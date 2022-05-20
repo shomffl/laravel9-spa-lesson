@@ -4423,37 +4423,34 @@ var Trigger = function Trigger(_ref2) {
 
 var Content = function Content(_ref3) {
   var _ref3$align = _ref3.align,
-      align = _ref3$align === void 0 ? 'right' : _ref3$align,
+      align = _ref3$align === void 0 ? "right" : _ref3$align,
       _ref3$width = _ref3.width,
-      width = _ref3$width === void 0 ? '48' : _ref3$width,
+      width = _ref3$width === void 0 ? "48" : _ref3$width,
       _ref3$contentClasses = _ref3.contentClasses,
-      contentClasses = _ref3$contentClasses === void 0 ? 'py-1 bg-white' : _ref3$contentClasses,
+      contentClasses = _ref3$contentClasses === void 0 ? "py-1 bg-white" : _ref3$contentClasses,
       children = _ref3.children;
 
   var _useContext2 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(DropDownContext),
       open = _useContext2.open,
       setOpen = _useContext2.setOpen;
 
-  var alignmentClasses = 'origin-top';
+  var alignmentClasses = "origin-top";
 
-  if (align === 'left') {
-    alignmentClasses = 'origin-top-left left-0';
-  } else if (align === 'right') {
-    alignmentClasses = 'origin-top-right right-0';
+  if (align === "left") {
+    alignmentClasses = "origin-top-left left-0";
+  } else if (align === "right") {
+    alignmentClasses = "origin-top-right right-0";
   }
 
-  var widthClasses = '';
+  var widthClasses = "";
 
-  if (width === '48') {
-    widthClasses = 'w-48';
+  if (width === "48") {
+    widthClasses = "w-48";
   }
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__.Transition, {
       show: open,
-      enter: "transition ease-out duration-200",
-      enterFrom: "transform opacity-0 scale-95",
-      enterTo: "transform opacity-100 scale-100",
       leave: "transition ease-in duration-75",
       leaveFrom: "transform opacity-100 scale-100",
       leaveTo: "transform opacity-0 scale-95",
@@ -4474,9 +4471,9 @@ var Content = function Content(_ref3) {
 var DropdownLink = function DropdownLink(_ref4) {
   var href = _ref4.href,
       _ref4$method = _ref4.method,
-      method = _ref4$method === void 0 ? 'post' : _ref4$method,
+      method = _ref4$method === void 0 ? "post" : _ref4$method,
       _ref4$as = _ref4.as,
-      as = _ref4$as === void 0 ? 'a' : _ref4$as,
+      as = _ref4$as === void 0 ? "a" : _ref4$as,
       children = _ref4.children;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
     href: href,
@@ -4745,8 +4742,8 @@ function Authenticated(_ref) {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
               className: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: route('dashboard'),
-                active: route().current('dashboard'),
+                href: route("dashboard"),
+                active: route().current("dashboard"),
                 children: "Dashboard"
               })
             })]
@@ -4776,7 +4773,7 @@ function Authenticated(_ref) {
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Content, {
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_Dropdown__WEBPACK_IMPORTED_MODULE_2__["default"].Link, {
-                    href: route('logout'),
+                    href: route("logout"),
                     method: "post",
                     as: "button",
                     children: "Log Out"
@@ -4799,13 +4796,13 @@ function Authenticated(_ref) {
                 fill: "none",
                 viewBox: "0 0 24 24",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-                  className: !showingNavigationDropdown ? 'inline-flex' : 'hidden',
+                  className: !showingNavigationDropdown ? "inline-flex" : "hidden",
                   strokeLinecap: "round",
                   strokeLinejoin: "round",
                   strokeWidth: "2",
                   d: "M4 6h16M4 12h16M4 18h16"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("path", {
-                  className: showingNavigationDropdown ? 'inline-flex' : 'hidden',
+                  className: showingNavigationDropdown ? "inline-flex" : "hidden",
                   strokeLinecap: "round",
                   strokeLinejoin: "round",
                   strokeWidth: "2",
@@ -4816,12 +4813,12 @@ function Authenticated(_ref) {
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-        className: (showingNavigationDropdown ? 'block' : 'hidden') + ' sm:hidden',
+        className: (showingNavigationDropdown ? "block" : "hidden") + " sm:hidden",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
           className: "pt-2 pb-3 space-y-1",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            href: route('dashboard'),
-            active: route().current('dashboard'),
+            href: route("dashboard"),
+            active: route().current("dashboard"),
             children: "Dashboard"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
@@ -4839,7 +4836,7 @@ function Authenticated(_ref) {
             className: "mt-3 space-y-1",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_ResponsiveNavLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
               method: "post",
-              href: route('logout'),
+              href: route("logout"),
               as: "button",
               children: "Log Out"
             })
@@ -5536,6 +5533,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 

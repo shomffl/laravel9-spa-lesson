@@ -29,5 +29,5 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('posts', PostController::class);
+Route::resource('posts', PostController::class)->middleware('auth');
 require __DIR__.'/auth.php';
