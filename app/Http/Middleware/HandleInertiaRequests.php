@@ -32,6 +32,8 @@ class HandleInertiaRequests extends Middleware
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
+
+    // breezeを使った場合に、コンポーネントにpropsと記述するだけでデータを取得できるのは、この関数を経由しているから。
     public function share(Request $request)
     {
         return array_merge(parent::share($request), [
