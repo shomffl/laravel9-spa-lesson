@@ -42,48 +42,75 @@ const Index = (props) => {
                                     <th className="px-6 pt-5 pb-4">
                                         Description
                                     </th>
+                                    <th className="px-6 pt-5 pb-4">Category</th>
                                     <th className="px-6 pt-5 pb-4">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {posts.map(({ id, title, description }) => (
-                                    <tr key={id} className="">
-                                        <td className="border-t">
-                                            <InertiaLink
-                                                href={route("posts.edit", id)}
-                                                className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none"
-                                            >
-                                                {id}
-                                            </InertiaLink>
-                                        </td>
-                                        <td className="border-t">
-                                            <InertiaLink
-                                                href={route("posts.edit", id)}
-                                                className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none"
-                                            >
-                                                {title}
-                                            </InertiaLink>
-                                        </td>
-                                        <td className="border-t">
-                                            <InertiaLink
-                                                tabIndex="1"
-                                                className="flex items-center px-6 py-4"
-                                                href={route("posts.edit", id)}
-                                            >
-                                                {description}
-                                            </InertiaLink>
-                                        </td>
-                                        <td className="border-t">
-                                            <InertiaLink
-                                                tabIndex="1"
-                                                className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
-                                                href={route("posts.edit", id)}
-                                            >
-                                                Edit
-                                            </InertiaLink>
-                                        </td>
-                                    </tr>
-                                ))}
+                                {data.map(
+                                    ({ id, title, description, category }) => (
+                                        <tr key={id} className="">
+                                            <td className="border-t">
+                                                <InertiaLink
+                                                    href={route(
+                                                        "posts.edit",
+                                                        id
+                                                    )}
+                                                    className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none"
+                                                >
+                                                    {id}
+                                                </InertiaLink>
+                                            </td>
+                                            <td className="border-t">
+                                                <InertiaLink
+                                                    href={route(
+                                                        "posts.edit",
+                                                        id
+                                                    )}
+                                                    className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none"
+                                                >
+                                                    {title}
+                                                </InertiaLink>
+                                            </td>
+                                            <td className="border-t">
+                                                <InertiaLink
+                                                    tabIndex="1"
+                                                    className="flex items-center px-6 py-4"
+                                                    href={route(
+                                                        "posts.edit",
+                                                        id
+                                                    )}
+                                                >
+                                                    {description}
+                                                </InertiaLink>
+                                            </td>
+                                            <td className="border-t">
+                                                <InertiaLink
+                                                    tabIndex="1"
+                                                    className="flex items-center px-6 py-4"
+                                                    href={route(
+                                                        "posts.edit",
+                                                        id
+                                                    )}
+                                                >
+                                                    {category.name}
+                                                </InertiaLink>
+                                            </td>
+                                            <td className="border-t">
+                                                <InertiaLink
+                                                    tabIndex="1"
+                                                    className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
+                                                    href={route(
+                                                        "posts.edit",
+                                                        id
+                                                    )}
+                                                >
+                                                    Edit
+                                                </InertiaLink>
+                                            </td>
+                                        </tr>
+                                    )
+                                )}
                                 {data.length === 0 && (
                                     <tr>
                                         <td

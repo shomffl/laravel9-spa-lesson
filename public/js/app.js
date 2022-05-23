@@ -5910,14 +5910,18 @@ var Index = function Index(props) {
                   children: "Description"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
                   className: "px-6 pt-5 pb-4",
+                  children: "Category"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                  className: "px-6 pt-5 pb-4",
                   children: "Action"
                 })]
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tbody", {
-              children: [posts.map(function (_ref) {
+              children: [data.map(function (_ref) {
                 var id = _ref.id,
                     title = _ref.title,
-                    description = _ref.description;
+                    description = _ref.description,
+                    category = _ref.category;
                 return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
                   className: "",
                   children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
@@ -5941,6 +5945,14 @@ var Index = function Index(props) {
                       className: "flex items-center px-6 py-4",
                       href: route("posts.edit", id),
                       children: description
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "border-t",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
+                      tabIndex: "1",
+                      className: "flex items-center px-6 py-4",
+                      href: route("posts.edit", id),
+                      children: category.name
                     })
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
                     className: "border-t",
