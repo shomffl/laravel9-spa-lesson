@@ -15,11 +15,9 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Post $post)
     {
-        $posts = Post::latest()->get();
-
-        return Inertia::render('Post/Index', ['posts' => $posts]);
+        return Inertia::render('Post/Index', ['posts' => $post->get()]);
     }
 
     /**
