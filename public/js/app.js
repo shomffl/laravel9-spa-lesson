@@ -5601,12 +5601,16 @@ __webpack_require__.r(__webpack_exports__);
 var Create = function Create(props) {
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.useForm)({
     title: "",
-    description: ""
+    description: "",
+    category_id: ""
   }),
       data = _useForm.data,
       setData = _useForm.setData,
       errors = _useForm.errors,
       post = _useForm.post;
+
+  var categories = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props.categories;
+  console.log(data);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -5677,6 +5681,29 @@ var Create = function Create(props) {
                   onChange: function onChange(e) {
                     return setData("description", e.target.value);
                   }
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+                  className: "text-red-600",
+                  children: errors.description
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("label", {
+                  children: "Category"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
+                    onChange: function onChange(e) {
+                      return setData("category_id", e.target.value);
+                    },
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                      children: "--------"
+                    }), categories.map(function (_ref) {
+                      var id = _ref.id,
+                          name = _ref.name;
+                      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
+                        value: id,
+                        children: name
+                      }, id);
+                    })]
+                  })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
                   className: "text-red-600",
                   children: errors.description

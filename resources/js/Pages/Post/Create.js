@@ -1,6 +1,6 @@
 import React from "react";
 import { Inertia } from "@inertiajs/inertia";
-import { InertiaLink, useForm } from "@inertiajs/inertia-react";
+import { InertiaLink, useForm, usePage } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 
@@ -8,7 +8,10 @@ const Create = (props) => {
     const { data, setData, errors, post } = useForm({
         title: "",
         description: "",
+        category_id: "",
     });
+    const { categories } = usePage().props;
+    console.log(data);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -78,6 +81,29 @@ const Create = (props) => {
                                             )
                                         }
                                     />
+                                    <span className="text-red-600">
+                                        {errors.description}
+                                    </span>
+                                </div>
+                                <div>
+                                    <label>Category</label>
+                                    <div>
+                                        <select
+                                            onChange={(e) =>
+                                                setData(
+                                                    "category_id",
+                                                    e.target.value
+                                                )
+                                            }
+                                        >
+                                            <option>--------</option>
+                                            {categories.map(({ id, name }) => (
+                                                <option key={id} value={id}>
+                                                    {name}
+                                                </option>
+                                            ))}
+                                        </select>
+                                    </div>
                                     <span className="text-red-600">
                                         {errors.description}
                                     </span>
