@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Inertia } from "@inertiajs/inertia";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
+import Pusher from "pusher-js";
 
 const Index = (props) => {
     const { posts } = usePage().props;
-    const data = posts;
+    const [texts, setTexts] = useState([]);
 
+    let pusherText = [];
+
+    useEffect(() => {
+        var pusher = new Pusher("00e71296007022344f25", {
+            cluster: "ap3",
+        });
+
+        var channel = pusher.subscribe("post");
+        channel.bind("App\\Events\\Posted", function (data) {
+            console.log(data);
+        });
+    }, []);
     return (
         <div>
             <Authenticated
@@ -47,7 +60,7 @@ const Index = (props) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {data.map(
+                                {posts.map(
                                     ({ id, title, description, category }) => (
                                         <tr key={id} className="">
                                             <td className="border-t">
@@ -111,7 +124,7 @@ const Index = (props) => {
                                         </tr>
                                     )
                                 )}
-                                {data.length === 0 && (
+                                {posts.length === 0 && (
                                     <tr>
                                         <td
                                             className="px-6 py-4 border-t"

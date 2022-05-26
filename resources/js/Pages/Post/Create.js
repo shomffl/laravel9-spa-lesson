@@ -11,7 +11,6 @@ const Create = (props) => {
         category_id: "",
     });
     const { categories } = usePage().props;
-    console.log(data);
 
     function handleSubmit(e) {
         e.preventDefault();

@@ -8,6 +8,7 @@ use App\Models\Category;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Request;
 use Inertia\Inertia;
+use App\Events\Posted;
 
 class PostController extends Controller
 {
@@ -40,9 +41,13 @@ class PostController extends Controller
      */
     public function store(StorePostRequest $request)
     {
-        Post::create(
-            $request->validated()
-        );
+        // Post::create(
+        //     $request->validated()
+        // );
+        $post = new Post($request->all());
+        $post->save();
+        event(new Posted($post));
+
 
         return Redirect::route('posts.index');
     }
