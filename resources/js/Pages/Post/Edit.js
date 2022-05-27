@@ -16,9 +16,7 @@ const Edit = (props) => {
         put(route("posts.update", post.id));
     }
     function destroy() {
-        if (confirm("Are you sure you want to delete this user?")) {
-            Inertia.delete(route("posts.destroy", post.id));
-        }
+        Inertia.delete(route("posts.destroy", post.id));
     }
 
     return (
