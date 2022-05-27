@@ -39,8 +39,8 @@ export default function Authenticated({ auth, header, children }) {
                             </div>
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <NavLink
-                                    href={route("messages.index")}
-                                    active={route().current("messages.index")}
+                                    href={route("users.index")}
+                                    active={route().current("users.index")}
                                 >
                                     Chat
                                 </NavLink>
@@ -176,7 +176,7 @@ export default function Authenticated({ auth, header, children }) {
                 </header>
             )}
 
-            <main>{children}</main>
+            <div>{children}</div>
         </div>
     );
 }

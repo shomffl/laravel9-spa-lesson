@@ -14,9 +14,10 @@ class MessageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(User $user)
+    public function index(Message $message)
     {
-        return Inertia::render("Message/Index",["users"=>$user->get()]);
+        dd("hi");
+        return Inertia::render("Message/Chat",);
     }
 
     /**
@@ -37,7 +38,10 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        Message::create($data);
+
+        return redirect("/user/" .  $data["recieve"]);
     }
 
     /**
@@ -48,12 +52,12 @@ class MessageController extends Controller
      */
     public function show(Message $message)
     {
-        return Inertia::render("Message/Show");
     }
 
-    public function getUser(User $user)
+
+    public function getMessageByRoom(User $user)
     {
-        return Inertia::render("Message/Show",["user"=>$user]);
+        return Inertia::render("Message/Chat",["user"=>$user]);
     }
 
     /**

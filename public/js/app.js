@@ -4756,8 +4756,8 @@ function Authenticated(_ref) {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
               className: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: route("messages.index"),
-                active: route().current("messages.index"),
+                href: route("users.index"),
+                active: route().current("users.index"),
                 children: "Chat"
               })
             })]
@@ -4863,7 +4863,7 @@ function Authenticated(_ref) {
         className: "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8",
         children: header
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("main", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       children: children
     })]
   });
@@ -5581,6 +5581,81 @@ function Dashboard(props) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Message/Chat.js":
+/*!********************************************!*\
+  !*** ./resources/js/Pages/Message/Chat.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Chat = function Chat(props) {
+  var user = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props.user;
+
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.useForm)({
+    send: props.auth.user.id,
+    recieve: user.id,
+    message: ""
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      post = _useForm.post;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    post(route("messages.store"));
+  }
+
+  console.log(data);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      auth: props.auth,
+      errors: props.errors,
+      header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
+        className: "font-semibold text-xl text-gray-800 leading-tight",
+        children: "Dashboard"
+      }),
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
+        title: "Index"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
+        onSubmit: handleSubmit,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          type: "text",
+          className: "w-9/12 px-4 py-2",
+          value: data.title,
+          onChange: function onChange(e) {
+            return setData("message", e.target.value);
+          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+            type: "submit",
+            className: "px-6 py-2 font-bold text-white bg-green-500 rounded",
+            children: "Send"
+          })
+        })]
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Chat);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Message/Index.js":
 /*!*********************************************!*\
   !*** ./resources/js/Pages/Message/Index.js ***!
@@ -5648,7 +5723,7 @@ var Index = function Index(props) {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                   className: "border-t",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
-                    href: "/user/".concat(id),
+                    href: "/message/".concat(id),
                     className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
                     children: "Chat"
                   })
@@ -5665,48 +5740,6 @@ var Index = function Index(props) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Message/Show.js":
-/*!********************************************!*\
-  !*** ./resources/js/Pages/Message/Show.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-
-
-var Show = function Show(props) {
-  console.log(props);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      auth: props.auth,
-      errors: props.errors,
-      header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
-        className: "font-semibold text-xl text-gray-800 leading-tight",
-        children: "Dashboard"
-      }),
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
-        title: "Index"
-      })
-    })
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Show);
 
 /***/ }),
 
@@ -64521,10 +64554,10 @@ var map = {
 	"./Auth/VerifyEmail.js": "./resources/js/Pages/Auth/VerifyEmail.js",
 	"./Dashboard": "./resources/js/Pages/Dashboard.js",
 	"./Dashboard.js": "./resources/js/Pages/Dashboard.js",
+	"./Message/Chat": "./resources/js/Pages/Message/Chat.js",
+	"./Message/Chat.js": "./resources/js/Pages/Message/Chat.js",
 	"./Message/Index": "./resources/js/Pages/Message/Index.js",
 	"./Message/Index.js": "./resources/js/Pages/Message/Index.js",
-	"./Message/Show": "./resources/js/Pages/Message/Show.js",
-	"./Message/Show.js": "./resources/js/Pages/Message/Show.js",
 	"./Post/Create": "./resources/js/Pages/Post/Create.js",
 	"./Post/Create.js": "./resources/js/Pages/Post/Create.js",
 	"./Post/Edit": "./resources/js/Pages/Post/Edit.js",
