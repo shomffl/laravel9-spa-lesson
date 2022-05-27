@@ -17,7 +17,7 @@ class MessageController extends Controller
     public function index(Message $message)
     {
         dd("hi");
-        return Inertia::render("Message/Chat",);
+        return Inertia::render("Message/Chat", );
     }
 
     /**
@@ -41,7 +41,7 @@ class MessageController extends Controller
         $data = $request->all();
         Message::create($data);
 
-        return redirect("/user/" .  $data["recieve"]);
+        return redirect("/message/" .  $data["recieve"]);
     }
 
     /**
@@ -57,7 +57,11 @@ class MessageController extends Controller
 
     public function getMessageByRoom(User $user)
     {
-        return Inertia::render("Message/Chat",["user"=>$user]);
+        $auth_id = \Auth::id();
+        $messages = Message::where("send", "=", $auth_id)->where("recieve", "=", $user->id)
+                            ->orWhere("send", "=", $user->id)->where("recieve", "=", $auth_id)->get();
+        dd($messages);
+        return Inertia::render("Message/Chat", ["user"=>$user]);
     }
 
     /**
