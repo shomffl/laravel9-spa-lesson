@@ -37,6 +37,14 @@ export default function Authenticated({ auth, header, children }) {
                                     Posts
                                 </NavLink>
                             </div>
+                            <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <NavLink
+                                    href={route("messages.index")}
+                                    active={route().current("messages.index")}
+                                >
+                                    Chat
+                                </NavLink>
+                            </div>
                         </div>
 
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
