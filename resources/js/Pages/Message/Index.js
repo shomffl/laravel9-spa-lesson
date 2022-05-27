@@ -34,7 +34,10 @@ const Index = (props) => {
                                     </td>
                                     <td className="border-t">{name}</td>
                                     <td className="border-t">
-                                        <InertiaLink className="px-4 py-2 text-sm text-white bg-blue-500 rounded">
+                                        <InertiaLink
+                                            href={`/user/${id}`}
+                                            className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
+                                        >
                                             Chat
                                         </InertiaLink>
                                     </td>

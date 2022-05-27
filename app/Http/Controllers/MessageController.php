@@ -48,7 +48,12 @@ class MessageController extends Controller
      */
     public function show(Message $message)
     {
-        //
+        return Inertia::render("Message/Show");
+    }
+
+    public function getUser(User $user)
+    {
+        return Inertia::render("Message/Show",["user"=>$user]);
     }
 
     /**

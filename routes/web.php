@@ -33,6 +33,7 @@ Route::get('/dashboard', function () {
 Route::resource('posts', PostController::class)->middleware('auth');
 Route::get("/get", [PostController::class,"getData"])->middleware("auth");
 Route::resource("messages", MessageController::class)->middleware("auth");
+Route::get("/user/{user}", [MessageController::class,"getUser"])->middleware("auth");
 
 
 require __DIR__.'/auth.php';
