@@ -35,7 +35,7 @@ class PostController extends Controller
      */
     public function create(Category $category)
     {
-        return Inertia::render('Post/Create',["categories" => $category->get()]);
+        return Inertia::render('Post/Create', ["categories" => $category->get()]);
     }
 
     /**
@@ -49,7 +49,7 @@ class PostController extends Controller
         // Post::create(
         //     $request->validated()
         // );
-        $post = new Post($request->all());
+        $post = new Post($request->validated());
         $post->save();
         event(new Posted($post));
 

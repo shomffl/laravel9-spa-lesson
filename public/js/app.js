@@ -5604,7 +5604,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Chat = function Chat(props) {
-  var user = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props.user;
+  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props,
+      user = _usePage$props.user,
+      messages = _usePage$props.messages;
 
   var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.useForm)({
     send: props.auth.user.id,
@@ -5615,12 +5617,12 @@ var Chat = function Chat(props) {
       setData = _useForm.setData,
       post = _useForm.post;
 
-  function handleSubmit(e) {
+  var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
     post(route("messages.store"));
-  }
+  };
 
-  console.log(data);
+  console.log(messages);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__["default"], {
       auth: props.auth,
@@ -5631,6 +5633,11 @@ var Chat = function Chat(props) {
       }),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
         title: "Index"
+      }), messages.map(function (_ref) {
+        var message = _ref.message;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: message
+        });
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
         onSubmit: handleSubmit,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {

@@ -4,18 +4,19 @@ import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 
 const Chat = (props) => {
-    const { user } = usePage().props;
+    const { user, messages } = usePage().props;
     const { data, setData, post } = useForm({
         send: props.auth.user.id,
         recieve: user.id,
         message: "",
     });
-
-    function handleSubmit(e) {
+    const handleSubmit = (e) => {
         e.preventDefault();
         post(route("messages.store"));
-    }
-    console.log(data);
+    };
+
+    console.log(messages);
+
     return (
         <div>
             <Authenticated
@@ -28,6 +29,11 @@ const Chat = (props) => {
                 }
             >
                 <Head title="Index" />
+
+                {messages.map(({ message }) => (
+                    <div>{message}</div>
+                ))}
+
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"

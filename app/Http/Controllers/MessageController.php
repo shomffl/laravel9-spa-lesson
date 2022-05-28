@@ -16,7 +16,6 @@ class MessageController extends Controller
      */
     public function index(Message $message)
     {
-        dd("hi");
         return Inertia::render("Message/Chat", );
     }
 
@@ -60,8 +59,7 @@ class MessageController extends Controller
         $auth_id = \Auth::id();
         $messages = Message::where("send", "=", $auth_id)->where("recieve", "=", $user->id)
                             ->orWhere("send", "=", $user->id)->where("recieve", "=", $auth_id)->get();
-        dd($messages);
-        return Inertia::render("Message/Chat", ["user"=>$user]);
+        return Inertia::render("Message/Chat", ["user"=>$user, "messages" => $messages]);
     }
 
     /**
