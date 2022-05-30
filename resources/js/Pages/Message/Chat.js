@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { usePage, useForm } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
+import Pusher from "pusher-js";
 
 const Chat = (props) => {
     const { user, messages } = usePage().props;
@@ -15,7 +16,16 @@ const Chat = (props) => {
         post(route("messages.store"));
     };
 
-    console.log(messages);
+    useEffect(() => {
+        var pusher = new Pusher("00e71296007022344f25", {
+            cluster: "ap3",
+        });
+
+        var channel = pusher.subscribe("message");
+        channel.bind("App\\Events\\Chat", function (data) {
+            console.log(data);
+        });
+    }, []);
 
     return (
         <div>

@@ -6,7 +6,7 @@ use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Events\Posted;
 
@@ -44,12 +44,12 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorePostRequest $request)
+    public function store(Request $request)
     {
         // Post::create(
         //     $request->validated()
         // );
-        $post = new Post($request->validated());
+        $post = new Post($request->all());
         $post->save();
         event(new Posted($post));
 

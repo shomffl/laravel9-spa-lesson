@@ -6,6 +6,8 @@ use App\Models\Message;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\User;
+use App\Events\Chat;
+
 
 class MessageController extends Controller
 {
@@ -37,10 +39,11 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->all();
-        Message::create($data);
+        $message = new Message($request->all());
+        $message->save();
+        event(new Chat($message));
 
-        return redirect("/message/" .  $data["recieve"]);
+        return redirect("/message/" .  $message["recieve"]);
     }
 
     /**

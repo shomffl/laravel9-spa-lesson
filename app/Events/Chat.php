@@ -9,22 +9,22 @@ use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use App\Models\Post;
+use App\Models\Message;
 
-class Posted implements ShouldBroadcast
+
+class Chat implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $post;
+    public $message;
 
-    public function __construct(Post $post)
+    public function __construct(Message $message)
     {
-        $this->post = $post;
+        $this->message = $message;
     }
 
     public function broadcastOn()
     {
-        return new Channel("post");
+        return new Channel('chat');
     }
-
 }
