@@ -35,7 +35,7 @@ const Index = (props) => {
                                     <td className="border-t">{name}</td>
                                     <td className="border-t">
                                         <InertiaLink
-                                            href={`/message/${id}`}
+                                            href={`/users/${id}`}
                                             className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
                                         >
                                             Chat

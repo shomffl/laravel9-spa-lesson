@@ -3,6 +3,7 @@ import { usePage, useForm } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 import Pusher from "pusher-js";
+import axios from "axios";
 
 const Chat = (props) => {
     const { user, messages } = usePage().props;
@@ -13,6 +14,7 @@ const Chat = (props) => {
     });
     const handleSubmit = (e) => {
         e.preventDefault();
+        setData("message", "");
         post(route("messages.store"));
     };
 
@@ -21,9 +23,11 @@ const Chat = (props) => {
             cluster: "ap3",
         });
 
-        var channel = pusher.subscribe("message");
-        channel.bind("App\\Events\\Chat", function (data) {
-            console.log(data);
+        var channel = pusher.subscribe("chat");
+        channel.bind("App\\Events\\Chat", function (res) {
+            axios.get("/").then((res) => {
+                console.log(res);
+            });
         });
     }, []);
 
@@ -48,7 +52,6 @@ const Chat = (props) => {
                     <input
                         type="text"
                         className="w-9/12 px-4 py-2"
-                        value={data.title}
                         onChange={(e) => setData("message", e.target.value)}
                     />
                     <div>

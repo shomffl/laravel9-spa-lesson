@@ -56,15 +56,6 @@ class MessageController extends Controller
     {
     }
 
-
-    public function getMessageByRoom(User $user)
-    {
-        $auth_id = \Auth::id();
-        $messages = Message::where("send", "=", $auth_id)->where("recieve", "=", $user->id)
-                            ->orWhere("send", "=", $user->id)->where("recieve", "=", $auth_id)->get();
-        return Inertia::render("Message/Chat", ["user"=>$user, "messages" => $messages]);
-    }
-
     /**
      * Show the form for editing the specified resource.
      *
