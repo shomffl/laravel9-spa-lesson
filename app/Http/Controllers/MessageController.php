@@ -18,7 +18,7 @@ class MessageController extends Controller
      */
     public function index(Message $message)
     {
-        return Inertia::render("Message/Chat", );
+        return Inertia::render("Message/Chat");
     }
 
     /**
