@@ -19,15 +19,19 @@ use Inertia\Inertia;
 */
 
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('posts', PostController::class)->middleware('auth');
-Route::get("/get", [PostController::class,"getData"])->middleware("auth");
-Route::resource("messages", MessageController::class)->middleware("auth");
-Route::resource("users", UserController::class)->middleware("auth");
-Route::get("/message/{user}", [MessageController::class,"getMessageByRoom"])->middleware("auth");
+
+Route::group(["middleware" => ["auth"]], function() {
+    Route::get('/', function () {
+    return Inertia::render('Dashboard');
+    })->name('dashboard');
+
+    Route::resource('posts', PostController::class);
+    Route::get("/get", [PostController::class,"getData"]);
+    Route::resource("messages", MessageController::class);
+    Route::resource("users", UserController::class);
+    Route::get("/room/{user}", [UserController::class, "getMessageByRoom"]);
+});
 
 
 require __DIR__.'/auth.php';
