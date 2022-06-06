@@ -25,12 +25,11 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::get('/', function () {
     return Inertia::render('Dashboard');
     })->name('dashboard');
-
     Route::resource('posts', PostController::class);
     Route::get("/get", [PostController::class,"getData"]);
     Route::resource("messages", MessageController::class);
     Route::resource("users", UserController::class);
-    Route::get("/room/{user}", [UserController::class, "getMessageByRoom"]);
+    Route::get("/room/{send}/{recieve}", [UserController::class, "getMessageByRoom"]);
 });
 
 

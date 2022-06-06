@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { usePage, useForm } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
@@ -6,14 +6,16 @@ import Pusher from "pusher-js";
 import axios from "axios";
 
 const Chat = (props) => {
-    const { user, messages } = usePage().props;
+    const { recieve_id, messages } = usePage().props;
     const { data, setData, post } = useForm({
         send: props.auth.user.id,
-        recieve: user.id,
+        recieve: recieve_id,
         message: "",
     });
+
+    const [messagesData, setMessagesData] = useState(messages);
+
     const handleSubmit = (e) => {
-        e.preventDefault();
         setData("message", "");
         post(route("messages.store"));
     };
@@ -25,9 +27,11 @@ const Chat = (props) => {
 
         var channel = pusher.subscribe("chat");
         channel.bind("App\\Events\\Chat", function (res) {
-            axios.get("/").then((res) => {
-                console.log(res);
-            });
+            axios
+                .get(`/room/${res.message.send}/${res.message.recieve}`, data)
+                .then((response) => {
+                    setMessagesData(response.data.messages);
+                });
         });
     }, []);
 
@@ -44,7 +48,7 @@ const Chat = (props) => {
             >
                 <Head title="Index" />
 
-                {messages.map(({ message }) => (
+                {messagesData.map(({ message }) => (
                     <div>{message}</div>
                 ))}
 

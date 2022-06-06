@@ -16,16 +16,16 @@ class UserController extends Controller
 
     public function show(User $user)
     {
-        $messages_data = UserController::getMessageByRoom($user);
-        dd($messages_data);
-        return Inertia::render("Message/Show");
+        $auth_user_id = \Auth::id();
+        $recieve_user_id = $user->id;
+        $messages_data = UserController::getMessageByRoom($auth_user_id, $recieve_user_id);
+        return Inertia::render("Message/Chat", ["recieve_id" => $recieve_user_id, "messages" => $messages_data["messages"]]);
     }
 
-    public function getMessageByRoom(User $user)
+    public function getMessageByRoom($send, $recieve)
     {
-        $auth_id = \Auth::id();
-        $messages = Message::where("send", "=", $auth_id)->where("recieve", "=", $user->id)
-                            ->orWhere("send", "=", $user->id)->where("recieve", "=", $auth_id)->get();
-        return ["user"=>$user, "messages" => $messages];
+        $messages = Message::where("send", "=", $send)->where("recieve", "=", $recieve)
+                            ->orWhere("send", "=", $recieve)->where("recieve", "=", $send)->get();
+        return ["messages" => $messages];
     }
 }

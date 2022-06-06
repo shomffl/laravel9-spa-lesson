@@ -43,7 +43,7 @@ class MessageController extends Controller
         $message->save();
         event(new Chat($message));
 
-        return redirect("/message/" .  $message["recieve"]);
+        return redirect("/users/" .  $message["recieve"]);
     }
 
     /**
