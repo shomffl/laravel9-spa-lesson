@@ -5640,6 +5640,8 @@ var Chat = function Chat(props) {
       messagesData = _useState2[0],
       setMessagesData = _useState2[1];
 
+  console.log(messagesData);
+
   var handleSubmit = function handleSubmit(e) {
     setData("message", "");
     post(route("messages.store"));
@@ -5656,6 +5658,31 @@ var Chat = function Chat(props) {
       });
     });
   }, []);
+
+  var messageStyle = function messageStyle(send) {
+    if (send === props.auth.user.id) {
+      return {
+        display: "block",
+        backgroundColor: "#C5D4D9",
+        margin: 5,
+        padding: 10,
+        paddingRight: "4%",
+        borderRadius: "10px",
+        textAlign: "right"
+      };
+    } else {
+      return {
+        backgroundColor: "white",
+        border: "1px solid gray",
+        margin: 5,
+        padding: 10,
+        paddingLeft: "4%",
+        borderRadius: "10px",
+        textAlign: "left"
+      };
+    }
+  };
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__["default"], {
       auth: props.auth,
@@ -5666,26 +5693,35 @@ var Chat = function Chat(props) {
       }),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
         title: "Index"
-      }), messagesData.map(function (_ref) {
-        var message = _ref.message;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-          children: message
-        });
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("form", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        className: "p-10",
+        children: messagesData.map(function (_ref) {
+          var id = _ref.id,
+              send = _ref.send,
+              message = _ref.message;
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+            style: messageStyle(send),
+            children: message
+          }, id);
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("form", {
         onSubmit: handleSubmit,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
-          type: "text",
-          className: "w-9/12 px-4 py-2",
-          onChange: function onChange(e) {
-            return setData("message", e.target.value);
-          }
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
-            type: "submit",
-            className: "px-6 py-2 font-bold text-white bg-green-500 rounded",
-            children: "Send"
-          })
-        })]
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+          className: "flex absolute bottom-0 right-56 content-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+            type: "text",
+            className: "min-w-full px-4 py-2 ml-20 mr-4 mb-10 rounded-r",
+            onChange: function onChange(e) {
+              return setData("message", e.target.value);
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
+              type: "submit",
+              className: "px-6 py-2 font-bold text-white bg-green-500 rounded",
+              children: "Send"
+            })
+          })]
+        })
       })]
     })
   });

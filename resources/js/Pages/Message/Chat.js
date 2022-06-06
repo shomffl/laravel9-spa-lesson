@@ -15,6 +15,8 @@ const Chat = (props) => {
 
     const [messagesData, setMessagesData] = useState(messages);
 
+    console.log(messagesData);
+
     const handleSubmit = (e) => {
         setData("message", "");
         post(route("messages.store"));
@@ -35,6 +37,30 @@ const Chat = (props) => {
         });
     }, []);
 
+    const messageStyle = (send) => {
+        if (send === props.auth.user.id) {
+            return {
+                display: "block",
+                backgroundColor: "#C5D4D9",
+                margin: 5,
+                padding: 10,
+                paddingRight: "4%",
+                borderRadius: "10px",
+                textAlign: "right",
+            };
+        } else {
+            return {
+                backgroundColor: "white",
+                border: "1px solid gray",
+                margin: 5,
+                padding: 10,
+                paddingLeft: "4%",
+                borderRadius: "10px",
+                textAlign: "left",
+            };
+        }
+    };
+
     return (
         <div>
             <Authenticated
@@ -48,23 +74,29 @@ const Chat = (props) => {
             >
                 <Head title="Index" />
 
-                {messagesData.map(({ message }) => (
-                    <div>{message}</div>
-                ))}
+                <div className="p-10">
+                    {messagesData.map(({ id, send, message }) => (
+                        <p style={messageStyle(send)} key={id}>
+                            {message}
+                        </p>
+                    ))}
+                </div>
 
                 <form onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        className="w-9/12 px-4 py-2"
-                        onChange={(e) => setData("message", e.target.value)}
-                    />
-                    <div>
-                        <button
-                            type="submit"
-                            className="px-6 py-2 font-bold text-white bg-green-500 rounded"
-                        >
-                            Send
-                        </button>
+                    <div className="flex absolute bottom-0 right-56 content-center">
+                        <input
+                            type="text"
+                            className="min-w-full px-4 py-2 ml-20 mr-4 mb-10 rounded-r"
+                            onChange={(e) => setData("message", e.target.value)}
+                        />
+                        <div>
+                            <button
+                                type="submit"
+                                className="px-6 py-2 font-bold text-white bg-green-500 rounded"
+                            >
+                                Send
+                            </button>
+                        </div>
                     </div>
                 </form>
             </Authenticated>
