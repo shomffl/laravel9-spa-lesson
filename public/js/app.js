@@ -6174,11 +6174,16 @@ var Index = function Index(props) {
     });
     var channel = pusher.subscribe("post");
     channel.bind("App\\Events\\Posted", function (data) {
-      axios__WEBPACK_IMPORTED_MODULE_5___default().get("/get").then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_5___default().get("/get-data").then(function (res) {
         setDatas(res.data);
       });
     });
   }, []);
+
+  function destroy(id) {
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia["delete"](route("posts.destroy", id));
+  }
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_3__["default"], {
       auth: props.auth,
@@ -6221,6 +6226,9 @@ var Index = function Index(props) {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
                   className: "px-6 pt-5 pb-4",
                   children: "Category"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+                  className: "px-6 pt-5 pb-4",
+                  children: "Action"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
                   className: "px-6 pt-5 pb-4",
                   children: "Action"
@@ -6271,6 +6279,14 @@ var Index = function Index(props) {
                       className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
                       href: route("posts.edit", id),
                       children: "Edit"
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                    className: "border-t",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
+                      onClick: function onClick(e) {
+                        return destroy(id);
+                      },
+                      children: "delete"
                     })
                   })]
                 }, id);

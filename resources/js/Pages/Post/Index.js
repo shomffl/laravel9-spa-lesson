@@ -17,11 +17,15 @@ const Index = (props) => {
 
         var channel = pusher.subscribe("post");
         channel.bind("App\\Events\\Posted", function (data) {
-            axios.get("/get").then((res) => {
+            axios.get("/get-data").then((res) => {
                 setDatas(res.data);
             });
         });
     }, []);
+
+    function destroy(id) {
+        Inertia.delete(route("posts.destroy", id));
+    }
 
     return (
         <div>
@@ -58,6 +62,7 @@ const Index = (props) => {
                                         Description
                                     </th>
                                     <th className="px-6 pt-5 pb-4">Category</th>
+                                    <th className="px-6 pt-5 pb-4">Action</th>
                                     <th className="px-6 pt-5 pb-4">Action</th>
                                 </tr>
                             </thead>
@@ -122,6 +127,13 @@ const Index = (props) => {
                                                 >
                                                     Edit
                                                 </InertiaLink>
+                                            </td>
+                                            <td className="border-t">
+                                                <button
+                                                    onClick={(e) => destroy(id)}
+                                                >
+                                                    delete
+                                                </button>
                                             </td>
                                         </tr>
                                     )

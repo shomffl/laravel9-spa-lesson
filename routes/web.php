@@ -30,8 +30,11 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::resource("messages", MessageController::class);
     Route::resource("users", UserController::class);
 
+    Route::get("/get-data", [PostController::class, "getData"]);
+
     Route::get("/room/{send}/{recieve}", [UserController::class, "getMessageByRoom"]); // チャットルームごとのメッセージを取得するための関数
 });
 
+Route::get("/get", [PostController::class, "getData"]);
 
 require __DIR__.'/auth.php';
