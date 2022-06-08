@@ -5756,7 +5756,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var Index = function Index(props) {
   var users = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props.users;
-  console.log(users);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__["default"], {
       auth: props.auth,
@@ -5792,7 +5791,7 @@ var Index = function Index(props) {
                 className: "",
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                   className: "border-t flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none",
-                  children: id
+                  children: "/"
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                   className: "border-t",
                   children: name

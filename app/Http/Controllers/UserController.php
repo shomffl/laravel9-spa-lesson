@@ -11,7 +11,9 @@ class UserController extends Controller
 {
     public function index(User $user)
     {
-        return Inertia::render("Message/Index",["users"=>$user->get()]);
+        $auth_id = \Auth::id();
+        $users_other_than_auth = User::where("id", "!=", $auth_id)->get();
+        return Inertia::render("Message/Index",["users"=>$users_other_than_auth]);
     }
 
     public function show(User $user)

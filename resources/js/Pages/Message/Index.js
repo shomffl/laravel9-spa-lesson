@@ -5,7 +5,6 @@ import { Head } from "@inertiajs/inertia-react";
 
 const Index = (props) => {
     const { users } = usePage().props;
-    console.log(users);
     return (
         <div>
             <Authenticated
@@ -30,7 +29,7 @@ const Index = (props) => {
                             {users.map(({ id, name }) => (
                                 <tr key={id} className="">
                                     <td className="border-t flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none">
-                                        {id}
+                                        /
                                     </td>
                                     <td className="border-t">{name}</td>
                                     <td className="border-t">
