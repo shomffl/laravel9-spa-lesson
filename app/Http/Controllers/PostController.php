@@ -23,11 +23,6 @@ class PostController extends Controller
         return Inertia::render('Post/Index', ['posts' => $post]);
     }
 
-    public function getData()
-    {
-        $post = Post::with("category")->get();
-        return $post;
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -50,6 +45,7 @@ class PostController extends Controller
         //     $request->validated()
         // );
         $post = new Post($request->all());
+        $post->user_id = \Auth::id();
         $post->save();
         event(new Posted($post));
 
