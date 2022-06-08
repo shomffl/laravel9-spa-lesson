@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId("following_id")->constrained("users");
             $table->foreignId("followed_id")->constrained("users");
             $table->primary(["following_id","followed_id"]);
-
+            $table->softDeletes();
         });
     }
 
