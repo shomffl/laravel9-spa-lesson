@@ -6179,6 +6179,17 @@ var Index = function Index(props) {
       });
     });
   }, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var pusher = new (pusher_js__WEBPACK_IMPORTED_MODULE_4___default())("00e71296007022344f25", {
+      cluster: "ap3"
+    });
+    var channel = pusher.subscribe("delete-data");
+    channel.bind("App\\Events\\DeleteData", function (data) {
+      axios__WEBPACK_IMPORTED_MODULE_5___default().get("/get-data").then(function (res) {
+        setDatas(res.data);
+      });
+    });
+  }, []);
 
   function destroy(id) {
     _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia["delete"](route("posts.destroy", id));

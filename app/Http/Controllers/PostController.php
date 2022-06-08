@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Events\Posted;
+use App\Events\DeleteData;
 
 class PostController extends Controller
 {
@@ -108,6 +109,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+        event(new DeleteData($post));
         $post->delete();
 
         return Redirect::route('posts.index');

@@ -23,6 +23,19 @@ const Index = (props) => {
         });
     }, []);
 
+    useEffect(() => {
+        var pusher = new Pusher("00e71296007022344f25", {
+            cluster: "ap3",
+        });
+
+        var channel = pusher.subscribe("delete-data");
+        channel.bind("App\\Events\\DeleteData", function (data) {
+            axios.get("/get-data").then((res) => {
+                setDatas(res.data);
+            });
+        });
+    }, []);
+
     function destroy(id) {
         Inertia.delete(route("posts.destroy", id));
     }
