@@ -5662,9 +5662,9 @@ var Chat = function Chat(props) {
   var messageStyle = function messageStyle(send) {
     if (send === props.auth.user.id) {
       return {
-        display: "block",
         backgroundColor: "#C5D4D9",
         margin: 5,
+        marginLeft: "60%",
         padding: 10,
         paddingRight: "4%",
         borderRadius: "10px",
@@ -5675,6 +5675,7 @@ var Chat = function Chat(props) {
         backgroundColor: "white",
         border: "1px solid gray",
         margin: 5,
+        marginRight: "60%",
         padding: 10,
         paddingLeft: "4%",
         borderRadius: "10px",
@@ -5699,7 +5700,7 @@ var Chat = function Chat(props) {
           var id = _ref.id,
               send = _ref.send,
               message = _ref.message;
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             style: messageStyle(send),
             children: message
           }, id);

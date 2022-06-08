@@ -40,9 +40,9 @@ const Chat = (props) => {
     const messageStyle = (send) => {
         if (send === props.auth.user.id) {
             return {
-                display: "block",
                 backgroundColor: "#C5D4D9",
                 margin: 5,
+                marginLeft: "60%",
                 padding: 10,
                 paddingRight: "4%",
                 borderRadius: "10px",
@@ -53,6 +53,7 @@ const Chat = (props) => {
                 backgroundColor: "white",
                 border: "1px solid gray",
                 margin: 5,
+                marginRight: "60%",
                 padding: 10,
                 paddingLeft: "4%",
                 borderRadius: "10px",
@@ -76,9 +77,9 @@ const Chat = (props) => {
 
                 <div className="p-10">
                     {messagesData.map(({ id, send, message }) => (
-                        <p style={messageStyle(send)} key={id}>
+                        <div style={messageStyle(send)} key={id}>
                             {message}
-                        </p>
+                        </div>
                     ))}
                 </div>
 
