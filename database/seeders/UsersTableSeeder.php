@@ -24,8 +24,36 @@ class UsersTableSeeder extends Seeder
             "updated_at" => date("Y-m-d H:i:s"),
         ]);
         DB::table("users")->insert([
-            "name" => "test-user",
+            "name" => "test-user1",
             "email" => "test@test",
+            "password" => Hash::make("testtest"),
+            "created_at" => date("Y-m-d H:i:s"),
+            "updated_at" => date("Y-m-d H:i:s"),
+        ]);
+        DB::table("users")->insert([
+            "name" => "test-user2",
+            "email" => "test2@test",
+            "password" => Hash::make("testtest"),
+            "created_at" => date("Y-m-d H:i:s"),
+            "updated_at" => date("Y-m-d H:i:s"),
+        ]);
+        DB::table("users")->insert([
+            "name" => "test-user3",
+            "email" => "test3@test",
+            "password" => Hash::make("testtest"),
+            "created_at" => date("Y-m-d H:i:s"),
+            "updated_at" => date("Y-m-d H:i:s"),
+        ]);
+        DB::table("users")->insert([
+            "name" => "test-user4",
+            "email" => "test4@test",
+            "password" => Hash::make("testtest"),
+            "created_at" => date("Y-m-d H:i:s"),
+            "updated_at" => date("Y-m-d H:i:s"),
+        ]);
+        DB::table("users")->insert([
+            "name" => "test-user5",
+            "email" => "test5@test",
             "password" => Hash::make("testtest"),
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
