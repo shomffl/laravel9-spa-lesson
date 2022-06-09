@@ -32,6 +32,9 @@ Route::group(["middleware" => ["auth"]], function() {
 
     Route::get("/get-data", [PostController::class, "getData"]);
 
+    Route::get("/follow/{user}", [UserController::class, "followUser"]);
+    Route::get("/unfollow/{user}", [UserController::class, "unFollowUser"]);
+
     Route::get("/room/{send}/{recieve}", [UserController::class, "getMessageByRoom"]); // チャットルームごとのメッセージを取得するための関数
 });
 

@@ -5810,9 +5810,11 @@ var Index = function Index(props) {
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                   className: "border-t",
                   children: follows_id.includes(id) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+                    href: "/unfollow/".concat(id),
                     className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
                     children: "UnFollow"
                   }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+                    href: "/follow/".concat(id),
                     className: "px-4 py-2 text-sm text-white bg-red-500 rounded",
                     children: "Follow"
                   })

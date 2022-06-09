@@ -6,6 +6,7 @@ use Inertia\Inertia;
 use App\Models\User;
 use App\Models\Message;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
@@ -39,5 +40,21 @@ class UserController extends Controller
         $messages = Message::where("send", "=", $send)->where("recieve", "=", $recieve)
                             ->orWhere("send", "=", $recieve)->where("recieve", "=", $send)->get();
         return ["messages" => $messages];
+    }
+
+    public function followUser(User $user)
+    {
+        $auth_user = \Auth::user();
+        $auth_user->follows()->attach($user->id);
+
+        return redirect("users");
+    }
+
+    public function unFollowUser(User $user)
+    {
+        $auth_user = \Auth::user();
+        $auth_user->follows()->detach($user->id);
+
+        return redirect("users");
     }
 }

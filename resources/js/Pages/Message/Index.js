@@ -44,11 +44,17 @@ const Index = (props) => {
                                     </td>
                                     <td className="border-t">
                                         {follows_id.includes(id) ? (
-                                            <InertiaLink className="px-4 py-2 text-sm text-white bg-blue-500 rounded">
+                                            <InertiaLink
+                                                href={`/unfollow/${id}`}
+                                                className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
+                                            >
                                                 UnFollow
                                             </InertiaLink>
                                         ) : (
-                                            <InertiaLink className="px-4 py-2 text-sm text-white bg-red-500 rounded">
+                                            <InertiaLink
+                                                href={`/follow/${id}`}
+                                                className="px-4 py-2 text-sm text-white bg-red-500 rounded"
+                                            >
                                                 Follow
                                             </InertiaLink>
                                         )}
