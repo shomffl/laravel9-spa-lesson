@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { InertiaLink, usePage } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 
 const Index = (props) => {
-    const { users } = usePage().props;
+    const { users, follows_id } = usePage().props;
+
     return (
         <div>
             <Authenticated
@@ -23,6 +24,7 @@ const Index = (props) => {
                                 <th className="px-6 pt-5 pb-4">#</th>
                                 <th className="px-6 pt-5 pb-4">UserName</th>
                                 <th className="px-6 pt-5 pb-4">Action</th>
+                                <th className="px-6 pt-5 pb-4">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -39,6 +41,17 @@ const Index = (props) => {
                                         >
                                             Chat
                                         </InertiaLink>
+                                    </td>
+                                    <td className="border-t">
+                                        {follows_id.includes(id) ? (
+                                            <InertiaLink className="px-4 py-2 text-sm text-white bg-blue-500 rounded">
+                                                UnFollow
+                                            </InertiaLink>
+                                        ) : (
+                                            <InertiaLink className="px-4 py-2 text-sm text-white bg-red-500 rounded">
+                                                Follow
+                                            </InertiaLink>
+                                        )}
                                     </td>
                                 </tr>
                             ))}

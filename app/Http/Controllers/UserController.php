@@ -13,7 +13,17 @@ class UserController extends Controller
     {
         $auth_id = \Auth::id();
         $users_other_than_auth = User::where("id", "!=", $auth_id)->get();
-        return Inertia::render("Message/Index",["users"=>$users_other_than_auth]);
+
+
+        $users_follow_by_auth = User::with("follows:id")->find($auth_id);
+        $users_id_follow_by_auth = [];
+
+        foreach($users_follow_by_auth["follows"] as $user_follow_by_auth)
+        {
+            array_push($users_id_follow_by_auth,$user_follow_by_auth->id);
+        }
+
+        return Inertia::render("Message/Index",["users"=>$users_other_than_auth,"follows_id" => $users_id_follow_by_auth]);
     }
 
     public function show(User $user)

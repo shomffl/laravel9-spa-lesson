@@ -5755,7 +5755,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Index = function Index(props) {
-  var users = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props.users;
+  var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props,
+      users = _usePage$props.users,
+      follows_id = _usePage$props.follows_id;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_2__["default"], {
       auth: props.auth,
@@ -5781,6 +5783,9 @@ var Index = function Index(props) {
               }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
                 className: "px-6 pt-5 pb-4",
                 children: "Action"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                className: "px-6 pt-5 pb-4",
+                children: "Action"
               })]
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
@@ -5801,6 +5806,15 @@ var Index = function Index(props) {
                     href: "/users/".concat(id),
                     className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
                     children: "Chat"
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  className: "border-t",
+                  children: follows_id.includes(id) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+                    className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
+                    children: "UnFollow"
+                  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
+                    className: "px-4 py-2 text-sm text-white bg-red-500 rounded",
+                    children: "Follow"
                   })
                 })]
               }, id);
