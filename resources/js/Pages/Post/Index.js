@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Inertia } from "@inertiajs/inertia";
-import { InertiaLink, usePage } from "@inertiajs/inertia-react";
+import { InertiaLink, Link, usePage } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 import Pusher from "pusher-js";
@@ -56,13 +56,23 @@ const Index = (props) => {
                     <h1 className="mb-8 text-3xl font-bold text-center">
                         Post
                     </h1>
-                    <div className="flex items-center justify-between mb-6">
-                        <InertiaLink
-                            className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
-                            href={route("posts.create")}
-                        >
-                            Create Post
-                        </InertiaLink>
+                    <div className="flex">
+                        <div className="flex items-center justify-between mb-6 mr-6">
+                            <InertiaLink
+                                className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
+                                href={route("posts.create")}
+                            >
+                                Create Post
+                            </InertiaLink>
+                        </div>
+                        <div className="flex items-center justify-between mb-6">
+                            <InertiaLink
+                                className="px-6 py-2 text-white bg-yellow-500 rounded-md focus:outline-none"
+                                href={"/posts-friends"}
+                            >
+                                Freind's Posts
+                            </InertiaLink>
+                        </div>
                     </div>
 
                     <div className="overflow-x-auto bg-white rounded shadow">

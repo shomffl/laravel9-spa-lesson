@@ -31,6 +31,7 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::resource("users", UserController::class);
 
     Route::get("/get-data", [PostController::class, "getData"]);
+    Route::get("/posts-friends", [PostController::class, "getDataPostByFriends"]);
 
     Route::get("/follow/{user}", [UserController::class, "followUser"]);
     Route::get("/unfollow/{user}", [UserController::class, "unFollowUser"]);

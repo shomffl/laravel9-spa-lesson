@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
 use App\Models\Category;
+use App\Models\User;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -13,11 +14,7 @@ use App\Events\DeleteData;
 
 class PostController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $post = Post::with("category")->get();
@@ -29,53 +26,37 @@ class PostController extends Controller
         $post = Post::with("category")->get();
         return $post;
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
+    public function getDataPostByFriends()
+    {
+        $auth_id = \Auth::id();
+        $friends_posts = User::with("follows.posts.category")->find($auth_id);
+        $friends_post_list = [];
+
+        foreach($friends_posts["follows"] as $friend_posts)
+        {
+            foreach($friend_posts["posts"] as $friend_post){
+                array_push($friends_post_list,$friend_post);
+            }
+        }
+        return Inertia::render("Post/FreindsPosts",["posts" => $friends_post_list]);
+    }
+
     public function create(Category $category)
     {
         return Inertia::render('Post/Create', ["categories" => $category->get()]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        // Post::create(
-        //     $request->validated()
-        // );
         $post = new Post($request->all());
         $post->user_id = \Auth::id();
         $post->save();
         event(new Posted($post));
 
-
         return Redirect::route('posts.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Post $post)
     {
         return Inertia::render('Post/Edit', [
@@ -87,13 +68,6 @@ class PostController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(StorePostRequest $request, Post $post)
     {
         $post->update($request->validated());
@@ -101,12 +75,6 @@ class PostController extends Controller
         return Redirect::route('posts.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Post $post)
     {
         event(new DeleteData($post));
