@@ -16,23 +16,31 @@ const Calendar = (props) => {
             }
         >
             <Head title="Calendar" />
-            <div className="my-10">
+            <div className="my-10 mx-20">
                 <FullCalendar
                     plugins={[dayGridPlugin]}
                     initialView="dayGridMonth"
                     locale="ja"
-                    events={[
-                        { title: "event 1", start: "2022-06-01" },
-                        {
-                            title: "event 2",
-                            start: "2022-06-03",
-                            end: "2022-06-05",
+                    titleFormat={{
+                        year: "2-digit",
+                        month: "2-digit",
+                        day: "2-digit",
+                    }}
+                    headerToolbar={{
+                        start: "title", // leftと書いてもよい
+                        center: "myCustomButton",
+                        end: "today prev,next",
+                    }}
+                    customButtons={{
+                        myCustomButton: {
+                            // カスタムボタンの名前
+                            text: "カスタムボタン!", // 画面に表示されるテキスト
+                            click: function () {
+                                // クリックイベントを設定できる
+                                alert("clicked the custom button!");
+                            },
                         },
-                        {
-                            title: "event 3",
-                            start: "2022-06-07T10:00:00",
-                        },
-                    ]}
+                    }}
                 />
             </div>
         </Authenticated>
