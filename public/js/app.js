@@ -15972,6 +15972,13 @@ function Authenticated(_ref) {
                 active: route().current("users.index"),
                 children: "Chat"
               })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+              className: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                href: "/calendar",
+                active: route().current("/calendar"),
+                children: "Calendar"
+              })
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
             className: "hidden sm:flex sm:items-center sm:ml-6",
@@ -16780,22 +16787,33 @@ var Calendar = function Calendar(props) {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Head, {
       title: "Calendar"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-      className: "my-10",
+      className: "my-10 mx-20",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_fullcalendar_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
         plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"]],
         initialView: "dayGridMonth",
         locale: "ja",
-        events: [{
-          title: "event 1",
-          start: "2022-06-01"
-        }, {
-          title: "event 2",
-          start: "2022-06-03",
-          end: "2022-06-05"
-        }, {
-          title: "event 3",
-          start: "2022-06-07T10:00:00"
-        }]
+        titleFormat: {
+          year: "2-digit",
+          month: "2-digit",
+          day: "2-digit"
+        },
+        headerToolbar: {
+          start: "title",
+          // leftと書いてもよい
+          center: "myCustomButton",
+          end: "today prev,next"
+        },
+        customButtons: {
+          myCustomButton: {
+            // カスタムボタンの名前
+            text: "カスタムボタン!",
+            // 画面に表示されるテキスト
+            click: function click() {
+              // クリックイベントを設定できる
+              alert("clicked the custom button!");
+            }
+          }
+        }
       })
     })]
   });
