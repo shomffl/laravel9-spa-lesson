@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Inertia } from "@inertiajs/inertia";
-import { InertiaLink, Link, usePage } from "@inertiajs/inertia-react";
+import { Link, usePage } from "@inertiajs/inertia-react";
 import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 import Pusher from "pusher-js";
 import axios from "axios";
 
 const Index = (props) => {
-    const { posts } = usePage().props;
+    const { auth, posts } = usePage().props;
     const [datas, setDatas] = useState([...posts]);
 
     useEffect(() => {
@@ -53,30 +53,27 @@ const Index = (props) => {
             >
                 <Head title="Index" />
                 <div className="container mx-auto">
-                    <h1 className="mb-8 text-3xl font-bold text-center">
-                        Post
-                    </h1>
-                    <div className="flex">
+                    <div className="flex mt-10">
                         <div className="flex items-center justify-between mb-6 mr-6">
-                            <InertiaLink
+                            <Link
                                 className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
                                 href={route("posts.create")}
                             >
                                 Create Post
-                            </InertiaLink>
+                            </Link>
                         </div>
                         <div className="flex items-center justify-between mb-6">
-                            <InertiaLink
+                            <Link
                                 className="px-6 py-2 text-white bg-yellow-500 rounded-md focus:outline-none"
                                 href={"/posts-friends"}
                             >
                                 Freind's Posts
-                            </InertiaLink>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="overflow-x-auto bg-white rounded shadow">
-                        <table className="w-full whitespace-nowrap">
+                        <table className="w-full whitespace-nowrap mb-10">
                             <thead className="text-white bg-gray-600">
                                 <tr className="font-bold text-left">
                                     <th className="px-6 pt-5 pb-4">#</th>
@@ -91,80 +88,90 @@ const Index = (props) => {
                             </thead>
                             <tbody>
                                 {datas.map(
-                                    ({ id, title, description, category }) => (
+                                    ({
+                                        id,
+                                        title,
+                                        description,
+                                        category,
+                                        user_id,
+                                    }) => (
                                         <tr key={id} className="">
-                                            <td className="border-t">
-                                                <InertiaLink
-                                                    href={route(
-                                                        "posts.edit",
-                                                        id
-                                                    )}
-                                                    className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none"
-                                                >
+                                            <td className="border-y">
+                                                <div className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none">
                                                     {id}
-                                                </InertiaLink>
+                                                </div>
                                             </td>
-                                            <td className="border-t">
-                                                <InertiaLink
-                                                    href={route(
-                                                        "posts.edit",
-                                                        id
-                                                    )}
-                                                    className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none"
-                                                >
+                                            <td className="border-y">
+                                                <div className="flex items-center px-6 py-4 focus:text-indigo-700 focus:outline-none">
                                                     {title}
-                                                </InertiaLink>
+                                                </div>
                                             </td>
-                                            <td className="border-t">
-                                                <InertiaLink
+                                            <td className="border-y">
+                                                <div
                                                     tabIndex="1"
                                                     className="flex items-center px-6 py-4"
-                                                    href={route(
-                                                        "posts.edit",
-                                                        id
-                                                    )}
                                                 >
                                                     {description}
-                                                </InertiaLink>
+                                                </div>
                                             </td>
-                                            <td className="border-t">
-                                                <InertiaLink
+                                            <td className="border-y">
+                                                <div
                                                     tabIndex="1"
                                                     className="flex items-center px-6 py-4"
-                                                    href={route(
-                                                        "posts.edit",
-                                                        id
-                                                    )}
                                                 >
                                                     {category.name}
-                                                </InertiaLink>
+                                                </div>
                                             </td>
-                                            <td className="border-t">
-                                                <InertiaLink
-                                                    tabIndex="1"
-                                                    className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
-                                                    href={route(
-                                                        "posts.edit",
-                                                        id
-                                                    )}
-                                                >
-                                                    Edit
-                                                </InertiaLink>
-                                            </td>
-                                            <td className="border-t">
-                                                <button
-                                                    onClick={(e) => destroy(id)}
-                                                >
-                                                    delete
-                                                </button>
-                                            </td>
+
+                                            {auth.user.id == user_id ? (
+                                                <>
+                                                    <td className="border-y">
+                                                        <Link
+                                                            tabIndex="1"
+                                                            className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
+                                                            href={route(
+                                                                "posts.edit",
+                                                                id
+                                                            )}
+                                                        >
+                                                            Edit
+                                                        </Link>
+                                                    </td>
+                                                    <td className="border-y">
+                                                        <button
+                                                            className="px-4 py-2 text-sm text-white bg-red-500 rounded"
+                                                            onClick={(e) =>
+                                                                destroy(id)
+                                                            }
+                                                        >
+                                                            delete
+                                                        </button>
+                                                    </td>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <td className="border-y">
+                                                        <Link
+                                                            tabIndex="1"
+                                                            className="px-4 py-2 text-sm text-white bg-gray-500 rounded"
+                                                        >
+                                                            Edit
+                                                        </Link>
+                                                    </td>
+                                                    <td className="border-y">
+                                                        <button className="px-4 py-2 text-sm text-white bg-gray-500 rounded">
+                                                            delete
+                                                        </button>
+                                                    </td>
+                                                </>
+                                            )}
                                         </tr>
                                     )
                                 )}
                                 {datas.length === 0 && (
                                     <tr>
                                         <td
-                                            className="px-6 py-4 border-t"
+                                            className="px-6 py-4 border-y"
                                             colSpan="4"
                                         >
                                             No contacts found.
