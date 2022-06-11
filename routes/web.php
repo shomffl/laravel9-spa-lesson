@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ScheduleController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -38,9 +39,7 @@ Route::group(["middleware" => ["auth"]], function() {
 
     Route::get("/room/{send}/{recieve}", [UserController::class, "getMessageByRoom"]); // チャットルームごとのメッセージを取得するための関数
 
-    Route::get("/calendar", function () {
-        return Inertia::render("Calendar");
-    });
+    Route::resource("schedules", ScheduleController::class);
 });
 
 require __DIR__.'/auth.php';
