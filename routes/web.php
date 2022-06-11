@@ -37,8 +37,10 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::get("/unfollow/{user}", [UserController::class, "unFollowUser"]);
 
     Route::get("/room/{send}/{recieve}", [UserController::class, "getMessageByRoom"]); // チャットルームごとのメッセージを取得するための関数
-});
 
-Route::get("/get", [PostController::class, "getData"]);
+    Route::get("/calendar", function () {
+        return Inertia::render("Calendar");
+    });
+});
 
 require __DIR__.'/auth.php';
