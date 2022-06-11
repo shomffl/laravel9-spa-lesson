@@ -20,6 +20,30 @@ class SchedulesTableSeeder extends Seeder
             "user_id" => 1,
             "start_date" => "2022-06-1",
             "end_date" => "2022-06-2",
+            "event_name" => "test1"
+        ]);
+        DB::table("schedules")->insert([
+            "user_id" => 1,
+            "start_date" => "2022-06-11",
+            "end_date" => "2022-06-12",
+            "event_name" => "test2"
+        ]);
+        DB::table("schedules")->insert([
+            "user_id" => 1,
+            "start_date" => "2022-06-21",
+            "end_date" => "2022-06-21",
+            "event_name" => "test3"
+        ]);
+        DB::table("schedules")->insert([
+            "user_id" => 2,
+            "start_date" => "2022-06-1",
+            "end_date" => "2022-06-2",
+            "event_name" => "test"
+        ]);
+        DB::table("schedules")->insert([
+            "user_id" => 3,
+            "start_date" => "2022-06-1",
+            "end_date" => "2022-06-2",
             "event_name" => "test"
         ]);
     }
