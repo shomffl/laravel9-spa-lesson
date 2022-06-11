@@ -15975,8 +15975,8 @@ function Authenticated(_ref) {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
               className: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Components_NavLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
-                href: "/calendar",
-                active: route().current("/calendar"),
+                href: route("schedules.index"),
+                active: route().current("schedules.index"),
                 children: "Calendar"
               })
             })]
@@ -16777,6 +16777,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Calendar = function Calendar(props) {
+  var schedules = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.usePage)().props.schedules;
+  console.log(schedules);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_3__["default"], {
     auth: props.auth,
     error: props.error,
@@ -16803,6 +16805,7 @@ var Calendar = function Calendar(props) {
           center: "myCustomButton",
           end: "today prev,next"
         },
+        events: schedules,
         customButtons: {
           myCustomButton: {
             // カスタムボタンの名前

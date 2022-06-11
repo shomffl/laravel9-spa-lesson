@@ -1,10 +1,12 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import Authenticated from "@/Layouts/Authenticated";
-import { Head } from "@inertiajs/inertia-react";
+import { Head, usePage } from "@inertiajs/inertia-react";
 
 const Calendar = (props) => {
+    const { schedules } = usePage().props;
+    console.log(schedules);
     return (
         <Authenticated
             auth={props.auth}
@@ -31,6 +33,7 @@ const Calendar = (props) => {
                         center: "myCustomButton",
                         end: "today prev,next",
                     }}
+                    events={schedules}
                     customButtons={{
                         myCustomButton: {
                             // カスタムボタンの名前
