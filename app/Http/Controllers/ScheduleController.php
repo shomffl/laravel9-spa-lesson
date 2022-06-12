@@ -24,6 +24,6 @@ class ScheduleController extends Controller
             ];
             array_push($schedules_list,$data);
         };
-        return Inertia::render("Calendar",["schedules" => $schedules_list]);
+        return Inertia::render("Calendar/Calendar",["schedules" => $schedules_list]);
     }
 }

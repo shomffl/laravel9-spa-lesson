@@ -27,7 +27,9 @@
         "tailwindcss": "^3.0.18"
     },
     "dependencies": {
+        "@fullcalendar/core": "^5.11.0",
         "@fullcalendar/daygrid": "^5.11.0",
+        "@fullcalendar/interaction": "^5.11.0",
         "@fullcalendar/react": "^5.11.1",
         "amplify": "^0.0.11",
         "pusher-js": "^7.1.0-beta"
