@@ -59,14 +59,22 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-        $this->authorize("view",$post);
-        return Inertia::render('Post/Edit', [
-            'post' => [
-                'id' => $post->id,
-                'title' => $post->title,
-                'description' => $post->description
-            ]
-        ]);
+
+        $user = auth()->user();
+
+        if($user->can("view", $post)){
+            return Inertia::render('Post/Edit', [
+                    'post' => [
+                        'id' => $post->id,
+                        'title' => $post->title,
+                        'description' => $post->description
+                    ]
+                ]);
+        }else{
+            return Inertia::render("Forbidden");
+        }
+
+
     }
 
     public function update(StorePostRequest $request, Post $post)
