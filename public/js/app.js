@@ -16875,6 +16875,35 @@ function Dashboard(props) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Forbidden.js":
+/*!*****************************************!*\
+  !*** ./resources/js/Pages/Forbidden.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var Forbidden = function Forbidden() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "w-6/12 m-auto",
+      src: "/images/403.png"
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Forbidden);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Message/Chat.js":
 /*!********************************************!*\
   !*** ./resources/js/Pages/Message/Chat.js ***!
@@ -76863,6 +76892,8 @@ var map = {
 	"./Calendar.js": "./resources/js/Pages/Calendar.js",
 	"./Dashboard": "./resources/js/Pages/Dashboard.js",
 	"./Dashboard.js": "./resources/js/Pages/Dashboard.js",
+	"./Forbidden": "./resources/js/Pages/Forbidden.js",
+	"./Forbidden.js": "./resources/js/Pages/Forbidden.js",
 	"./Message/Chat": "./resources/js/Pages/Message/Chat.js",
 	"./Message/Chat.js": "./resources/js/Pages/Message/Chat.js",
 	"./Message/Index": "./resources/js/Pages/Message/Index.js",

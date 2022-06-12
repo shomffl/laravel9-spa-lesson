@@ -59,17 +59,27 @@ class PostController extends Controller
 
     public function edit(Post $post)
     {
-        return Inertia::render('Post/Edit', [
-            'post' => [
-                'id' => $post->id,
-                'title' => $post->title,
-                'description' => $post->description
-            ]
-        ]);
+
+        $user = auth()->user();
+
+        if($user->can("view", $post)){
+            return Inertia::render('Post/Edit', [
+                    'post' => [
+                        'id' => $post->id,
+                        'title' => $post->title,
+                        'description' => $post->description
+                    ]
+                ]);
+        }else{
+            return Inertia::render("Forbidden");
+        }
+
+
     }
 
     public function update(StorePostRequest $request, Post $post)
     {
+        $this->authorize("update",$post);
         $post->update($request->validated());
 
         return Redirect::route('posts.index');
@@ -77,6 +87,7 @@ class PostController extends Controller
 
     public function destroy(Post $post)
     {
+        $this->authorize("delete",$post);
         event(new DeleteData($post));
         $post->delete();
 
