@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
             $table->foreignId("user_id")->constrained("users");
-            $table->date("start_date");
-            $table->date("end_date");
+            $table->dateTime("start_date");
+            $table->dateTime("end_date");
             $table->string("event_name");
             $table->timestamps();
         });

@@ -18,8 +18,8 @@ class SchedulesTableSeeder extends Seeder
     {
         DB::table("schedules")->insert([
             "user_id" => 1,
-            "start_date" => "2022-06-1",
-            "end_date" => "2022-06-2",
+            "start_date" => "2022-06-1 12:00:00",
+            "end_date" => "2022-06-2 13:00:00",
             "event_name" => "test1"
         ]);
         DB::table("schedules")->insert([
@@ -30,8 +30,8 @@ class SchedulesTableSeeder extends Seeder
         ]);
         DB::table("schedules")->insert([
             "user_id" => 1,
-            "start_date" => "2022-06-21",
-            "end_date" => "2022-06-21",
+            "start_date" => "2022-06-21 14:00:00",
+            "end_date" => "2022-06-21 15:30:00",
             "event_name" => "test3"
         ]);
         DB::table("schedules")->insert([
