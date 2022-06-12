@@ -77,11 +77,10 @@ class PostController extends Controller
 
     }
 
-    public function update(StorePostRequest $request, Post $post)
+    public function update(Request $request, Post $post)
     {
         $this->authorize("update",$post);
-        $post->update($request->validated());
-
+        $post->update($request->all());
         return Redirect::route('posts.index');
     }
 
