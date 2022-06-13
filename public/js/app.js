@@ -21784,9 +21784,7 @@ var Index = function Index(props) {
     });
     var channel = pusher.subscribe("post");
     channel.bind("App\\Events\\Posted", function (data) {
-      axios__WEBPACK_IMPORTED_MODULE_5___default().get("/get-data").then(function (res) {
-        setDatas(res.data);
-      });
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.get("posts.index");
     });
   }, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
