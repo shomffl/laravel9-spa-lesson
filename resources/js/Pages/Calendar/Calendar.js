@@ -12,13 +12,11 @@ const Calendar = (props) => {
     const { schedules } = usePage().props;
     const [modalIsOpen, setIsOpen] = useState(false);
 
-    const { data, setData, post } = useForm({
+    const { data, setData } = useForm({
         event_name: "",
         start_date: "",
         end_date: "",
     });
-
-    // console.log(schedules);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -27,7 +25,6 @@ const Calendar = (props) => {
     };
 
     const handleDateClick = useCallback((arg) => {
-        console.log(arg.dateStr);
         setData({
             event_name: "",
             start_date: arg.dateStr + "T00:00",
