@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Schedule;
 use App\Models\User;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Redirect;
 
 class ScheduleController extends Controller
 {
@@ -24,6 +25,14 @@ class ScheduleController extends Controller
             ];
             array_push($schedules_list,$data);
         };
-        return Inertia::render("Calendar",["schedules" => $schedules_list]);
+        return Inertia::render("Calendar/Calendar",["schedules" => $schedules_list]);
+    }
+
+    public function store(Request $request, Schedule $schedule)
+    {
+        $schedule->fill($request->all());
+        $schedule->user_id =auth()->id();
+        $schedule->save();
+        return Redirect::route("schedules.index");
     }
 }

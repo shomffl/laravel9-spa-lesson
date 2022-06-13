@@ -9943,6 +9943,1809 @@ var unmountComponentAtNode = FullCalendarVDom.unmountComponentAtNode;
 
 /***/ }),
 
+/***/ "./node_modules/@fullcalendar/core/locales-all.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@fullcalendar/core/locales-all.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+var l0 = {
+  code: 'af',
+  week: {
+    dow: 1, // Maandag is die eerste dag van die week.
+    doy: 4, // Die week wat die 4de Januarie bevat is die eerste week van die jaar.
+  },
+  buttonText: {
+    prev: 'Vorige',
+    next: 'Volgende',
+    today: 'Vandag',
+    year: 'Jaar',
+    month: 'Maand',
+    week: 'Week',
+    day: 'Dag',
+    list: 'Agenda',
+  },
+  allDayText: 'Heeldag',
+  moreLinkText: 'Addisionele',
+  noEventsText: 'Daar is geen gebeurtenisse nie',
+};
+
+var l1 = {
+  code: 'ar-dz',
+  week: {
+    dow: 0, // Sunday is the first day of the week.
+    doy: 4, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'السابق',
+    next: 'التالي',
+    today: 'اليوم',
+    month: 'شهر',
+    week: 'أسبوع',
+    day: 'يوم',
+    list: 'أجندة',
+  },
+  weekText: 'أسبوع',
+  allDayText: 'اليوم كله',
+  moreLinkText: 'أخرى',
+  noEventsText: 'أي أحداث لعرض',
+};
+
+var l2 = {
+  code: 'ar-kw',
+  week: {
+    dow: 0, // Sunday is the first day of the week.
+    doy: 12, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'السابق',
+    next: 'التالي',
+    today: 'اليوم',
+    month: 'شهر',
+    week: 'أسبوع',
+    day: 'يوم',
+    list: 'أجندة',
+  },
+  weekText: 'أسبوع',
+  allDayText: 'اليوم كله',
+  moreLinkText: 'أخرى',
+  noEventsText: 'أي أحداث لعرض',
+};
+
+var l3 = {
+  code: 'ar-ly',
+  week: {
+    dow: 6, // Saturday is the first day of the week.
+    doy: 12, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'السابق',
+    next: 'التالي',
+    today: 'اليوم',
+    month: 'شهر',
+    week: 'أسبوع',
+    day: 'يوم',
+    list: 'أجندة',
+  },
+  weekText: 'أسبوع',
+  allDayText: 'اليوم كله',
+  moreLinkText: 'أخرى',
+  noEventsText: 'أي أحداث لعرض',
+};
+
+var l4 = {
+  code: 'ar-ma',
+  week: {
+    dow: 6, // Saturday is the first day of the week.
+    doy: 12, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'السابق',
+    next: 'التالي',
+    today: 'اليوم',
+    month: 'شهر',
+    week: 'أسبوع',
+    day: 'يوم',
+    list: 'أجندة',
+  },
+  weekText: 'أسبوع',
+  allDayText: 'اليوم كله',
+  moreLinkText: 'أخرى',
+  noEventsText: 'أي أحداث لعرض',
+};
+
+var l5 = {
+  code: 'ar-sa',
+  week: {
+    dow: 0, // Sunday is the first day of the week.
+    doy: 6, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'السابق',
+    next: 'التالي',
+    today: 'اليوم',
+    month: 'شهر',
+    week: 'أسبوع',
+    day: 'يوم',
+    list: 'أجندة',
+  },
+  weekText: 'أسبوع',
+  allDayText: 'اليوم كله',
+  moreLinkText: 'أخرى',
+  noEventsText: 'أي أحداث لعرض',
+};
+
+var l6 = {
+  code: 'ar-tn',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'السابق',
+    next: 'التالي',
+    today: 'اليوم',
+    month: 'شهر',
+    week: 'أسبوع',
+    day: 'يوم',
+    list: 'أجندة',
+  },
+  weekText: 'أسبوع',
+  allDayText: 'اليوم كله',
+  moreLinkText: 'أخرى',
+  noEventsText: 'أي أحداث لعرض',
+};
+
+var l7 = {
+  code: 'ar',
+  week: {
+    dow: 6, // Saturday is the first day of the week.
+    doy: 12, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'السابق',
+    next: 'التالي',
+    today: 'اليوم',
+    month: 'شهر',
+    week: 'أسبوع',
+    day: 'يوم',
+    list: 'أجندة',
+  },
+  weekText: 'أسبوع',
+  allDayText: 'اليوم كله',
+  moreLinkText: 'أخرى',
+  noEventsText: 'أي أحداث لعرض',
+};
+
+var l8 = {
+  code: 'az',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Əvvəl',
+    next: 'Sonra',
+    today: 'Bu Gün',
+    month: 'Ay',
+    week: 'Həftə',
+    day: 'Gün',
+    list: 'Gündəm',
+  },
+  weekText: 'Həftə',
+  allDayText: 'Bütün Gün',
+  moreLinkText: function(n) {
+    return '+ daha çox ' + n
+  },
+  noEventsText: 'Göstərmək üçün hadisə yoxdur',
+};
+
+var l9 = {
+  code: 'bg',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'назад',
+    next: 'напред',
+    today: 'днес',
+    month: 'Месец',
+    week: 'Седмица',
+    day: 'Ден',
+    list: 'График',
+  },
+  allDayText: 'Цял ден',
+  moreLinkText: function(n) {
+    return '+още ' + n
+  },
+  noEventsText: 'Няма събития за показване',
+};
+
+var l10 = {
+  code: 'bn',
+  week: {
+    dow: 0, // Sunday is the first day of the week.
+    doy: 6, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'পেছনে',
+    next: 'সামনে',
+    today: 'আজ',
+    month: 'মাস',
+    week: 'সপ্তাহ',
+    day: 'দিন',
+    list: 'তালিকা',
+  },
+  weekText: 'সপ্তাহ',
+  allDayText: 'সারাদিন',
+  moreLinkText: function(n) {
+    return '+অন্যান্য ' + n
+  },
+  noEventsText: 'কোনো ইভেন্ট নেই',
+};
+
+var l11 = {
+  code: 'bs',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Prošli',
+    next: 'Sljedeći',
+    today: 'Danas',
+    month: 'Mjesec',
+    week: 'Sedmica',
+    day: 'Dan',
+    list: 'Raspored',
+  },
+  weekText: 'Sed',
+  allDayText: 'Cijeli dan',
+  moreLinkText: function(n) {
+    return '+ još ' + n
+  },
+  noEventsText: 'Nema događaja za prikazivanje',
+};
+
+var l12 = {
+  code: 'ca',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Anterior',
+    next: 'Següent',
+    today: 'Avui',
+    month: 'Mes',
+    week: 'Setmana',
+    day: 'Dia',
+    list: 'Agenda',
+  },
+  weekText: 'Set',
+  allDayText: 'Tot el dia',
+  moreLinkText: 'més',
+  noEventsText: 'No hi ha esdeveniments per mostrar',
+};
+
+var l13 = {
+  code: 'cs',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Dříve',
+    next: 'Později',
+    today: 'Nyní',
+    month: 'Měsíc',
+    week: 'Týden',
+    day: 'Den',
+    list: 'Agenda',
+  },
+  weekText: 'Týd',
+  allDayText: 'Celý den',
+  moreLinkText: function(n) {
+    return '+další: ' + n
+  },
+  noEventsText: 'Žádné akce k zobrazení',
+};
+
+var l14 = {
+  code: 'cy',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Blaenorol',
+    next: 'Nesaf',
+    today: 'Heddiw',
+    year: 'Blwyddyn',
+    month: 'Mis',
+    week: 'Wythnos',
+    day: 'Dydd',
+    list: 'Rhestr',
+  },
+  weekText: 'Wythnos',
+  allDayText: 'Trwy\'r dydd',
+  moreLinkText: 'Mwy',
+  noEventsText: 'Dim digwyddiadau',
+};
+
+var l15 = {
+  code: 'da',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Forrige',
+    next: 'Næste',
+    today: 'I dag',
+    month: 'Måned',
+    week: 'Uge',
+    day: 'Dag',
+    list: 'Agenda',
+  },
+  weekText: 'Uge',
+  allDayText: 'Hele dagen',
+  moreLinkText: 'flere',
+  noEventsText: 'Ingen arrangementer at vise',
+};
+
+function affix$1(buttonText) {
+  return (buttonText === 'Tag' || buttonText === 'Monat') ? 'r' :
+    buttonText === 'Jahr' ? 's' : ''
+}
+
+var l16 = {
+  code: 'de-at',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Zurück',
+    next: 'Vor',
+    today: 'Heute',
+    year: 'Jahr',
+    month: 'Monat',
+    week: 'Woche',
+    day: 'Tag',
+    list: 'Terminübersicht',
+  },
+  weekText: 'KW',
+  weekTextLong: 'Woche',
+  allDayText: 'Ganztägig',
+  moreLinkText: function(n) {
+    return '+ weitere ' + n
+  },
+  noEventsText: 'Keine Ereignisse anzuzeigen',
+  buttonHints: {
+    prev(buttonText) {
+      return `Vorherige${affix$1(buttonText)} ${buttonText}`
+    },
+    next(buttonText) {
+      return `Nächste${affix$1(buttonText)} ${buttonText}`
+    },
+    today(buttonText) {
+      // → Heute, Diese Woche, Dieser Monat, Dieses Jahr
+      if (buttonText === 'Tag') {
+        return 'Heute'
+      }
+      return `Diese${affix$1(buttonText)} ${buttonText}`
+    },
+  },
+  viewHint(buttonText) {
+    // → Tagesansicht, Wochenansicht, Monatsansicht, Jahresansicht
+    const glue = buttonText === 'Woche' ? 'n' : buttonText === 'Monat' ? 's' : 'es';
+    return buttonText + glue + 'ansicht'
+  },
+  navLinkHint: 'Gehe zu $0',
+  moreLinkHint(eventCnt) {
+    return 'Zeige ' + (eventCnt === 1 ?
+      'ein weiteres Ereignis' :
+      eventCnt + ' weitere Ereignisse')
+  },
+  closeHint: 'Schließen',
+  timeHint: 'Uhrzeit',
+  eventHint: 'Ereignis',
+};
+
+function affix(buttonText) {
+  return (buttonText === 'Tag' || buttonText === 'Monat') ? 'r' :
+    buttonText === 'Jahr' ? 's' : ''
+}
+
+var l17 = {
+  code: 'de',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Zurück',
+    next: 'Vor',
+    today: 'Heute',
+    year: 'Jahr',
+    month: 'Monat',
+    week: 'Woche',
+    day: 'Tag',
+    list: 'Terminübersicht',
+  },
+  weekText: 'KW',
+  weekTextLong: 'Woche',
+  allDayText: 'Ganztägig',
+  moreLinkText: function(n) {
+    return '+ weitere ' + n
+  },
+  noEventsText: 'Keine Ereignisse anzuzeigen',
+  buttonHints: {
+    prev(buttonText) {
+      return `Vorherige${affix(buttonText)} ${buttonText}`
+    },
+    next(buttonText) {
+      return `Nächste${affix(buttonText)} ${buttonText}`
+    },
+    today(buttonText) {
+      // → Heute, Diese Woche, Dieser Monat, Dieses Jahr
+      if (buttonText === 'Tag') {
+        return 'Heute'
+      }
+      return `Diese${affix(buttonText)} ${buttonText}`
+    },
+  },
+  viewHint(buttonText) {
+    // → Tagesansicht, Wochenansicht, Monatsansicht, Jahresansicht
+    const glue = buttonText === 'Woche' ? 'n' : buttonText === 'Monat' ? 's' : 'es';
+    return buttonText + glue + 'ansicht'
+  },
+  navLinkHint: 'Gehe zu $0',
+  moreLinkHint(eventCnt) {
+    return 'Zeige ' + (eventCnt === 1 ?
+      'ein weiteres Ereignis' :
+      eventCnt + ' weitere Ereignisse')
+  },
+  closeHint: 'Schließen',
+  timeHint: 'Uhrzeit',
+  eventHint: 'Ereignis',
+};
+
+var l18 = {
+  code: 'el',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Προηγούμενος',
+    next: 'Επόμενος',
+    today: 'Σήμερα',
+    month: 'Μήνας',
+    week: 'Εβδομάδα',
+    day: 'Ημέρα',
+    list: 'Ατζέντα',
+  },
+  weekText: 'Εβδ',
+  allDayText: 'Ολοήμερο',
+  moreLinkText: 'περισσότερα',
+  noEventsText: 'Δεν υπάρχουν γεγονότα προς εμφάνιση',
+};
+
+var l19 = {
+  code: 'en-au',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonHints: {
+    prev: 'Previous $0',
+    next: 'Next $0',
+    today: 'This $0',
+  },
+  viewHint: '$0 view',
+  navLinkHint: 'Go to $0',
+  moreLinkHint(eventCnt) {
+    return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
+  },
+};
+
+var l20 = {
+  code: 'en-gb',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonHints: {
+    prev: 'Previous $0',
+    next: 'Next $0',
+    today: 'This $0',
+  },
+  viewHint: '$0 view',
+  navLinkHint: 'Go to $0',
+  moreLinkHint(eventCnt) {
+    return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
+  },
+};
+
+var l21 = {
+  code: 'en-nz',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonHints: {
+    prev: 'Previous $0',
+    next: 'Next $0',
+    today: 'This $0',
+  },
+  viewHint: '$0 view',
+  navLinkHint: 'Go to $0',
+  moreLinkHint(eventCnt) {
+    return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
+  },
+};
+
+var l22 = {
+  code: 'eo',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Antaŭa',
+    next: 'Sekva',
+    today: 'Hodiaŭ',
+    month: 'Monato',
+    week: 'Semajno',
+    day: 'Tago',
+    list: 'Tagordo',
+  },
+  weekText: 'Sm',
+  allDayText: 'Tuta tago',
+  moreLinkText: 'pli',
+  noEventsText: 'Neniuj eventoj por montri',
+};
+
+var l23 = {
+  code: 'es',
+  week: {
+    dow: 0, // Sunday is the first day of the week.
+    doy: 6, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Ant',
+    next: 'Sig',
+    today: 'Hoy',
+    month: 'Mes',
+    week: 'Semana',
+    day: 'Día',
+    list: 'Agenda',
+  },
+  weekText: 'Sm',
+  allDayText: 'Todo el día',
+  moreLinkText: 'más',
+  noEventsText: 'No hay eventos para mostrar',
+};
+
+var l24 = {
+  code: 'es',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Ant',
+    next: 'Sig',
+    today: 'Hoy',
+    month: 'Mes',
+    week: 'Semana',
+    day: 'Día',
+    list: 'Agenda',
+  },
+  buttonHints: {
+    prev: '$0 antes',
+    next: '$0 siguiente',
+    today(buttonText) {
+      return (buttonText === 'Día') ? 'Hoy' :
+        ((buttonText === 'Semana') ? 'Esta' : 'Este') + ' ' + buttonText.toLocaleLowerCase()
+    },
+  },
+  viewHint(buttonText) {
+    return 'Vista ' + (buttonText === 'Semana' ? 'de la' : 'del') + ' ' + buttonText.toLocaleLowerCase()
+  },
+  weekText: 'Sm',
+  weekTextLong: 'Semana',
+  allDayText: 'Todo el día',
+  moreLinkText: 'más',
+  moreLinkHint(eventCnt) {
+    return `Mostrar ${eventCnt} eventos más`
+  },
+  noEventsText: 'No hay eventos para mostrar',
+  navLinkHint: 'Ir al $0',
+  closeHint: 'Cerrar',
+  timeHint: 'La hora',
+  eventHint: 'Evento',
+};
+
+var l25 = {
+  code: 'et',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Eelnev',
+    next: 'Järgnev',
+    today: 'Täna',
+    month: 'Kuu',
+    week: 'Nädal',
+    day: 'Päev',
+    list: 'Päevakord',
+  },
+  weekText: 'näd',
+  allDayText: 'Kogu päev',
+  moreLinkText: function(n) {
+    return '+ veel ' + n
+  },
+  noEventsText: 'Kuvamiseks puuduvad sündmused',
+};
+
+var l26 = {
+  code: 'eu',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Aur',
+    next: 'Hur',
+    today: 'Gaur',
+    month: 'Hilabetea',
+    week: 'Astea',
+    day: 'Eguna',
+    list: 'Agenda',
+  },
+  weekText: 'As',
+  allDayText: 'Egun osoa',
+  moreLinkText: 'gehiago',
+  noEventsText: 'Ez dago ekitaldirik erakusteko',
+};
+
+var l27 = {
+  code: 'fa',
+  week: {
+    dow: 6, // Saturday is the first day of the week.
+    doy: 12, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'قبلی',
+    next: 'بعدی',
+    today: 'امروز',
+    month: 'ماه',
+    week: 'هفته',
+    day: 'روز',
+    list: 'برنامه',
+  },
+  weekText: 'هف',
+  allDayText: 'تمام روز',
+  moreLinkText: function(n) {
+    return 'بیش از ' + n
+  },
+  noEventsText: 'هیچ رویدادی به نمایش',
+};
+
+var l28 = {
+  code: 'fi',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Edellinen',
+    next: 'Seuraava',
+    today: 'Tänään',
+    month: 'Kuukausi',
+    week: 'Viikko',
+    day: 'Päivä',
+    list: 'Tapahtumat',
+  },
+  weekText: 'Vk',
+  allDayText: 'Koko päivä',
+  moreLinkText: 'lisää',
+  noEventsText: 'Ei näytettäviä tapahtumia',
+};
+
+var l29 = {
+  code: 'fr',
+  buttonText: {
+    prev: 'Précédent',
+    next: 'Suivant',
+    today: "Aujourd'hui",
+    year: 'Année',
+    month: 'Mois',
+    week: 'Semaine',
+    day: 'Jour',
+    list: 'Mon planning',
+  },
+  weekText: 'Sem.',
+  allDayText: 'Toute la journée',
+  moreLinkText: 'en plus',
+  noEventsText: 'Aucun événement à afficher',
+};
+
+var l30 = {
+  code: 'fr-ch',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Précédent',
+    next: 'Suivant',
+    today: 'Courant',
+    year: 'Année',
+    month: 'Mois',
+    week: 'Semaine',
+    day: 'Jour',
+    list: 'Mon planning',
+  },
+  weekText: 'Sm',
+  allDayText: 'Toute la journée',
+  moreLinkText: 'en plus',
+  noEventsText: 'Aucun événement à afficher',
+};
+
+var l31 = {
+  code: 'fr',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Précédent',
+    next: 'Suivant',
+    today: "Aujourd'hui",
+    year: 'Année',
+    month: 'Mois',
+    week: 'Semaine',
+    day: 'Jour',
+    list: 'Planning',
+  },
+  weekText: 'Sem.',
+  allDayText: 'Toute la journée',
+  moreLinkText: 'en plus',
+  noEventsText: 'Aucun événement à afficher',
+};
+
+var l32 = {
+  code: 'gl',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Ant',
+    next: 'Seg',
+    today: 'Hoxe',
+    month: 'Mes',
+    week: 'Semana',
+    day: 'Día',
+    list: 'Axenda',
+  },
+  weekText: 'Sm',
+  allDayText: 'Todo o día',
+  moreLinkText: 'máis',
+  noEventsText: 'Non hai eventos para amosar',
+};
+
+var l33 = {
+  code: 'he',
+  direction: 'rtl',
+  buttonText: {
+    prev: 'הקודם',
+    next: 'הבא',
+    today: 'היום',
+    month: 'חודש',
+    week: 'שבוע',
+    day: 'יום',
+    list: 'סדר יום',
+  },
+  allDayText: 'כל היום',
+  moreLinkText: 'אחר',
+  noEventsText: 'אין אירועים להצגה',
+  weekText: 'שבוע',
+};
+
+var l34 = {
+  code: 'hi',
+  week: {
+    dow: 0, // Sunday is the first day of the week.
+    doy: 6, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'पिछला',
+    next: 'अगला',
+    today: 'आज',
+    month: 'महीना',
+    week: 'सप्ताह',
+    day: 'दिन',
+    list: 'कार्यसूची',
+  },
+  weekText: 'हफ्ता',
+  allDayText: 'सभी दिन',
+  moreLinkText: function(n) {
+    return '+अधिक ' + n
+  },
+  noEventsText: 'कोई घटनाओं को प्रदर्शित करने के लिए',
+};
+
+var l35 = {
+  code: 'hr',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Prijašnji',
+    next: 'Sljedeći',
+    today: 'Danas',
+    month: 'Mjesec',
+    week: 'Tjedan',
+    day: 'Dan',
+    list: 'Raspored',
+  },
+  weekText: 'Tje',
+  allDayText: 'Cijeli dan',
+  moreLinkText: function(n) {
+    return '+ još ' + n
+  },
+  noEventsText: 'Nema događaja za prikaz',
+};
+
+var l36 = {
+  code: 'hu',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'vissza',
+    next: 'előre',
+    today: 'ma',
+    month: 'Hónap',
+    week: 'Hét',
+    day: 'Nap',
+    list: 'Lista',
+  },
+  weekText: 'Hét',
+  allDayText: 'Egész nap',
+  moreLinkText: 'további',
+  noEventsText: 'Nincs megjeleníthető esemény',
+};
+
+var l37 = {
+  code: 'hy-am',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Նախորդ',
+    next: 'Հաջորդ',
+    today: 'Այսօր',
+    month: 'Ամիս',
+    week: 'Շաբաթ',
+    day: 'Օր',
+    list: 'Օրվա ցուցակ',
+  },
+  weekText: 'Շաբ',
+  allDayText: 'Ամբողջ օր',
+  moreLinkText: function(n) {
+    return '+ ևս ' + n
+  },
+  noEventsText: 'Բացակայում է իրադարձությունը ցուցադրելու',
+};
+
+var l38 = {
+  code: 'id',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'mundur',
+    next: 'maju',
+    today: 'hari ini',
+    month: 'Bulan',
+    week: 'Minggu',
+    day: 'Hari',
+    list: 'Agenda',
+  },
+  weekText: 'Mg',
+  allDayText: 'Sehari penuh',
+  moreLinkText: 'lebih',
+  noEventsText: 'Tidak ada acara untuk ditampilkan',
+};
+
+var l39 = {
+  code: 'is',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Fyrri',
+    next: 'Næsti',
+    today: 'Í dag',
+    month: 'Mánuður',
+    week: 'Vika',
+    day: 'Dagur',
+    list: 'Dagskrá',
+  },
+  weekText: 'Vika',
+  allDayText: 'Allan daginn',
+  moreLinkText: 'meira',
+  noEventsText: 'Engir viðburðir til að sýna',
+};
+
+var l40 = {
+  code: 'it',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Prec',
+    next: 'Succ',
+    today: 'Oggi',
+    month: 'Mese',
+    week: 'Settimana',
+    day: 'Giorno',
+    list: 'Agenda',
+  },
+  weekText: 'Sm',
+  allDayText: 'Tutto il giorno',
+  moreLinkText: function(n) {
+    return '+altri ' + n
+  },
+  noEventsText: 'Non ci sono eventi da visualizzare',
+};
+
+var l41 = {
+  code: 'ja',
+  buttonText: {
+    prev: '前',
+    next: '次',
+    today: '今日',
+    month: '月',
+    week: '週',
+    day: '日',
+    list: '予定リスト',
+  },
+  weekText: '週',
+  allDayText: '終日',
+  moreLinkText: function(n) {
+    return '他 ' + n + ' 件'
+  },
+  noEventsText: '表示する予定はありません',
+};
+
+var l42 = {
+  code: 'ka',
+  week: {
+    dow: 1,
+    doy: 7,
+  },
+  buttonText: {
+    prev: 'წინა',
+    next: 'შემდეგი',
+    today: 'დღეს',
+    month: 'თვე',
+    week: 'კვირა',
+    day: 'დღე',
+    list: 'დღის წესრიგი',
+  },
+  weekText: 'კვ',
+  allDayText: 'მთელი დღე',
+  moreLinkText: function(n) {
+    return '+ კიდევ ' + n
+  },
+  noEventsText: 'ღონისძიებები არ არის',
+};
+
+var l43 = {
+  code: 'kk',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Алдыңғы',
+    next: 'Келесі',
+    today: 'Бүгін',
+    month: 'Ай',
+    week: 'Апта',
+    day: 'Күн',
+    list: 'Күн тәртібі',
+  },
+  weekText: 'Не',
+  allDayText: 'Күні бойы',
+  moreLinkText: function(n) {
+    return '+ тағы ' + n
+  },
+  noEventsText: 'Көрсету үшін оқиғалар жоқ',
+};
+
+var l44 = {
+  code: 'km',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'មុន',
+    next: 'បន្ទាប់',
+    today: 'ថ្ងៃនេះ',
+    year: 'ឆ្នាំ',
+    month: 'ខែ',
+    week: 'សប្តាហ៍',
+    day: 'ថ្ងៃ',
+    list: 'បញ្ជី',
+  },
+  weekText: 'សប្តាហ៍',
+  allDayText: 'ពេញមួយថ្ងៃ',
+  moreLinkText: 'ច្រើនទៀត',
+  noEventsText: 'គ្មានព្រឹត្តិការណ៍ត្រូវបង្ហាញ',
+};
+
+var l45 = {
+  code: 'ko',
+  buttonText: {
+    prev: '이전달',
+    next: '다음달',
+    today: '오늘',
+    month: '월',
+    week: '주',
+    day: '일',
+    list: '일정목록',
+  },
+  weekText: '주',
+  allDayText: '종일',
+  moreLinkText: '개',
+  noEventsText: '일정이 없습니다',
+};
+
+var l46 = {
+  code: 'ku',
+  week: {
+    dow: 6, // Saturday is the first day of the week.
+    doy: 12, // The week that contains Jan 1st is the first week of the year.
+  },
+  direction: 'rtl',
+  buttonText: {
+    prev: 'پێشتر',
+    next: 'دواتر',
+    today: 'ئەمڕو',
+    month: 'مانگ',
+    week: 'هەفتە',
+    day: 'ڕۆژ',
+    list: 'بەرنامە',
+  },
+  weekText: 'هەفتە',
+  allDayText: 'هەموو ڕۆژەکە',
+  moreLinkText: 'زیاتر',
+  noEventsText: 'هیچ ڕووداوێك نیە',
+};
+
+var l47 = {
+  code: 'lb',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Zréck',
+    next: 'Weider',
+    today: 'Haut',
+    month: 'Mount',
+    week: 'Woch',
+    day: 'Dag',
+    list: 'Terminiwwersiicht',
+  },
+  weekText: 'W',
+  allDayText: 'Ganzen Dag',
+  moreLinkText: 'méi',
+  noEventsText: 'Nee Evenementer ze affichéieren',
+};
+
+var l48 = {
+  code: 'lt',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Atgal',
+    next: 'Pirmyn',
+    today: 'Šiandien',
+    month: 'Mėnuo',
+    week: 'Savaitė',
+    day: 'Diena',
+    list: 'Darbotvarkė',
+  },
+  weekText: 'SAV',
+  allDayText: 'Visą dieną',
+  moreLinkText: 'daugiau',
+  noEventsText: 'Nėra įvykių rodyti',
+};
+
+var l49 = {
+  code: 'lv',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Iepr.',
+    next: 'Nāk.',
+    today: 'Šodien',
+    month: 'Mēnesis',
+    week: 'Nedēļa',
+    day: 'Diena',
+    list: 'Dienas kārtība',
+  },
+  weekText: 'Ned.',
+  allDayText: 'Visu dienu',
+  moreLinkText: function(n) {
+    return '+vēl ' + n
+  },
+  noEventsText: 'Nav notikumu',
+};
+
+var l50 = {
+  code: 'mk',
+  buttonText: {
+    prev: 'претходно',
+    next: 'следно',
+    today: 'Денес',
+    month: 'Месец',
+    week: 'Недела',
+    day: 'Ден',
+    list: 'График',
+  },
+  weekText: 'Сед',
+  allDayText: 'Цел ден',
+  moreLinkText: function(n) {
+    return '+повеќе ' + n
+  },
+  noEventsText: 'Нема настани за прикажување',
+};
+
+var l51 = {
+  code: 'ms',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Sebelum',
+    next: 'Selepas',
+    today: 'hari ini',
+    month: 'Bulan',
+    week: 'Minggu',
+    day: 'Hari',
+    list: 'Agenda',
+  },
+  weekText: 'Mg',
+  allDayText: 'Sepanjang hari',
+  moreLinkText: function(n) {
+    return 'masih ada ' + n + ' acara'
+  },
+  noEventsText: 'Tiada peristiwa untuk dipaparkan',
+};
+
+var l52 = {
+  code: 'nb',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Forrige',
+    next: 'Neste',
+    today: 'I dag',
+    month: 'Måned',
+    week: 'Uke',
+    day: 'Dag',
+    list: 'Agenda',
+  },
+  weekText: 'Uke',
+  weekTextLong: 'Uke',
+  allDayText: 'Hele dagen',
+  moreLinkText: 'til',
+  noEventsText: 'Ingen hendelser å vise',
+  buttonHints: {
+    prev: 'Forrige $0',
+    next: 'Neste $0',
+    today: 'Nåværende $0',
+  },
+  viewHint: '$0 visning',
+  navLinkHint: 'Gå til $0',
+  moreLinkHint(eventCnt) {
+    return `Vis ${eventCnt} flere hendelse${eventCnt === 1 ? '' : 'r'}`
+  },
+};
+
+var l53 = {
+  code: 'ne', // code for nepal
+  week: {
+    dow: 7, // Sunday is the first day of the week.
+    doy: 1, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'अघिल्लो',
+    next: 'अर्को',
+    today: 'आज',
+    month: 'महिना',
+    week: 'हप्ता',
+    day: 'दिन',
+    list: 'सूची',
+  },
+  weekText: 'हप्ता',
+  allDayText: 'दिनभरि',
+  moreLinkText: 'थप लिंक',
+  noEventsText: 'देखाउनको लागि कुनै घटनाहरू छैनन्',
+};
+
+var l54 = {
+  code: 'nl',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Vorige',
+    next: 'Volgende',
+    today: 'Vandaag',
+    year: 'Jaar',
+    month: 'Maand',
+    week: 'Week',
+    day: 'Dag',
+    list: 'Agenda',
+  },
+  allDayText: 'Hele dag',
+  moreLinkText: 'extra',
+  noEventsText: 'Geen evenementen om te laten zien',
+};
+
+var l55 = {
+  code: 'nn',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Førre',
+    next: 'Neste',
+    today: 'I dag',
+    month: 'Månad',
+    week: 'Veke',
+    day: 'Dag',
+    list: 'Agenda',
+  },
+  weekText: 'Veke',
+  allDayText: 'Heile dagen',
+  moreLinkText: 'til',
+  noEventsText: 'Ingen hendelser å vise',
+};
+
+var l56 = {
+  code: 'pl',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Poprzedni',
+    next: 'Następny',
+    today: 'Dziś',
+    month: 'Miesiąc',
+    week: 'Tydzień',
+    day: 'Dzień',
+    list: 'Plan dnia',
+  },
+  weekText: 'Tydz',
+  allDayText: 'Cały dzień',
+  moreLinkText: 'więcej',
+  noEventsText: 'Brak wydarzeń do wyświetlenia',
+};
+
+var l57 = {
+  code: 'pt-br',
+  buttonText: {
+    prev: 'Anterior',
+    next: 'Próximo',
+    today: 'Hoje',
+    month: 'Mês',
+    week: 'Semana',
+    day: 'Dia',
+    list: 'Lista',
+  },
+  weekText: 'Sm',
+  allDayText: 'dia inteiro',
+  moreLinkText: function(n) {
+    return 'mais +' + n
+  },
+  noEventsText: 'Não há eventos para mostrar',
+};
+
+var l58 = {
+  code: 'pt',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Anterior',
+    next: 'Seguinte',
+    today: 'Hoje',
+    month: 'Mês',
+    week: 'Semana',
+    day: 'Dia',
+    list: 'Agenda',
+  },
+  weekText: 'Sem',
+  allDayText: 'Todo o dia',
+  moreLinkText: 'mais',
+  noEventsText: 'Não há eventos para mostrar',
+};
+
+var l59 = {
+  code: 'ro',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'precedentă',
+    next: 'următoare',
+    today: 'Azi',
+    month: 'Lună',
+    week: 'Săptămână',
+    day: 'Zi',
+    list: 'Agendă',
+  },
+  weekText: 'Săpt',
+  allDayText: 'Toată ziua',
+  moreLinkText: function(n) {
+    return '+alte ' + n
+  },
+  noEventsText: 'Nu există evenimente de afișat',
+};
+
+var l60 = {
+  code: 'ru',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Пред',
+    next: 'След',
+    today: 'Сегодня',
+    month: 'Месяц',
+    week: 'Неделя',
+    day: 'День',
+    list: 'Повестка дня',
+  },
+  weekText: 'Нед',
+  allDayText: 'Весь день',
+  moreLinkText: function(n) {
+    return '+ ещё ' + n
+  },
+  noEventsText: 'Нет событий для отображения',
+};
+
+var l61 = {
+  code: 'si-lk',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'පෙර',
+    next: 'පසු',
+    today: 'අද',
+    month: 'මාසය',
+    week: 'සතිය',
+    day: 'දවස',
+    list: 'ලැයිස්තුව',
+  },
+  weekText: 'සති',
+  allDayText: 'සියලු',
+  moreLinkText: 'තවත්',
+  noEventsText: 'මුකුත් නැත',
+};
+
+var l62 = {
+  code: 'sk',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Predchádzajúci',
+    next: 'Nasledujúci',
+    today: 'Dnes',
+    month: 'Mesiac',
+    week: 'Týždeň',
+    day: 'Deň',
+    list: 'Rozvrh',
+  },
+  weekText: 'Ty',
+  allDayText: 'Celý deň',
+  moreLinkText: function(n) {
+    return '+ďalšie: ' + n
+  },
+  noEventsText: 'Žiadne akcie na zobrazenie',
+};
+
+var l63 = {
+  code: 'sl',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Prejšnji',
+    next: 'Naslednji',
+    today: 'Trenutni',
+    month: 'Mesec',
+    week: 'Teden',
+    day: 'Dan',
+    list: 'Dnevni red',
+  },
+  weekText: 'Teden',
+  allDayText: 'Ves dan',
+  moreLinkText: 'več',
+  noEventsText: 'Ni dogodkov za prikaz',
+};
+
+var l64 = {
+  code: 'sm',
+  buttonText: {
+    prev: 'Talu ai',
+    next: 'Mulimuli atu',
+    today: 'Aso nei',
+    month: 'Masina',
+    week: 'Vaiaso',
+    day: 'Aso',
+    list: 'Faasologa',
+  },
+  weekText: 'Vaiaso',
+  allDayText: 'Aso atoa',
+  moreLinkText: 'sili atu',
+  noEventsText: 'Leai ni mea na tutupu',
+};
+
+var l65 = {
+  code: 'sq',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'mbrapa',
+    next: 'Përpara',
+    today: 'sot',
+    month: 'Muaj',
+    week: 'Javë',
+    day: 'Ditë',
+    list: 'Listë',
+  },
+  weekText: 'Ja',
+  allDayText: 'Gjithë ditën',
+  moreLinkText: function(n) {
+    return '+më tepër ' + n
+  },
+  noEventsText: 'Nuk ka evente për të shfaqur',
+};
+
+var l66 = {
+  code: 'sr-cyrl',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Претходна',
+    next: 'следећи',
+    today: 'Данас',
+    month: 'Месец',
+    week: 'Недеља',
+    day: 'Дан',
+    list: 'Планер',
+  },
+  weekText: 'Сед',
+  allDayText: 'Цео дан',
+  moreLinkText: function(n) {
+    return '+ још ' + n
+  },
+  noEventsText: 'Нема догађаја за приказ',
+};
+
+var l67 = {
+  code: 'sr',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Prethodna',
+    next: 'Sledeći',
+    today: 'Danas',
+    month: 'Mеsеc',
+    week: 'Nеdеlja',
+    day: 'Dan',
+    list: 'Planеr',
+  },
+  weekText: 'Sed',
+  allDayText: 'Cеo dan',
+  moreLinkText: function(n) {
+    return '+ još ' + n
+  },
+  noEventsText: 'Nеma događaja za prikaz',
+};
+
+var l68 = {
+  code: 'sv',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Förra',
+    next: 'Nästa',
+    today: 'Idag',
+    month: 'Månad',
+    week: 'Vecka',
+    day: 'Dag',
+    list: 'Program',
+  },
+  buttonHints: {
+    prev(buttonText) {
+      return `Föregående ${buttonText.toLocaleLowerCase()}`
+    },
+    next(buttonText) {
+      return `Nästa ${buttonText.toLocaleLowerCase()}`
+    },
+    today(buttonText) {
+      return (buttonText === 'Program' ? 'Detta' : 'Denna') + ' ' + buttonText.toLocaleLowerCase()
+    },
+  },
+  viewHint: '$0 vy',
+  navLinkHint: 'Gå till $0',
+  moreLinkHint(eventCnt) {
+    return `Visa ytterligare ${eventCnt} händelse${eventCnt === 1 ? '' : 'r'}`
+  },
+  weekText: 'v.',
+  weekTextLong: 'Vecka',
+  allDayText: 'Heldag',
+  moreLinkText: 'till',
+  noEventsText: 'Inga händelser att visa',
+  closeHint: 'Stäng',
+  timeHint: 'Klockan',
+  eventHint: 'Händelse',
+};
+
+var l69 = {
+  code: 'ta-in',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'முந்தைய',
+    next: 'அடுத்தது',
+    today: 'இன்று',
+    month: 'மாதம்',
+    week: 'வாரம்',
+    day: 'நாள்',
+    list: 'தினசரி அட்டவணை',
+  },
+  weekText: 'வாரம்',
+  allDayText: 'நாள் முழுவதும்',
+  moreLinkText: function(n) {
+    return '+ மேலும் ' + n
+  },
+  noEventsText: 'காண்பிக்க நிகழ்வுகள் இல்லை',
+};
+
+var l70 = {
+  code: 'th',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'ก่อนหน้า',
+    next: 'ถัดไป',
+    prevYear: 'ปีก่อนหน้า',
+    nextYear: 'ปีถัดไป',
+    year: 'ปี',
+    today: 'วันนี้',
+    month: 'เดือน',
+    week: 'สัปดาห์',
+    day: 'วัน',
+    list: 'กำหนดการ',
+  },
+  weekText: 'สัปดาห์',
+  allDayText: 'ตลอดวัน',
+  moreLinkText: 'เพิ่มเติม',
+  noEventsText: 'ไม่มีกิจกรรมที่จะแสดง',
+};
+
+var l71 = {
+  code: 'tr',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'geri',
+    next: 'ileri',
+    today: 'bugün',
+    month: 'Ay',
+    week: 'Hafta',
+    day: 'Gün',
+    list: 'Ajanda',
+  },
+  weekText: 'Hf',
+  allDayText: 'Tüm gün',
+  moreLinkText: 'daha fazla',
+  noEventsText: 'Gösterilecek etkinlik yok',
+};
+
+var l72 = {
+  code: 'ug',
+  buttonText: {
+    month: 'ئاي',
+    week: 'ھەپتە',
+    day: 'كۈن',
+    list: 'كۈنتەرتىپ',
+  },
+  allDayText: 'پۈتۈن كۈن',
+};
+
+var l73 = {
+  code: 'uk',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 7, // The week that contains Jan 1st is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Попередній',
+    next: 'далі',
+    today: 'Сьогодні',
+    month: 'Місяць',
+    week: 'Тиждень',
+    day: 'День',
+    list: 'Порядок денний',
+  },
+  weekText: 'Тиж',
+  allDayText: 'Увесь день',
+  moreLinkText: function(n) {
+    return '+ще ' + n + '...'
+  },
+  noEventsText: 'Немає подій для відображення',
+};
+
+var l74 = {
+  code: 'uz',
+  buttonText: {
+    month: 'Oy',
+    week: 'Xafta',
+    day: 'Kun',
+    list: 'Kun tartibi',
+  },
+  allDayText: "Kun bo'yi",
+  moreLinkText: function(n) {
+    return '+ yana ' + n
+  },
+  noEventsText: "Ko'rsatish uchun voqealar yo'q",
+};
+
+var l75 = {
+  code: 'vi',
+  week: {
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: 'Trước',
+    next: 'Tiếp',
+    today: 'Hôm nay',
+    month: 'Tháng',
+    week: 'Tuần',
+    day: 'Ngày',
+    list: 'Lịch biểu',
+  },
+  weekText: 'Tu',
+  allDayText: 'Cả ngày',
+  moreLinkText: function(n) {
+    return '+ thêm ' + n
+  },
+  noEventsText: 'Không có sự kiện để hiển thị',
+};
+
+var l76 = {
+  code: 'zh-cn',
+  week: {
+    // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
+    dow: 1, // Monday is the first day of the week.
+    doy: 4, // The week that contains Jan 4th is the first week of the year.
+  },
+  buttonText: {
+    prev: '上月',
+    next: '下月',
+    today: '今天',
+    month: '月',
+    week: '周',
+    day: '日',
+    list: '日程',
+  },
+  weekText: '周',
+  allDayText: '全天',
+  moreLinkText: function(n) {
+    return '另外 ' + n + ' 个'
+  },
+  noEventsText: '没有事件显示',
+};
+
+var l77 = {
+  code: 'zh-tw',
+  buttonText: {
+    prev: '上月',
+    next: '下月',
+    today: '今天',
+    month: '月',
+    week: '週',
+    day: '天',
+    list: '活動列表',
+  },
+  weekText: '周',
+  allDayText: '整天',
+  moreLinkText: '顯示更多',
+  noEventsText: '没有任何活動',
+};
+
+/* eslint max-len: off */
+
+var localesAll = [
+  l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l42, l43, l44, l45, l46, l47, l48, l49, l50, l51, l52, l53, l54, l55, l56, l57, l58, l59, l60, l61, l62, l63, l64, l65, l66, l67, l68, l69, l70, l71, l72, l73, l74, l75, l76, l77, 
+];
+
+exports["default"] = localesAll;
+
+
+/***/ }),
+
 /***/ "./node_modules/@fullcalendar/daygrid/main.js":
 /*!****************************************************!*\
   !*** ./node_modules/@fullcalendar/daygrid/main.js ***!
@@ -10903,6 +12706,2187 @@ var main = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_1__.createPlugin)({
             fixedWeekCount: true,
         },
     },
+});
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);
+
+//# sourceMappingURL=main.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@fullcalendar/interaction/main.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@fullcalendar/interaction/main.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Draggable": () => (/* binding */ ExternalDraggable),
+/* harmony export */   "FeaturefulElementDragging": () => (/* binding */ FeaturefulElementDragging),
+/* harmony export */   "PointerDragging": () => (/* binding */ PointerDragging),
+/* harmony export */   "ThirdPartyDraggable": () => (/* binding */ ThirdPartyDraggable),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fullcalendar/common */ "./node_modules/@fullcalendar/common/main.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/*!
+FullCalendar v5.10.2
+Docs & License: https://fullcalendar.io/
+(c) 2021 Adam Shaw
+*/
+
+
+
+_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.config.touchMouseIgnoreWait = 500;
+var ignoreMouseDepth = 0;
+var listenerCnt = 0;
+var isWindowTouchMoveCancelled = false;
+/*
+Uses a "pointer" abstraction, which monitors UI events for both mouse and touch.
+Tracks when the pointer "drags" on a certain element, meaning down+move+up.
+
+Also, tracks if there was touch-scrolling.
+Also, can prevent touch-scrolling from happening.
+Also, can fire pointermove events when scrolling happens underneath, even when no real pointer movement.
+
+emits:
+- pointerdown
+- pointermove
+- pointerup
+*/
+var PointerDragging = /** @class */ (function () {
+    function PointerDragging(containerEl) {
+        var _this = this;
+        this.subjectEl = null;
+        // options that can be directly assigned by caller
+        this.selector = ''; // will cause subjectEl in all emitted events to be this element
+        this.handleSelector = '';
+        this.shouldIgnoreMove = false;
+        this.shouldWatchScroll = true; // for simulating pointermove on scroll
+        // internal states
+        this.isDragging = false;
+        this.isTouchDragging = false;
+        this.wasTouchScroll = false;
+        // Mouse
+        // ----------------------------------------------------------------------------------------------------
+        this.handleMouseDown = function (ev) {
+            if (!_this.shouldIgnoreMouse() &&
+                isPrimaryMouseButton(ev) &&
+                _this.tryStart(ev)) {
+                var pev = _this.createEventFromMouse(ev, true);
+                _this.emitter.trigger('pointerdown', pev);
+                _this.initScrollWatch(pev);
+                if (!_this.shouldIgnoreMove) {
+                    document.addEventListener('mousemove', _this.handleMouseMove);
+                }
+                document.addEventListener('mouseup', _this.handleMouseUp);
+            }
+        };
+        this.handleMouseMove = function (ev) {
+            var pev = _this.createEventFromMouse(ev);
+            _this.recordCoords(pev);
+            _this.emitter.trigger('pointermove', pev);
+        };
+        this.handleMouseUp = function (ev) {
+            document.removeEventListener('mousemove', _this.handleMouseMove);
+            document.removeEventListener('mouseup', _this.handleMouseUp);
+            _this.emitter.trigger('pointerup', _this.createEventFromMouse(ev));
+            _this.cleanup(); // call last so that pointerup has access to props
+        };
+        // Touch
+        // ----------------------------------------------------------------------------------------------------
+        this.handleTouchStart = function (ev) {
+            if (_this.tryStart(ev)) {
+                _this.isTouchDragging = true;
+                var pev = _this.createEventFromTouch(ev, true);
+                _this.emitter.trigger('pointerdown', pev);
+                _this.initScrollWatch(pev);
+                // unlike mouse, need to attach to target, not document
+                // https://stackoverflow.com/a/45760014
+                var targetEl = ev.target;
+                if (!_this.shouldIgnoreMove) {
+                    targetEl.addEventListener('touchmove', _this.handleTouchMove);
+                }
+                targetEl.addEventListener('touchend', _this.handleTouchEnd);
+                targetEl.addEventListener('touchcancel', _this.handleTouchEnd); // treat it as a touch end
+                // attach a handler to get called when ANY scroll action happens on the page.
+                // this was impossible to do with normal on/off because 'scroll' doesn't bubble.
+                // http://stackoverflow.com/a/32954565/96342
+                window.addEventListener('scroll', _this.handleTouchScroll, true);
+            }
+        };
+        this.handleTouchMove = function (ev) {
+            var pev = _this.createEventFromTouch(ev);
+            _this.recordCoords(pev);
+            _this.emitter.trigger('pointermove', pev);
+        };
+        this.handleTouchEnd = function (ev) {
+            if (_this.isDragging) { // done to guard against touchend followed by touchcancel
+                var targetEl = ev.target;
+                targetEl.removeEventListener('touchmove', _this.handleTouchMove);
+                targetEl.removeEventListener('touchend', _this.handleTouchEnd);
+                targetEl.removeEventListener('touchcancel', _this.handleTouchEnd);
+                window.removeEventListener('scroll', _this.handleTouchScroll, true); // useCaptured=true
+                _this.emitter.trigger('pointerup', _this.createEventFromTouch(ev));
+                _this.cleanup(); // call last so that pointerup has access to props
+                _this.isTouchDragging = false;
+                startIgnoringMouse();
+            }
+        };
+        this.handleTouchScroll = function () {
+            _this.wasTouchScroll = true;
+        };
+        this.handleScroll = function (ev) {
+            if (!_this.shouldIgnoreMove) {
+                var pageX = (window.pageXOffset - _this.prevScrollX) + _this.prevPageX;
+                var pageY = (window.pageYOffset - _this.prevScrollY) + _this.prevPageY;
+                _this.emitter.trigger('pointermove', {
+                    origEvent: ev,
+                    isTouch: _this.isTouchDragging,
+                    subjectEl: _this.subjectEl,
+                    pageX: pageX,
+                    pageY: pageY,
+                    deltaX: pageX - _this.origPageX,
+                    deltaY: pageY - _this.origPageY,
+                });
+            }
+        };
+        this.containerEl = containerEl;
+        this.emitter = new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.Emitter();
+        containerEl.addEventListener('mousedown', this.handleMouseDown);
+        containerEl.addEventListener('touchstart', this.handleTouchStart, { passive: true });
+        listenerCreated();
+    }
+    PointerDragging.prototype.destroy = function () {
+        this.containerEl.removeEventListener('mousedown', this.handleMouseDown);
+        this.containerEl.removeEventListener('touchstart', this.handleTouchStart, { passive: true });
+        listenerDestroyed();
+    };
+    PointerDragging.prototype.tryStart = function (ev) {
+        var subjectEl = this.querySubjectEl(ev);
+        var downEl = ev.target;
+        if (subjectEl &&
+            (!this.handleSelector || (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementClosest)(downEl, this.handleSelector))) {
+            this.subjectEl = subjectEl;
+            this.isDragging = true; // do this first so cancelTouchScroll will work
+            this.wasTouchScroll = false;
+            return true;
+        }
+        return false;
+    };
+    PointerDragging.prototype.cleanup = function () {
+        isWindowTouchMoveCancelled = false;
+        this.isDragging = false;
+        this.subjectEl = null;
+        // keep wasTouchScroll around for later access
+        this.destroyScrollWatch();
+    };
+    PointerDragging.prototype.querySubjectEl = function (ev) {
+        if (this.selector) {
+            return (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementClosest)(ev.target, this.selector);
+        }
+        return this.containerEl;
+    };
+    PointerDragging.prototype.shouldIgnoreMouse = function () {
+        return ignoreMouseDepth || this.isTouchDragging;
+    };
+    // can be called by user of this class, to cancel touch-based scrolling for the current drag
+    PointerDragging.prototype.cancelTouchScroll = function () {
+        if (this.isDragging) {
+            isWindowTouchMoveCancelled = true;
+        }
+    };
+    // Scrolling that simulates pointermoves
+    // ----------------------------------------------------------------------------------------------------
+    PointerDragging.prototype.initScrollWatch = function (ev) {
+        if (this.shouldWatchScroll) {
+            this.recordCoords(ev);
+            window.addEventListener('scroll', this.handleScroll, true); // useCapture=true
+        }
+    };
+    PointerDragging.prototype.recordCoords = function (ev) {
+        if (this.shouldWatchScroll) {
+            this.prevPageX = ev.pageX;
+            this.prevPageY = ev.pageY;
+            this.prevScrollX = window.pageXOffset;
+            this.prevScrollY = window.pageYOffset;
+        }
+    };
+    PointerDragging.prototype.destroyScrollWatch = function () {
+        if (this.shouldWatchScroll) {
+            window.removeEventListener('scroll', this.handleScroll, true); // useCaptured=true
+        }
+    };
+    // Event Normalization
+    // ----------------------------------------------------------------------------------------------------
+    PointerDragging.prototype.createEventFromMouse = function (ev, isFirst) {
+        var deltaX = 0;
+        var deltaY = 0;
+        // TODO: repeat code
+        if (isFirst) {
+            this.origPageX = ev.pageX;
+            this.origPageY = ev.pageY;
+        }
+        else {
+            deltaX = ev.pageX - this.origPageX;
+            deltaY = ev.pageY - this.origPageY;
+        }
+        return {
+            origEvent: ev,
+            isTouch: false,
+            subjectEl: this.subjectEl,
+            pageX: ev.pageX,
+            pageY: ev.pageY,
+            deltaX: deltaX,
+            deltaY: deltaY,
+        };
+    };
+    PointerDragging.prototype.createEventFromTouch = function (ev, isFirst) {
+        var touches = ev.touches;
+        var pageX;
+        var pageY;
+        var deltaX = 0;
+        var deltaY = 0;
+        // if touch coords available, prefer,
+        // because FF would give bad ev.pageX ev.pageY
+        if (touches && touches.length) {
+            pageX = touches[0].pageX;
+            pageY = touches[0].pageY;
+        }
+        else {
+            pageX = ev.pageX;
+            pageY = ev.pageY;
+        }
+        // TODO: repeat code
+        if (isFirst) {
+            this.origPageX = pageX;
+            this.origPageY = pageY;
+        }
+        else {
+            deltaX = pageX - this.origPageX;
+            deltaY = pageY - this.origPageY;
+        }
+        return {
+            origEvent: ev,
+            isTouch: true,
+            subjectEl: this.subjectEl,
+            pageX: pageX,
+            pageY: pageY,
+            deltaX: deltaX,
+            deltaY: deltaY,
+        };
+    };
+    return PointerDragging;
+}());
+// Returns a boolean whether this was a left mouse click and no ctrl key (which means right click on Mac)
+function isPrimaryMouseButton(ev) {
+    return ev.button === 0 && !ev.ctrlKey;
+}
+// Ignoring fake mouse events generated by touch
+// ----------------------------------------------------------------------------------------------------
+function startIgnoringMouse() {
+    ignoreMouseDepth += 1;
+    setTimeout(function () {
+        ignoreMouseDepth -= 1;
+    }, _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.config.touchMouseIgnoreWait);
+}
+// We want to attach touchmove as early as possible for Safari
+// ----------------------------------------------------------------------------------------------------
+function listenerCreated() {
+    listenerCnt += 1;
+    if (listenerCnt === 1) {
+        window.addEventListener('touchmove', onWindowTouchMove, { passive: false });
+    }
+}
+function listenerDestroyed() {
+    listenerCnt -= 1;
+    if (!listenerCnt) {
+        window.removeEventListener('touchmove', onWindowTouchMove, { passive: false });
+    }
+}
+function onWindowTouchMove(ev) {
+    if (isWindowTouchMoveCancelled) {
+        ev.preventDefault();
+    }
+}
+
+/*
+An effect in which an element follows the movement of a pointer across the screen.
+The moving element is a clone of some other element.
+Must call start + handleMove + stop.
+*/
+var ElementMirror = /** @class */ (function () {
+    function ElementMirror() {
+        this.isVisible = false; // must be explicitly enabled
+        this.sourceEl = null;
+        this.mirrorEl = null;
+        this.sourceElRect = null; // screen coords relative to viewport
+        // options that can be set directly by caller
+        this.parentNode = document.body; // HIGHLY SUGGESTED to set this to sidestep ShadowDOM issues
+        this.zIndex = 9999;
+        this.revertDuration = 0;
+    }
+    ElementMirror.prototype.start = function (sourceEl, pageX, pageY) {
+        this.sourceEl = sourceEl;
+        this.sourceElRect = this.sourceEl.getBoundingClientRect();
+        this.origScreenX = pageX - window.pageXOffset;
+        this.origScreenY = pageY - window.pageYOffset;
+        this.deltaX = 0;
+        this.deltaY = 0;
+        this.updateElPosition();
+    };
+    ElementMirror.prototype.handleMove = function (pageX, pageY) {
+        this.deltaX = (pageX - window.pageXOffset) - this.origScreenX;
+        this.deltaY = (pageY - window.pageYOffset) - this.origScreenY;
+        this.updateElPosition();
+    };
+    // can be called before start
+    ElementMirror.prototype.setIsVisible = function (bool) {
+        if (bool) {
+            if (!this.isVisible) {
+                if (this.mirrorEl) {
+                    this.mirrorEl.style.display = '';
+                }
+                this.isVisible = bool; // needs to happen before updateElPosition
+                this.updateElPosition(); // because was not updating the position while invisible
+            }
+        }
+        else if (this.isVisible) {
+            if (this.mirrorEl) {
+                this.mirrorEl.style.display = 'none';
+            }
+            this.isVisible = bool;
+        }
+    };
+    // always async
+    ElementMirror.prototype.stop = function (needsRevertAnimation, callback) {
+        var _this = this;
+        var done = function () {
+            _this.cleanup();
+            callback();
+        };
+        if (needsRevertAnimation &&
+            this.mirrorEl &&
+            this.isVisible &&
+            this.revertDuration && // if 0, transition won't work
+            (this.deltaX || this.deltaY) // if same coords, transition won't work
+        ) {
+            this.doRevertAnimation(done, this.revertDuration);
+        }
+        else {
+            setTimeout(done, 0);
+        }
+    };
+    ElementMirror.prototype.doRevertAnimation = function (callback, revertDuration) {
+        var mirrorEl = this.mirrorEl;
+        var finalSourceElRect = this.sourceEl.getBoundingClientRect(); // because autoscrolling might have happened
+        mirrorEl.style.transition =
+            'top ' + revertDuration + 'ms,' +
+                'left ' + revertDuration + 'ms';
+        (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.applyStyle)(mirrorEl, {
+            left: finalSourceElRect.left,
+            top: finalSourceElRect.top,
+        });
+        (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.whenTransitionDone)(mirrorEl, function () {
+            mirrorEl.style.transition = '';
+            callback();
+        });
+    };
+    ElementMirror.prototype.cleanup = function () {
+        if (this.mirrorEl) {
+            (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.removeElement)(this.mirrorEl);
+            this.mirrorEl = null;
+        }
+        this.sourceEl = null;
+    };
+    ElementMirror.prototype.updateElPosition = function () {
+        if (this.sourceEl && this.isVisible) {
+            (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.applyStyle)(this.getMirrorEl(), {
+                left: this.sourceElRect.left + this.deltaX,
+                top: this.sourceElRect.top + this.deltaY,
+            });
+        }
+    };
+    ElementMirror.prototype.getMirrorEl = function () {
+        var sourceElRect = this.sourceElRect;
+        var mirrorEl = this.mirrorEl;
+        if (!mirrorEl) {
+            mirrorEl = this.mirrorEl = this.sourceEl.cloneNode(true); // cloneChildren=true
+            // we don't want long taps or any mouse interaction causing selection/menus.
+            // would use preventSelection(), but that prevents selectstart, causing problems.
+            mirrorEl.classList.add('fc-unselectable');
+            mirrorEl.classList.add('fc-event-dragging');
+            (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.applyStyle)(mirrorEl, {
+                position: 'fixed',
+                zIndex: this.zIndex,
+                visibility: '',
+                boxSizing: 'border-box',
+                width: sourceElRect.right - sourceElRect.left,
+                height: sourceElRect.bottom - sourceElRect.top,
+                right: 'auto',
+                bottom: 'auto',
+                margin: 0,
+            });
+            this.parentNode.appendChild(mirrorEl);
+        }
+        return mirrorEl;
+    };
+    return ElementMirror;
+}());
+
+/*
+Is a cache for a given element's scroll information (all the info that ScrollController stores)
+in addition the "client rectangle" of the element.. the area within the scrollbars.
+
+The cache can be in one of two modes:
+- doesListening:false - ignores when the container is scrolled by someone else
+- doesListening:true - watch for scrolling and update the cache
+*/
+var ScrollGeomCache = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(ScrollGeomCache, _super);
+    function ScrollGeomCache(scrollController, doesListening) {
+        var _this = _super.call(this) || this;
+        _this.handleScroll = function () {
+            _this.scrollTop = _this.scrollController.getScrollTop();
+            _this.scrollLeft = _this.scrollController.getScrollLeft();
+            _this.handleScrollChange();
+        };
+        _this.scrollController = scrollController;
+        _this.doesListening = doesListening;
+        _this.scrollTop = _this.origScrollTop = scrollController.getScrollTop();
+        _this.scrollLeft = _this.origScrollLeft = scrollController.getScrollLeft();
+        _this.scrollWidth = scrollController.getScrollWidth();
+        _this.scrollHeight = scrollController.getScrollHeight();
+        _this.clientWidth = scrollController.getClientWidth();
+        _this.clientHeight = scrollController.getClientHeight();
+        _this.clientRect = _this.computeClientRect(); // do last in case it needs cached values
+        if (_this.doesListening) {
+            _this.getEventTarget().addEventListener('scroll', _this.handleScroll);
+        }
+        return _this;
+    }
+    ScrollGeomCache.prototype.destroy = function () {
+        if (this.doesListening) {
+            this.getEventTarget().removeEventListener('scroll', this.handleScroll);
+        }
+    };
+    ScrollGeomCache.prototype.getScrollTop = function () {
+        return this.scrollTop;
+    };
+    ScrollGeomCache.prototype.getScrollLeft = function () {
+        return this.scrollLeft;
+    };
+    ScrollGeomCache.prototype.setScrollTop = function (top) {
+        this.scrollController.setScrollTop(top);
+        if (!this.doesListening) {
+            // we are not relying on the element to normalize out-of-bounds scroll values
+            // so we need to sanitize ourselves
+            this.scrollTop = Math.max(Math.min(top, this.getMaxScrollTop()), 0);
+            this.handleScrollChange();
+        }
+    };
+    ScrollGeomCache.prototype.setScrollLeft = function (top) {
+        this.scrollController.setScrollLeft(top);
+        if (!this.doesListening) {
+            // we are not relying on the element to normalize out-of-bounds scroll values
+            // so we need to sanitize ourselves
+            this.scrollLeft = Math.max(Math.min(top, this.getMaxScrollLeft()), 0);
+            this.handleScrollChange();
+        }
+    };
+    ScrollGeomCache.prototype.getClientWidth = function () {
+        return this.clientWidth;
+    };
+    ScrollGeomCache.prototype.getClientHeight = function () {
+        return this.clientHeight;
+    };
+    ScrollGeomCache.prototype.getScrollWidth = function () {
+        return this.scrollWidth;
+    };
+    ScrollGeomCache.prototype.getScrollHeight = function () {
+        return this.scrollHeight;
+    };
+    ScrollGeomCache.prototype.handleScrollChange = function () {
+    };
+    return ScrollGeomCache;
+}(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.ScrollController));
+
+var ElementScrollGeomCache = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(ElementScrollGeomCache, _super);
+    function ElementScrollGeomCache(el, doesListening) {
+        return _super.call(this, new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.ElementScrollController(el), doesListening) || this;
+    }
+    ElementScrollGeomCache.prototype.getEventTarget = function () {
+        return this.scrollController.el;
+    };
+    ElementScrollGeomCache.prototype.computeClientRect = function () {
+        return (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.computeInnerRect)(this.scrollController.el);
+    };
+    return ElementScrollGeomCache;
+}(ScrollGeomCache));
+
+var WindowScrollGeomCache = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(WindowScrollGeomCache, _super);
+    function WindowScrollGeomCache(doesListening) {
+        return _super.call(this, new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.WindowScrollController(), doesListening) || this;
+    }
+    WindowScrollGeomCache.prototype.getEventTarget = function () {
+        return window;
+    };
+    WindowScrollGeomCache.prototype.computeClientRect = function () {
+        return {
+            left: this.scrollLeft,
+            right: this.scrollLeft + this.clientWidth,
+            top: this.scrollTop,
+            bottom: this.scrollTop + this.clientHeight,
+        };
+    };
+    // the window is the only scroll object that changes it's rectangle relative
+    // to the document's topleft as it scrolls
+    WindowScrollGeomCache.prototype.handleScrollChange = function () {
+        this.clientRect = this.computeClientRect();
+    };
+    return WindowScrollGeomCache;
+}(ScrollGeomCache));
+
+// If available we are using native "performance" API instead of "Date"
+// Read more about it on MDN:
+// https://developer.mozilla.org/en-US/docs/Web/API/Performance
+var getTime = typeof performance === 'function' ? performance.now : Date.now;
+/*
+For a pointer interaction, automatically scrolls certain scroll containers when the pointer
+approaches the edge.
+
+The caller must call start + handleMove + stop.
+*/
+var AutoScroller = /** @class */ (function () {
+    function AutoScroller() {
+        var _this = this;
+        // options that can be set by caller
+        this.isEnabled = true;
+        this.scrollQuery = [window, '.fc-scroller'];
+        this.edgeThreshold = 50; // pixels
+        this.maxVelocity = 300; // pixels per second
+        // internal state
+        this.pointerScreenX = null;
+        this.pointerScreenY = null;
+        this.isAnimating = false;
+        this.scrollCaches = null;
+        // protect against the initial pointerdown being too close to an edge and starting the scroll
+        this.everMovedUp = false;
+        this.everMovedDown = false;
+        this.everMovedLeft = false;
+        this.everMovedRight = false;
+        this.animate = function () {
+            if (_this.isAnimating) { // wasn't cancelled between animation calls
+                var edge = _this.computeBestEdge(_this.pointerScreenX + window.pageXOffset, _this.pointerScreenY + window.pageYOffset);
+                if (edge) {
+                    var now = getTime();
+                    _this.handleSide(edge, (now - _this.msSinceRequest) / 1000);
+                    _this.requestAnimation(now);
+                }
+                else {
+                    _this.isAnimating = false; // will stop animation
+                }
+            }
+        };
+    }
+    AutoScroller.prototype.start = function (pageX, pageY, scrollStartEl) {
+        if (this.isEnabled) {
+            this.scrollCaches = this.buildCaches(scrollStartEl);
+            this.pointerScreenX = null;
+            this.pointerScreenY = null;
+            this.everMovedUp = false;
+            this.everMovedDown = false;
+            this.everMovedLeft = false;
+            this.everMovedRight = false;
+            this.handleMove(pageX, pageY);
+        }
+    };
+    AutoScroller.prototype.handleMove = function (pageX, pageY) {
+        if (this.isEnabled) {
+            var pointerScreenX = pageX - window.pageXOffset;
+            var pointerScreenY = pageY - window.pageYOffset;
+            var yDelta = this.pointerScreenY === null ? 0 : pointerScreenY - this.pointerScreenY;
+            var xDelta = this.pointerScreenX === null ? 0 : pointerScreenX - this.pointerScreenX;
+            if (yDelta < 0) {
+                this.everMovedUp = true;
+            }
+            else if (yDelta > 0) {
+                this.everMovedDown = true;
+            }
+            if (xDelta < 0) {
+                this.everMovedLeft = true;
+            }
+            else if (xDelta > 0) {
+                this.everMovedRight = true;
+            }
+            this.pointerScreenX = pointerScreenX;
+            this.pointerScreenY = pointerScreenY;
+            if (!this.isAnimating) {
+                this.isAnimating = true;
+                this.requestAnimation(getTime());
+            }
+        }
+    };
+    AutoScroller.prototype.stop = function () {
+        if (this.isEnabled) {
+            this.isAnimating = false; // will stop animation
+            for (var _i = 0, _a = this.scrollCaches; _i < _a.length; _i++) {
+                var scrollCache = _a[_i];
+                scrollCache.destroy();
+            }
+            this.scrollCaches = null;
+        }
+    };
+    AutoScroller.prototype.requestAnimation = function (now) {
+        this.msSinceRequest = now;
+        requestAnimationFrame(this.animate);
+    };
+    AutoScroller.prototype.handleSide = function (edge, seconds) {
+        var scrollCache = edge.scrollCache;
+        var edgeThreshold = this.edgeThreshold;
+        var invDistance = edgeThreshold - edge.distance;
+        var velocity = // the closer to the edge, the faster we scroll
+         ((invDistance * invDistance) / (edgeThreshold * edgeThreshold)) * // quadratic
+            this.maxVelocity * seconds;
+        var sign = 1;
+        switch (edge.name) {
+            case 'left':
+                sign = -1;
+            // falls through
+            case 'right':
+                scrollCache.setScrollLeft(scrollCache.getScrollLeft() + velocity * sign);
+                break;
+            case 'top':
+                sign = -1;
+            // falls through
+            case 'bottom':
+                scrollCache.setScrollTop(scrollCache.getScrollTop() + velocity * sign);
+                break;
+        }
+    };
+    // left/top are relative to document topleft
+    AutoScroller.prototype.computeBestEdge = function (left, top) {
+        var edgeThreshold = this.edgeThreshold;
+        var bestSide = null;
+        var scrollCaches = this.scrollCaches || [];
+        for (var _i = 0, scrollCaches_1 = scrollCaches; _i < scrollCaches_1.length; _i++) {
+            var scrollCache = scrollCaches_1[_i];
+            var rect = scrollCache.clientRect;
+            var leftDist = left - rect.left;
+            var rightDist = rect.right - left;
+            var topDist = top - rect.top;
+            var bottomDist = rect.bottom - top;
+            // completely within the rect?
+            if (leftDist >= 0 && rightDist >= 0 && topDist >= 0 && bottomDist >= 0) {
+                if (topDist <= edgeThreshold && this.everMovedUp && scrollCache.canScrollUp() &&
+                    (!bestSide || bestSide.distance > topDist)) {
+                    bestSide = { scrollCache: scrollCache, name: 'top', distance: topDist };
+                }
+                if (bottomDist <= edgeThreshold && this.everMovedDown && scrollCache.canScrollDown() &&
+                    (!bestSide || bestSide.distance > bottomDist)) {
+                    bestSide = { scrollCache: scrollCache, name: 'bottom', distance: bottomDist };
+                }
+                if (leftDist <= edgeThreshold && this.everMovedLeft && scrollCache.canScrollLeft() &&
+                    (!bestSide || bestSide.distance > leftDist)) {
+                    bestSide = { scrollCache: scrollCache, name: 'left', distance: leftDist };
+                }
+                if (rightDist <= edgeThreshold && this.everMovedRight && scrollCache.canScrollRight() &&
+                    (!bestSide || bestSide.distance > rightDist)) {
+                    bestSide = { scrollCache: scrollCache, name: 'right', distance: rightDist };
+                }
+            }
+        }
+        return bestSide;
+    };
+    AutoScroller.prototype.buildCaches = function (scrollStartEl) {
+        return this.queryScrollEls(scrollStartEl).map(function (el) {
+            if (el === window) {
+                return new WindowScrollGeomCache(false); // false = don't listen to user-generated scrolls
+            }
+            return new ElementScrollGeomCache(el, false); // false = don't listen to user-generated scrolls
+        });
+    };
+    AutoScroller.prototype.queryScrollEls = function (scrollStartEl) {
+        var els = [];
+        for (var _i = 0, _a = this.scrollQuery; _i < _a.length; _i++) {
+            var query = _a[_i];
+            if (typeof query === 'object') {
+                els.push(query);
+            }
+            else {
+                els.push.apply(els, Array.prototype.slice.call((0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getElRoot)(scrollStartEl).querySelectorAll(query)));
+            }
+        }
+        return els;
+    };
+    return AutoScroller;
+}());
+
+/*
+Monitors dragging on an element. Has a number of high-level features:
+- minimum distance required before dragging
+- minimum wait time ("delay") before dragging
+- a mirror element that follows the pointer
+*/
+var FeaturefulElementDragging = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(FeaturefulElementDragging, _super);
+    function FeaturefulElementDragging(containerEl, selector) {
+        var _this = _super.call(this, containerEl) || this;
+        _this.containerEl = containerEl;
+        // options that can be directly set by caller
+        // the caller can also set the PointerDragging's options as well
+        _this.delay = null;
+        _this.minDistance = 0;
+        _this.touchScrollAllowed = true; // prevents drag from starting and blocks scrolling during drag
+        _this.mirrorNeedsRevert = false;
+        _this.isInteracting = false; // is the user validly moving the pointer? lasts until pointerup
+        _this.isDragging = false; // is it INTENTFULLY dragging? lasts until after revert animation
+        _this.isDelayEnded = false;
+        _this.isDistanceSurpassed = false;
+        _this.delayTimeoutId = null;
+        _this.onPointerDown = function (ev) {
+            if (!_this.isDragging) { // so new drag doesn't happen while revert animation is going
+                _this.isInteracting = true;
+                _this.isDelayEnded = false;
+                _this.isDistanceSurpassed = false;
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.preventSelection)(document.body);
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.preventContextMenu)(document.body);
+                // prevent links from being visited if there's an eventual drag.
+                // also prevents selection in older browsers (maybe?).
+                // not necessary for touch, besides, browser would complain about passiveness.
+                if (!ev.isTouch) {
+                    ev.origEvent.preventDefault();
+                }
+                _this.emitter.trigger('pointerdown', ev);
+                if (_this.isInteracting && // not destroyed via pointerdown handler
+                    !_this.pointer.shouldIgnoreMove) {
+                    // actions related to initiating dragstart+dragmove+dragend...
+                    _this.mirror.setIsVisible(false); // reset. caller must set-visible
+                    _this.mirror.start(ev.subjectEl, ev.pageX, ev.pageY); // must happen on first pointer down
+                    _this.startDelay(ev);
+                    if (!_this.minDistance) {
+                        _this.handleDistanceSurpassed(ev);
+                    }
+                }
+            }
+        };
+        _this.onPointerMove = function (ev) {
+            if (_this.isInteracting) {
+                _this.emitter.trigger('pointermove', ev);
+                if (!_this.isDistanceSurpassed) {
+                    var minDistance = _this.minDistance;
+                    var distanceSq = void 0; // current distance from the origin, squared
+                    var deltaX = ev.deltaX, deltaY = ev.deltaY;
+                    distanceSq = deltaX * deltaX + deltaY * deltaY;
+                    if (distanceSq >= minDistance * minDistance) { // use pythagorean theorem
+                        _this.handleDistanceSurpassed(ev);
+                    }
+                }
+                if (_this.isDragging) {
+                    // a real pointer move? (not one simulated by scrolling)
+                    if (ev.origEvent.type !== 'scroll') {
+                        _this.mirror.handleMove(ev.pageX, ev.pageY);
+                        _this.autoScroller.handleMove(ev.pageX, ev.pageY);
+                    }
+                    _this.emitter.trigger('dragmove', ev);
+                }
+            }
+        };
+        _this.onPointerUp = function (ev) {
+            if (_this.isInteracting) {
+                _this.isInteracting = false;
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.allowSelection)(document.body);
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.allowContextMenu)(document.body);
+                _this.emitter.trigger('pointerup', ev); // can potentially set mirrorNeedsRevert
+                if (_this.isDragging) {
+                    _this.autoScroller.stop();
+                    _this.tryStopDrag(ev); // which will stop the mirror
+                }
+                if (_this.delayTimeoutId) {
+                    clearTimeout(_this.delayTimeoutId);
+                    _this.delayTimeoutId = null;
+                }
+            }
+        };
+        var pointer = _this.pointer = new PointerDragging(containerEl);
+        pointer.emitter.on('pointerdown', _this.onPointerDown);
+        pointer.emitter.on('pointermove', _this.onPointerMove);
+        pointer.emitter.on('pointerup', _this.onPointerUp);
+        if (selector) {
+            pointer.selector = selector;
+        }
+        _this.mirror = new ElementMirror();
+        _this.autoScroller = new AutoScroller();
+        return _this;
+    }
+    FeaturefulElementDragging.prototype.destroy = function () {
+        this.pointer.destroy();
+        // HACK: simulate a pointer-up to end the current drag
+        // TODO: fire 'dragend' directly and stop interaction. discourage use of pointerup event (b/c might not fire)
+        this.onPointerUp({});
+    };
+    FeaturefulElementDragging.prototype.startDelay = function (ev) {
+        var _this = this;
+        if (typeof this.delay === 'number') {
+            this.delayTimeoutId = setTimeout(function () {
+                _this.delayTimeoutId = null;
+                _this.handleDelayEnd(ev);
+            }, this.delay); // not assignable to number!
+        }
+        else {
+            this.handleDelayEnd(ev);
+        }
+    };
+    FeaturefulElementDragging.prototype.handleDelayEnd = function (ev) {
+        this.isDelayEnded = true;
+        this.tryStartDrag(ev);
+    };
+    FeaturefulElementDragging.prototype.handleDistanceSurpassed = function (ev) {
+        this.isDistanceSurpassed = true;
+        this.tryStartDrag(ev);
+    };
+    FeaturefulElementDragging.prototype.tryStartDrag = function (ev) {
+        if (this.isDelayEnded && this.isDistanceSurpassed) {
+            if (!this.pointer.wasTouchScroll || this.touchScrollAllowed) {
+                this.isDragging = true;
+                this.mirrorNeedsRevert = false;
+                this.autoScroller.start(ev.pageX, ev.pageY, this.containerEl);
+                this.emitter.trigger('dragstart', ev);
+                if (this.touchScrollAllowed === false) {
+                    this.pointer.cancelTouchScroll();
+                }
+            }
+        }
+    };
+    FeaturefulElementDragging.prototype.tryStopDrag = function (ev) {
+        // .stop() is ALWAYS asynchronous, which we NEED because we want all pointerup events
+        // that come from the document to fire beforehand. much more convenient this way.
+        this.mirror.stop(this.mirrorNeedsRevert, this.stopDrag.bind(this, ev));
+    };
+    FeaturefulElementDragging.prototype.stopDrag = function (ev) {
+        this.isDragging = false;
+        this.emitter.trigger('dragend', ev);
+    };
+    // fill in the implementations...
+    FeaturefulElementDragging.prototype.setIgnoreMove = function (bool) {
+        this.pointer.shouldIgnoreMove = bool;
+    };
+    FeaturefulElementDragging.prototype.setMirrorIsVisible = function (bool) {
+        this.mirror.setIsVisible(bool);
+    };
+    FeaturefulElementDragging.prototype.setMirrorNeedsRevert = function (bool) {
+        this.mirrorNeedsRevert = bool;
+    };
+    FeaturefulElementDragging.prototype.setAutoScrollEnabled = function (bool) {
+        this.autoScroller.isEnabled = bool;
+    };
+    return FeaturefulElementDragging;
+}(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.ElementDragging));
+
+/*
+When this class is instantiated, it records the offset of an element (relative to the document topleft),
+and continues to monitor scrolling, updating the cached coordinates if it needs to.
+Does not access the DOM after instantiation, so highly performant.
+
+Also keeps track of all scrolling/overflow:hidden containers that are parents of the given element
+and an determine if a given point is inside the combined clipping rectangle.
+*/
+var OffsetTracker = /** @class */ (function () {
+    function OffsetTracker(el) {
+        this.origRect = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.computeRect)(el);
+        // will work fine for divs that have overflow:hidden
+        this.scrollCaches = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getClippingParents)(el).map(function (scrollEl) { return new ElementScrollGeomCache(scrollEl, true); });
+    }
+    OffsetTracker.prototype.destroy = function () {
+        for (var _i = 0, _a = this.scrollCaches; _i < _a.length; _i++) {
+            var scrollCache = _a[_i];
+            scrollCache.destroy();
+        }
+    };
+    OffsetTracker.prototype.computeLeft = function () {
+        var left = this.origRect.left;
+        for (var _i = 0, _a = this.scrollCaches; _i < _a.length; _i++) {
+            var scrollCache = _a[_i];
+            left += scrollCache.origScrollLeft - scrollCache.getScrollLeft();
+        }
+        return left;
+    };
+    OffsetTracker.prototype.computeTop = function () {
+        var top = this.origRect.top;
+        for (var _i = 0, _a = this.scrollCaches; _i < _a.length; _i++) {
+            var scrollCache = _a[_i];
+            top += scrollCache.origScrollTop - scrollCache.getScrollTop();
+        }
+        return top;
+    };
+    OffsetTracker.prototype.isWithinClipping = function (pageX, pageY) {
+        var point = { left: pageX, top: pageY };
+        for (var _i = 0, _a = this.scrollCaches; _i < _a.length; _i++) {
+            var scrollCache = _a[_i];
+            if (!isIgnoredClipping(scrollCache.getEventTarget()) &&
+                !(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.pointInsideRect)(point, scrollCache.clientRect)) {
+                return false;
+            }
+        }
+        return true;
+    };
+    return OffsetTracker;
+}());
+// certain clipping containers should never constrain interactions, like <html> and <body>
+// https://github.com/fullcalendar/fullcalendar/issues/3615
+function isIgnoredClipping(node) {
+    var tagName = node.tagName;
+    return tagName === 'HTML' || tagName === 'BODY';
+}
+
+/*
+Tracks movement over multiple droppable areas (aka "hits")
+that exist in one or more DateComponents.
+Relies on an existing draggable.
+
+emits:
+- pointerdown
+- dragstart
+- hitchange - fires initially, even if not over a hit
+- pointerup
+- (hitchange - again, to null, if ended over a hit)
+- dragend
+*/
+var HitDragging = /** @class */ (function () {
+    function HitDragging(dragging, droppableStore) {
+        var _this = this;
+        // options that can be set by caller
+        this.useSubjectCenter = false;
+        this.requireInitial = true; // if doesn't start out on a hit, won't emit any events
+        this.initialHit = null;
+        this.movingHit = null;
+        this.finalHit = null; // won't ever be populated if shouldIgnoreMove
+        this.handlePointerDown = function (ev) {
+            var dragging = _this.dragging;
+            _this.initialHit = null;
+            _this.movingHit = null;
+            _this.finalHit = null;
+            _this.prepareHits();
+            _this.processFirstCoord(ev);
+            if (_this.initialHit || !_this.requireInitial) {
+                dragging.setIgnoreMove(false);
+                // TODO: fire this before computing processFirstCoord, so listeners can cancel. this gets fired by almost every handler :(
+                _this.emitter.trigger('pointerdown', ev);
+            }
+            else {
+                dragging.setIgnoreMove(true);
+            }
+        };
+        this.handleDragStart = function (ev) {
+            _this.emitter.trigger('dragstart', ev);
+            _this.handleMove(ev, true); // force = fire even if initially null
+        };
+        this.handleDragMove = function (ev) {
+            _this.emitter.trigger('dragmove', ev);
+            _this.handleMove(ev);
+        };
+        this.handlePointerUp = function (ev) {
+            _this.releaseHits();
+            _this.emitter.trigger('pointerup', ev);
+        };
+        this.handleDragEnd = function (ev) {
+            if (_this.movingHit) {
+                _this.emitter.trigger('hitupdate', null, true, ev);
+            }
+            _this.finalHit = _this.movingHit;
+            _this.movingHit = null;
+            _this.emitter.trigger('dragend', ev);
+        };
+        this.droppableStore = droppableStore;
+        dragging.emitter.on('pointerdown', this.handlePointerDown);
+        dragging.emitter.on('dragstart', this.handleDragStart);
+        dragging.emitter.on('dragmove', this.handleDragMove);
+        dragging.emitter.on('pointerup', this.handlePointerUp);
+        dragging.emitter.on('dragend', this.handleDragEnd);
+        this.dragging = dragging;
+        this.emitter = new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.Emitter();
+    }
+    // sets initialHit
+    // sets coordAdjust
+    HitDragging.prototype.processFirstCoord = function (ev) {
+        var origPoint = { left: ev.pageX, top: ev.pageY };
+        var adjustedPoint = origPoint;
+        var subjectEl = ev.subjectEl;
+        var subjectRect;
+        if (subjectEl instanceof HTMLElement) { // i.e. not a Document/ShadowRoot
+            subjectRect = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.computeRect)(subjectEl);
+            adjustedPoint = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.constrainPoint)(adjustedPoint, subjectRect);
+        }
+        var initialHit = this.initialHit = this.queryHitForOffset(adjustedPoint.left, adjustedPoint.top);
+        if (initialHit) {
+            if (this.useSubjectCenter && subjectRect) {
+                var slicedSubjectRect = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.intersectRects)(subjectRect, initialHit.rect);
+                if (slicedSubjectRect) {
+                    adjustedPoint = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getRectCenter)(slicedSubjectRect);
+                }
+            }
+            this.coordAdjust = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.diffPoints)(adjustedPoint, origPoint);
+        }
+        else {
+            this.coordAdjust = { left: 0, top: 0 };
+        }
+    };
+    HitDragging.prototype.handleMove = function (ev, forceHandle) {
+        var hit = this.queryHitForOffset(ev.pageX + this.coordAdjust.left, ev.pageY + this.coordAdjust.top);
+        if (forceHandle || !isHitsEqual(this.movingHit, hit)) {
+            this.movingHit = hit;
+            this.emitter.trigger('hitupdate', hit, false, ev);
+        }
+    };
+    HitDragging.prototype.prepareHits = function () {
+        this.offsetTrackers = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.mapHash)(this.droppableStore, function (interactionSettings) {
+            interactionSettings.component.prepareHits();
+            return new OffsetTracker(interactionSettings.el);
+        });
+    };
+    HitDragging.prototype.releaseHits = function () {
+        var offsetTrackers = this.offsetTrackers;
+        for (var id in offsetTrackers) {
+            offsetTrackers[id].destroy();
+        }
+        this.offsetTrackers = {};
+    };
+    HitDragging.prototype.queryHitForOffset = function (offsetLeft, offsetTop) {
+        var _a = this, droppableStore = _a.droppableStore, offsetTrackers = _a.offsetTrackers;
+        var bestHit = null;
+        for (var id in droppableStore) {
+            var component = droppableStore[id].component;
+            var offsetTracker = offsetTrackers[id];
+            if (offsetTracker && // wasn't destroyed mid-drag
+                offsetTracker.isWithinClipping(offsetLeft, offsetTop)) {
+                var originLeft = offsetTracker.computeLeft();
+                var originTop = offsetTracker.computeTop();
+                var positionLeft = offsetLeft - originLeft;
+                var positionTop = offsetTop - originTop;
+                var origRect = offsetTracker.origRect;
+                var width = origRect.right - origRect.left;
+                var height = origRect.bottom - origRect.top;
+                if (
+                // must be within the element's bounds
+                positionLeft >= 0 && positionLeft < width &&
+                    positionTop >= 0 && positionTop < height) {
+                    var hit = component.queryHit(positionLeft, positionTop, width, height);
+                    if (hit && (
+                    // make sure the hit is within activeRange, meaning it's not a dead cell
+                    (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.rangeContainsRange)(hit.dateProfile.activeRange, hit.dateSpan.range)) &&
+                        (!bestHit || hit.layer > bestHit.layer)) {
+                        hit.componentId = id;
+                        hit.context = component.context;
+                        // TODO: better way to re-orient rectangle
+                        hit.rect.left += originLeft;
+                        hit.rect.right += originLeft;
+                        hit.rect.top += originTop;
+                        hit.rect.bottom += originTop;
+                        bestHit = hit;
+                    }
+                }
+            }
+        }
+        return bestHit;
+    };
+    return HitDragging;
+}());
+function isHitsEqual(hit0, hit1) {
+    if (!hit0 && !hit1) {
+        return true;
+    }
+    if (Boolean(hit0) !== Boolean(hit1)) {
+        return false;
+    }
+    return (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.isDateSpansEqual)(hit0.dateSpan, hit1.dateSpan);
+}
+
+function buildDatePointApiWithContext(dateSpan, context) {
+    var props = {};
+    for (var _i = 0, _a = context.pluginHooks.datePointTransforms; _i < _a.length; _i++) {
+        var transform = _a[_i];
+        (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)(props, transform(dateSpan, context));
+    }
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)(props, buildDatePointApi(dateSpan, context.dateEnv));
+    return props;
+}
+function buildDatePointApi(span, dateEnv) {
+    return {
+        date: dateEnv.toDate(span.range.start),
+        dateStr: dateEnv.formatIso(span.range.start, { omitTime: span.allDay }),
+        allDay: span.allDay,
+    };
+}
+
+/*
+Monitors when the user clicks on a specific date/time of a component.
+A pointerdown+pointerup on the same "hit" constitutes a click.
+*/
+var DateClicking = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(DateClicking, _super);
+    function DateClicking(settings) {
+        var _this = _super.call(this, settings) || this;
+        _this.handlePointerDown = function (pev) {
+            var dragging = _this.dragging;
+            var downEl = pev.origEvent.target;
+            // do this in pointerdown (not dragend) because DOM might be mutated by the time dragend is fired
+            dragging.setIgnoreMove(!_this.component.isValidDateDownEl(downEl));
+        };
+        // won't even fire if moving was ignored
+        _this.handleDragEnd = function (ev) {
+            var component = _this.component;
+            var pointer = _this.dragging.pointer;
+            if (!pointer.wasTouchScroll) {
+                var _a = _this.hitDragging, initialHit = _a.initialHit, finalHit = _a.finalHit;
+                if (initialHit && finalHit && isHitsEqual(initialHit, finalHit)) {
+                    var context = component.context;
+                    var arg = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, buildDatePointApiWithContext(initialHit.dateSpan, context)), { dayEl: initialHit.dayEl, jsEvent: ev.origEvent, view: context.viewApi || context.calendarApi.view });
+                    context.emitter.trigger('dateClick', arg);
+                }
+            }
+        };
+        // we DO want to watch pointer moves because otherwise finalHit won't get populated
+        _this.dragging = new FeaturefulElementDragging(settings.el);
+        _this.dragging.autoScroller.isEnabled = false;
+        var hitDragging = _this.hitDragging = new HitDragging(_this.dragging, (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.interactionSettingsToStore)(settings));
+        hitDragging.emitter.on('pointerdown', _this.handlePointerDown);
+        hitDragging.emitter.on('dragend', _this.handleDragEnd);
+        return _this;
+    }
+    DateClicking.prototype.destroy = function () {
+        this.dragging.destroy();
+    };
+    return DateClicking;
+}(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.Interaction));
+
+/*
+Tracks when the user selects a portion of time of a component,
+constituted by a drag over date cells, with a possible delay at the beginning of the drag.
+*/
+var DateSelecting = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(DateSelecting, _super);
+    function DateSelecting(settings) {
+        var _this = _super.call(this, settings) || this;
+        _this.dragSelection = null;
+        _this.handlePointerDown = function (ev) {
+            var _a = _this, component = _a.component, dragging = _a.dragging;
+            var options = component.context.options;
+            var canSelect = options.selectable &&
+                component.isValidDateDownEl(ev.origEvent.target);
+            // don't bother to watch expensive moves if component won't do selection
+            dragging.setIgnoreMove(!canSelect);
+            // if touch, require user to hold down
+            dragging.delay = ev.isTouch ? getComponentTouchDelay$1(component) : null;
+        };
+        _this.handleDragStart = function (ev) {
+            _this.component.context.calendarApi.unselect(ev); // unselect previous selections
+        };
+        _this.handleHitUpdate = function (hit, isFinal) {
+            var context = _this.component.context;
+            var dragSelection = null;
+            var isInvalid = false;
+            if (hit) {
+                var initialHit = _this.hitDragging.initialHit;
+                var disallowed = hit.componentId === initialHit.componentId
+                    && _this.isHitComboAllowed
+                    && !_this.isHitComboAllowed(initialHit, hit);
+                if (!disallowed) {
+                    dragSelection = joinHitsIntoSelection(initialHit, hit, context.pluginHooks.dateSelectionTransformers);
+                }
+                if (!dragSelection || !(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.isDateSelectionValid)(dragSelection, hit.dateProfile, context)) {
+                    isInvalid = true;
+                    dragSelection = null;
+                }
+            }
+            if (dragSelection) {
+                context.dispatch({ type: 'SELECT_DATES', selection: dragSelection });
+            }
+            else if (!isFinal) { // only unselect if moved away while dragging
+                context.dispatch({ type: 'UNSELECT_DATES' });
+            }
+            if (!isInvalid) {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.enableCursor)();
+            }
+            else {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.disableCursor)();
+            }
+            if (!isFinal) {
+                _this.dragSelection = dragSelection; // only clear if moved away from all hits while dragging
+            }
+        };
+        _this.handlePointerUp = function (pev) {
+            if (_this.dragSelection) {
+                // selection is already rendered, so just need to report selection
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.triggerDateSelect)(_this.dragSelection, pev, _this.component.context);
+                _this.dragSelection = null;
+            }
+        };
+        var component = settings.component;
+        var options = component.context.options;
+        var dragging = _this.dragging = new FeaturefulElementDragging(settings.el);
+        dragging.touchScrollAllowed = false;
+        dragging.minDistance = options.selectMinDistance || 0;
+        dragging.autoScroller.isEnabled = options.dragScroll;
+        var hitDragging = _this.hitDragging = new HitDragging(_this.dragging, (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.interactionSettingsToStore)(settings));
+        hitDragging.emitter.on('pointerdown', _this.handlePointerDown);
+        hitDragging.emitter.on('dragstart', _this.handleDragStart);
+        hitDragging.emitter.on('hitupdate', _this.handleHitUpdate);
+        hitDragging.emitter.on('pointerup', _this.handlePointerUp);
+        return _this;
+    }
+    DateSelecting.prototype.destroy = function () {
+        this.dragging.destroy();
+    };
+    return DateSelecting;
+}(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.Interaction));
+function getComponentTouchDelay$1(component) {
+    var options = component.context.options;
+    var delay = options.selectLongPressDelay;
+    if (delay == null) {
+        delay = options.longPressDelay;
+    }
+    return delay;
+}
+function joinHitsIntoSelection(hit0, hit1, dateSelectionTransformers) {
+    var dateSpan0 = hit0.dateSpan;
+    var dateSpan1 = hit1.dateSpan;
+    var ms = [
+        dateSpan0.range.start,
+        dateSpan0.range.end,
+        dateSpan1.range.start,
+        dateSpan1.range.end,
+    ];
+    ms.sort(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.compareNumbers);
+    var props = {};
+    for (var _i = 0, dateSelectionTransformers_1 = dateSelectionTransformers; _i < dateSelectionTransformers_1.length; _i++) {
+        var transformer = dateSelectionTransformers_1[_i];
+        var res = transformer(hit0, hit1);
+        if (res === false) {
+            return null;
+        }
+        if (res) {
+            (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)(props, res);
+        }
+    }
+    props.range = { start: ms[0], end: ms[3] };
+    props.allDay = dateSpan0.allDay;
+    return props;
+}
+
+var EventDragging = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(EventDragging, _super);
+    function EventDragging(settings) {
+        var _this = _super.call(this, settings) || this;
+        // internal state
+        _this.subjectEl = null;
+        _this.subjectSeg = null; // the seg being selected/dragged
+        _this.isDragging = false;
+        _this.eventRange = null;
+        _this.relevantEvents = null; // the events being dragged
+        _this.receivingContext = null;
+        _this.validMutation = null;
+        _this.mutatedRelevantEvents = null;
+        _this.handlePointerDown = function (ev) {
+            var origTarget = ev.origEvent.target;
+            var _a = _this, component = _a.component, dragging = _a.dragging;
+            var mirror = dragging.mirror;
+            var options = component.context.options;
+            var initialContext = component.context;
+            _this.subjectEl = ev.subjectEl;
+            var subjectSeg = _this.subjectSeg = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getElSeg)(ev.subjectEl);
+            var eventRange = _this.eventRange = subjectSeg.eventRange;
+            var eventInstanceId = eventRange.instance.instanceId;
+            _this.relevantEvents = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getRelevantEvents)(initialContext.getCurrentData().eventStore, eventInstanceId);
+            dragging.minDistance = ev.isTouch ? 0 : options.eventDragMinDistance;
+            dragging.delay =
+                // only do a touch delay if touch and this event hasn't been selected yet
+                (ev.isTouch && eventInstanceId !== component.props.eventSelection) ?
+                    getComponentTouchDelay(component) :
+                    null;
+            if (options.fixedMirrorParent) {
+                mirror.parentNode = options.fixedMirrorParent;
+            }
+            else {
+                mirror.parentNode = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementClosest)(origTarget, '.fc');
+            }
+            mirror.revertDuration = options.dragRevertDuration;
+            var isValid = component.isValidSegDownEl(origTarget) &&
+                !(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementClosest)(origTarget, '.fc-event-resizer'); // NOT on a resizer
+            dragging.setIgnoreMove(!isValid);
+            // disable dragging for elements that are resizable (ie, selectable)
+            // but are not draggable
+            _this.isDragging = isValid &&
+                ev.subjectEl.classList.contains('fc-event-draggable');
+        };
+        _this.handleDragStart = function (ev) {
+            var initialContext = _this.component.context;
+            var eventRange = _this.eventRange;
+            var eventInstanceId = eventRange.instance.instanceId;
+            if (ev.isTouch) {
+                // need to select a different event?
+                if (eventInstanceId !== _this.component.props.eventSelection) {
+                    initialContext.dispatch({ type: 'SELECT_EVENT', eventInstanceId: eventInstanceId });
+                }
+            }
+            else {
+                // if now using mouse, but was previous touch interaction, clear selected event
+                initialContext.dispatch({ type: 'UNSELECT_EVENT' });
+            }
+            if (_this.isDragging) {
+                initialContext.calendarApi.unselect(ev); // unselect *date* selection
+                initialContext.emitter.trigger('eventDragStart', {
+                    el: _this.subjectEl,
+                    event: new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(initialContext, eventRange.def, eventRange.instance),
+                    jsEvent: ev.origEvent,
+                    view: initialContext.viewApi,
+                });
+            }
+        };
+        _this.handleHitUpdate = function (hit, isFinal) {
+            if (!_this.isDragging) {
+                return;
+            }
+            var relevantEvents = _this.relevantEvents;
+            var initialHit = _this.hitDragging.initialHit;
+            var initialContext = _this.component.context;
+            // states based on new hit
+            var receivingContext = null;
+            var mutation = null;
+            var mutatedRelevantEvents = null;
+            var isInvalid = false;
+            var interaction = {
+                affectedEvents: relevantEvents,
+                mutatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEmptyEventStore)(),
+                isEvent: true,
+            };
+            if (hit) {
+                receivingContext = hit.context;
+                var receivingOptions = receivingContext.options;
+                if (initialContext === receivingContext ||
+                    (receivingOptions.editable && receivingOptions.droppable)) {
+                    mutation = computeEventMutation(initialHit, hit, receivingContext.getCurrentData().pluginHooks.eventDragMutationMassagers);
+                    if (mutation) {
+                        mutatedRelevantEvents = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.applyMutationToEventStore)(relevantEvents, receivingContext.getCurrentData().eventUiBases, mutation, receivingContext);
+                        interaction.mutatedEvents = mutatedRelevantEvents;
+                        if (!(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.isInteractionValid)(interaction, hit.dateProfile, receivingContext)) {
+                            isInvalid = true;
+                            mutation = null;
+                            mutatedRelevantEvents = null;
+                            interaction.mutatedEvents = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEmptyEventStore)();
+                        }
+                    }
+                }
+                else {
+                    receivingContext = null;
+                }
+            }
+            _this.displayDrag(receivingContext, interaction);
+            if (!isInvalid) {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.enableCursor)();
+            }
+            else {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.disableCursor)();
+            }
+            if (!isFinal) {
+                if (initialContext === receivingContext && // TODO: write test for this
+                    isHitsEqual(initialHit, hit)) {
+                    mutation = null;
+                }
+                _this.dragging.setMirrorNeedsRevert(!mutation);
+                // render the mirror if no already-rendered mirror
+                // TODO: wish we could somehow wait for dispatch to guarantee render
+                _this.dragging.setMirrorIsVisible(!hit || !(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getElRoot)(_this.subjectEl).querySelector('.fc-event-mirror'));
+                // assign states based on new hit
+                _this.receivingContext = receivingContext;
+                _this.validMutation = mutation;
+                _this.mutatedRelevantEvents = mutatedRelevantEvents;
+            }
+        };
+        _this.handlePointerUp = function () {
+            if (!_this.isDragging) {
+                _this.cleanup(); // because handleDragEnd won't fire
+            }
+        };
+        _this.handleDragEnd = function (ev) {
+            if (_this.isDragging) {
+                var initialContext_1 = _this.component.context;
+                var initialView = initialContext_1.viewApi;
+                var _a = _this, receivingContext_1 = _a.receivingContext, validMutation = _a.validMutation;
+                var eventDef = _this.eventRange.def;
+                var eventInstance = _this.eventRange.instance;
+                var eventApi = new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(initialContext_1, eventDef, eventInstance);
+                var relevantEvents_1 = _this.relevantEvents;
+                var mutatedRelevantEvents_1 = _this.mutatedRelevantEvents;
+                var finalHit = _this.hitDragging.finalHit;
+                _this.clearDrag(); // must happen after revert animation
+                initialContext_1.emitter.trigger('eventDragStop', {
+                    el: _this.subjectEl,
+                    event: eventApi,
+                    jsEvent: ev.origEvent,
+                    view: initialView,
+                });
+                if (validMutation) {
+                    // dropped within same calendar
+                    if (receivingContext_1 === initialContext_1) {
+                        var updatedEventApi = new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(initialContext_1, mutatedRelevantEvents_1.defs[eventDef.defId], eventInstance ? mutatedRelevantEvents_1.instances[eventInstance.instanceId] : null);
+                        initialContext_1.dispatch({
+                            type: 'MERGE_EVENTS',
+                            eventStore: mutatedRelevantEvents_1,
+                        });
+                        var eventChangeArg = {
+                            oldEvent: eventApi,
+                            event: updatedEventApi,
+                            relatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.buildEventApis)(mutatedRelevantEvents_1, initialContext_1, eventInstance),
+                            revert: function () {
+                                initialContext_1.dispatch({
+                                    type: 'MERGE_EVENTS',
+                                    eventStore: relevantEvents_1, // the pre-change data
+                                });
+                            },
+                        };
+                        var transformed = {};
+                        for (var _i = 0, _b = initialContext_1.getCurrentData().pluginHooks.eventDropTransformers; _i < _b.length; _i++) {
+                            var transformer = _b[_i];
+                            (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)(transformed, transformer(validMutation, initialContext_1));
+                        }
+                        initialContext_1.emitter.trigger('eventDrop', (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, eventChangeArg), transformed), { el: ev.subjectEl, delta: validMutation.datesDelta, jsEvent: ev.origEvent, view: initialView }));
+                        initialContext_1.emitter.trigger('eventChange', eventChangeArg);
+                        // dropped in different calendar
+                    }
+                    else if (receivingContext_1) {
+                        var eventRemoveArg = {
+                            event: eventApi,
+                            relatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.buildEventApis)(relevantEvents_1, initialContext_1, eventInstance),
+                            revert: function () {
+                                initialContext_1.dispatch({
+                                    type: 'MERGE_EVENTS',
+                                    eventStore: relevantEvents_1,
+                                });
+                            },
+                        };
+                        initialContext_1.emitter.trigger('eventLeave', (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, eventRemoveArg), { draggedEl: ev.subjectEl, view: initialView }));
+                        initialContext_1.dispatch({
+                            type: 'REMOVE_EVENTS',
+                            eventStore: relevantEvents_1,
+                        });
+                        initialContext_1.emitter.trigger('eventRemove', eventRemoveArg);
+                        var addedEventDef = mutatedRelevantEvents_1.defs[eventDef.defId];
+                        var addedEventInstance = mutatedRelevantEvents_1.instances[eventInstance.instanceId];
+                        var addedEventApi = new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(receivingContext_1, addedEventDef, addedEventInstance);
+                        receivingContext_1.dispatch({
+                            type: 'MERGE_EVENTS',
+                            eventStore: mutatedRelevantEvents_1,
+                        });
+                        var eventAddArg = {
+                            event: addedEventApi,
+                            relatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.buildEventApis)(mutatedRelevantEvents_1, receivingContext_1, addedEventInstance),
+                            revert: function () {
+                                receivingContext_1.dispatch({
+                                    type: 'REMOVE_EVENTS',
+                                    eventStore: mutatedRelevantEvents_1,
+                                });
+                            },
+                        };
+                        receivingContext_1.emitter.trigger('eventAdd', eventAddArg);
+                        if (ev.isTouch) {
+                            receivingContext_1.dispatch({
+                                type: 'SELECT_EVENT',
+                                eventInstanceId: eventInstance.instanceId,
+                            });
+                        }
+                        receivingContext_1.emitter.trigger('drop', (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, buildDatePointApiWithContext(finalHit.dateSpan, receivingContext_1)), { draggedEl: ev.subjectEl, jsEvent: ev.origEvent, view: finalHit.context.viewApi }));
+                        receivingContext_1.emitter.trigger('eventReceive', (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, eventAddArg), { draggedEl: ev.subjectEl, view: finalHit.context.viewApi }));
+                    }
+                }
+                else {
+                    initialContext_1.emitter.trigger('_noEventDrop');
+                }
+            }
+            _this.cleanup();
+        };
+        var component = _this.component;
+        var options = component.context.options;
+        var dragging = _this.dragging = new FeaturefulElementDragging(settings.el);
+        dragging.pointer.selector = EventDragging.SELECTOR;
+        dragging.touchScrollAllowed = false;
+        dragging.autoScroller.isEnabled = options.dragScroll;
+        var hitDragging = _this.hitDragging = new HitDragging(_this.dragging, _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.interactionSettingsStore);
+        hitDragging.useSubjectCenter = settings.useEventCenter;
+        hitDragging.emitter.on('pointerdown', _this.handlePointerDown);
+        hitDragging.emitter.on('dragstart', _this.handleDragStart);
+        hitDragging.emitter.on('hitupdate', _this.handleHitUpdate);
+        hitDragging.emitter.on('pointerup', _this.handlePointerUp);
+        hitDragging.emitter.on('dragend', _this.handleDragEnd);
+        return _this;
+    }
+    EventDragging.prototype.destroy = function () {
+        this.dragging.destroy();
+    };
+    // render a drag state on the next receivingCalendar
+    EventDragging.prototype.displayDrag = function (nextContext, state) {
+        var initialContext = this.component.context;
+        var prevContext = this.receivingContext;
+        // does the previous calendar need to be cleared?
+        if (prevContext && prevContext !== nextContext) {
+            // does the initial calendar need to be cleared?
+            // if so, don't clear all the way. we still need to to hide the affectedEvents
+            if (prevContext === initialContext) {
+                prevContext.dispatch({
+                    type: 'SET_EVENT_DRAG',
+                    state: {
+                        affectedEvents: state.affectedEvents,
+                        mutatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEmptyEventStore)(),
+                        isEvent: true,
+                    },
+                });
+                // completely clear the old calendar if it wasn't the initial
+            }
+            else {
+                prevContext.dispatch({ type: 'UNSET_EVENT_DRAG' });
+            }
+        }
+        if (nextContext) {
+            nextContext.dispatch({ type: 'SET_EVENT_DRAG', state: state });
+        }
+    };
+    EventDragging.prototype.clearDrag = function () {
+        var initialCalendar = this.component.context;
+        var receivingContext = this.receivingContext;
+        if (receivingContext) {
+            receivingContext.dispatch({ type: 'UNSET_EVENT_DRAG' });
+        }
+        // the initial calendar might have an dummy drag state from displayDrag
+        if (initialCalendar !== receivingContext) {
+            initialCalendar.dispatch({ type: 'UNSET_EVENT_DRAG' });
+        }
+    };
+    EventDragging.prototype.cleanup = function () {
+        this.subjectSeg = null;
+        this.isDragging = false;
+        this.eventRange = null;
+        this.relevantEvents = null;
+        this.receivingContext = null;
+        this.validMutation = null;
+        this.mutatedRelevantEvents = null;
+    };
+    // TODO: test this in IE11
+    // QUESTION: why do we need it on the resizable???
+    EventDragging.SELECTOR = '.fc-event-draggable, .fc-event-resizable';
+    return EventDragging;
+}(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.Interaction));
+function computeEventMutation(hit0, hit1, massagers) {
+    var dateSpan0 = hit0.dateSpan;
+    var dateSpan1 = hit1.dateSpan;
+    var date0 = dateSpan0.range.start;
+    var date1 = dateSpan1.range.start;
+    var standardProps = {};
+    if (dateSpan0.allDay !== dateSpan1.allDay) {
+        standardProps.allDay = dateSpan1.allDay;
+        standardProps.hasEnd = hit1.context.options.allDayMaintainDuration;
+        if (dateSpan1.allDay) {
+            // means date1 is already start-of-day,
+            // but date0 needs to be converted
+            date0 = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.startOfDay)(date0);
+        }
+    }
+    var delta = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.diffDates)(date0, date1, hit0.context.dateEnv, hit0.componentId === hit1.componentId ?
+        hit0.largeUnit :
+        null);
+    if (delta.milliseconds) { // has hours/minutes/seconds
+        standardProps.allDay = false;
+    }
+    var mutation = {
+        datesDelta: delta,
+        standardProps: standardProps,
+    };
+    for (var _i = 0, massagers_1 = massagers; _i < massagers_1.length; _i++) {
+        var massager = massagers_1[_i];
+        massager(mutation, hit0, hit1);
+    }
+    return mutation;
+}
+function getComponentTouchDelay(component) {
+    var options = component.context.options;
+    var delay = options.eventLongPressDelay;
+    if (delay == null) {
+        delay = options.longPressDelay;
+    }
+    return delay;
+}
+
+var EventResizing = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(EventResizing, _super);
+    function EventResizing(settings) {
+        var _this = _super.call(this, settings) || this;
+        // internal state
+        _this.draggingSegEl = null;
+        _this.draggingSeg = null; // TODO: rename to resizingSeg? subjectSeg?
+        _this.eventRange = null;
+        _this.relevantEvents = null;
+        _this.validMutation = null;
+        _this.mutatedRelevantEvents = null;
+        _this.handlePointerDown = function (ev) {
+            var component = _this.component;
+            var segEl = _this.querySegEl(ev);
+            var seg = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getElSeg)(segEl);
+            var eventRange = _this.eventRange = seg.eventRange;
+            _this.dragging.minDistance = component.context.options.eventDragMinDistance;
+            // if touch, need to be working with a selected event
+            _this.dragging.setIgnoreMove(!_this.component.isValidSegDownEl(ev.origEvent.target) ||
+                (ev.isTouch && _this.component.props.eventSelection !== eventRange.instance.instanceId));
+        };
+        _this.handleDragStart = function (ev) {
+            var context = _this.component.context;
+            var eventRange = _this.eventRange;
+            _this.relevantEvents = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getRelevantEvents)(context.getCurrentData().eventStore, _this.eventRange.instance.instanceId);
+            var segEl = _this.querySegEl(ev);
+            _this.draggingSegEl = segEl;
+            _this.draggingSeg = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getElSeg)(segEl);
+            context.calendarApi.unselect();
+            context.emitter.trigger('eventResizeStart', {
+                el: segEl,
+                event: new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(context, eventRange.def, eventRange.instance),
+                jsEvent: ev.origEvent,
+                view: context.viewApi,
+            });
+        };
+        _this.handleHitUpdate = function (hit, isFinal, ev) {
+            var context = _this.component.context;
+            var relevantEvents = _this.relevantEvents;
+            var initialHit = _this.hitDragging.initialHit;
+            var eventInstance = _this.eventRange.instance;
+            var mutation = null;
+            var mutatedRelevantEvents = null;
+            var isInvalid = false;
+            var interaction = {
+                affectedEvents: relevantEvents,
+                mutatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEmptyEventStore)(),
+                isEvent: true,
+            };
+            if (hit) {
+                var disallowed = hit.componentId === initialHit.componentId
+                    && _this.isHitComboAllowed
+                    && !_this.isHitComboAllowed(initialHit, hit);
+                if (!disallowed) {
+                    mutation = computeMutation(initialHit, hit, ev.subjectEl.classList.contains('fc-event-resizer-start'), eventInstance.range);
+                }
+            }
+            if (mutation) {
+                mutatedRelevantEvents = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.applyMutationToEventStore)(relevantEvents, context.getCurrentData().eventUiBases, mutation, context);
+                interaction.mutatedEvents = mutatedRelevantEvents;
+                if (!(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.isInteractionValid)(interaction, hit.dateProfile, context)) {
+                    isInvalid = true;
+                    mutation = null;
+                    mutatedRelevantEvents = null;
+                    interaction.mutatedEvents = null;
+                }
+            }
+            if (mutatedRelevantEvents) {
+                context.dispatch({
+                    type: 'SET_EVENT_RESIZE',
+                    state: interaction,
+                });
+            }
+            else {
+                context.dispatch({ type: 'UNSET_EVENT_RESIZE' });
+            }
+            if (!isInvalid) {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.enableCursor)();
+            }
+            else {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.disableCursor)();
+            }
+            if (!isFinal) {
+                if (mutation && isHitsEqual(initialHit, hit)) {
+                    mutation = null;
+                }
+                _this.validMutation = mutation;
+                _this.mutatedRelevantEvents = mutatedRelevantEvents;
+            }
+        };
+        _this.handleDragEnd = function (ev) {
+            var context = _this.component.context;
+            var eventDef = _this.eventRange.def;
+            var eventInstance = _this.eventRange.instance;
+            var eventApi = new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(context, eventDef, eventInstance);
+            var relevantEvents = _this.relevantEvents;
+            var mutatedRelevantEvents = _this.mutatedRelevantEvents;
+            context.emitter.trigger('eventResizeStop', {
+                el: _this.draggingSegEl,
+                event: eventApi,
+                jsEvent: ev.origEvent,
+                view: context.viewApi,
+            });
+            if (_this.validMutation) {
+                var updatedEventApi = new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(context, mutatedRelevantEvents.defs[eventDef.defId], eventInstance ? mutatedRelevantEvents.instances[eventInstance.instanceId] : null);
+                context.dispatch({
+                    type: 'MERGE_EVENTS',
+                    eventStore: mutatedRelevantEvents,
+                });
+                var eventChangeArg = {
+                    oldEvent: eventApi,
+                    event: updatedEventApi,
+                    relatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.buildEventApis)(mutatedRelevantEvents, context, eventInstance),
+                    revert: function () {
+                        context.dispatch({
+                            type: 'MERGE_EVENTS',
+                            eventStore: relevantEvents, // the pre-change events
+                        });
+                    },
+                };
+                context.emitter.trigger('eventResize', (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, eventChangeArg), { el: _this.draggingSegEl, startDelta: _this.validMutation.startDelta || (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createDuration)(0), endDelta: _this.validMutation.endDelta || (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createDuration)(0), jsEvent: ev.origEvent, view: context.viewApi }));
+                context.emitter.trigger('eventChange', eventChangeArg);
+            }
+            else {
+                context.emitter.trigger('_noEventResize');
+            }
+            // reset all internal state
+            _this.draggingSeg = null;
+            _this.relevantEvents = null;
+            _this.validMutation = null;
+            // okay to keep eventInstance around. useful to set it in handlePointerDown
+        };
+        var component = settings.component;
+        var dragging = _this.dragging = new FeaturefulElementDragging(settings.el);
+        dragging.pointer.selector = '.fc-event-resizer';
+        dragging.touchScrollAllowed = false;
+        dragging.autoScroller.isEnabled = component.context.options.dragScroll;
+        var hitDragging = _this.hitDragging = new HitDragging(_this.dragging, (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.interactionSettingsToStore)(settings));
+        hitDragging.emitter.on('pointerdown', _this.handlePointerDown);
+        hitDragging.emitter.on('dragstart', _this.handleDragStart);
+        hitDragging.emitter.on('hitupdate', _this.handleHitUpdate);
+        hitDragging.emitter.on('dragend', _this.handleDragEnd);
+        return _this;
+    }
+    EventResizing.prototype.destroy = function () {
+        this.dragging.destroy();
+    };
+    EventResizing.prototype.querySegEl = function (ev) {
+        return (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementClosest)(ev.subjectEl, '.fc-event');
+    };
+    return EventResizing;
+}(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.Interaction));
+function computeMutation(hit0, hit1, isFromStart, instanceRange) {
+    var dateEnv = hit0.context.dateEnv;
+    var date0 = hit0.dateSpan.range.start;
+    var date1 = hit1.dateSpan.range.start;
+    var delta = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.diffDates)(date0, date1, dateEnv, hit0.largeUnit);
+    if (isFromStart) {
+        if (dateEnv.add(instanceRange.start, delta) < instanceRange.end) {
+            return { startDelta: delta };
+        }
+    }
+    else if (dateEnv.add(instanceRange.end, delta) > instanceRange.start) {
+        return { endDelta: delta };
+    }
+    return null;
+}
+
+var UnselectAuto = /** @class */ (function () {
+    function UnselectAuto(context) {
+        var _this = this;
+        this.context = context;
+        this.isRecentPointerDateSelect = false; // wish we could use a selector to detect date selection, but uses hit system
+        this.matchesCancel = false;
+        this.matchesEvent = false;
+        this.onSelect = function (selectInfo) {
+            if (selectInfo.jsEvent) {
+                _this.isRecentPointerDateSelect = true;
+            }
+        };
+        this.onDocumentPointerDown = function (pev) {
+            var unselectCancel = _this.context.options.unselectCancel;
+            var downEl = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getEventTargetViaRoot)(pev.origEvent);
+            _this.matchesCancel = !!(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementClosest)(downEl, unselectCancel);
+            _this.matchesEvent = !!(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementClosest)(downEl, EventDragging.SELECTOR); // interaction started on an event?
+        };
+        this.onDocumentPointerUp = function (pev) {
+            var context = _this.context;
+            var documentPointer = _this.documentPointer;
+            var calendarState = context.getCurrentData();
+            // touch-scrolling should never unfocus any type of selection
+            if (!documentPointer.wasTouchScroll) {
+                if (calendarState.dateSelection && // an existing date selection?
+                    !_this.isRecentPointerDateSelect // a new pointer-initiated date selection since last onDocumentPointerUp?
+                ) {
+                    var unselectAuto = context.options.unselectAuto;
+                    if (unselectAuto && (!unselectAuto || !_this.matchesCancel)) {
+                        context.calendarApi.unselect(pev);
+                    }
+                }
+                if (calendarState.eventSelection && // an existing event selected?
+                    !_this.matchesEvent // interaction DIDN'T start on an event
+                ) {
+                    context.dispatch({ type: 'UNSELECT_EVENT' });
+                }
+            }
+            _this.isRecentPointerDateSelect = false;
+        };
+        var documentPointer = this.documentPointer = new PointerDragging(document);
+        documentPointer.shouldIgnoreMove = true;
+        documentPointer.shouldWatchScroll = false;
+        documentPointer.emitter.on('pointerdown', this.onDocumentPointerDown);
+        documentPointer.emitter.on('pointerup', this.onDocumentPointerUp);
+        /*
+        TODO: better way to know about whether there was a selection with the pointer
+        */
+        context.emitter.on('select', this.onSelect);
+    }
+    UnselectAuto.prototype.destroy = function () {
+        this.context.emitter.off('select', this.onSelect);
+        this.documentPointer.destroy();
+    };
+    return UnselectAuto;
+}());
+
+var OPTION_REFINERS = {
+    fixedMirrorParent: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+};
+var LISTENER_REFINERS = {
+    dateClick: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventDragStart: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventDragStop: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventDrop: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventResizeStart: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventResizeStop: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventResize: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    drop: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventReceive: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+    eventLeave: _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.identity,
+};
+
+/*
+Given an already instantiated draggable object for one-or-more elements,
+Interprets any dragging as an attempt to drag an events that lives outside
+of a calendar onto a calendar.
+*/
+var ExternalElementDragging = /** @class */ (function () {
+    function ExternalElementDragging(dragging, suppliedDragMeta) {
+        var _this = this;
+        this.receivingContext = null;
+        this.droppableEvent = null; // will exist for all drags, even if create:false
+        this.suppliedDragMeta = null;
+        this.dragMeta = null;
+        this.handleDragStart = function (ev) {
+            _this.dragMeta = _this.buildDragMeta(ev.subjectEl);
+        };
+        this.handleHitUpdate = function (hit, isFinal, ev) {
+            var dragging = _this.hitDragging.dragging;
+            var receivingContext = null;
+            var droppableEvent = null;
+            var isInvalid = false;
+            var interaction = {
+                affectedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEmptyEventStore)(),
+                mutatedEvents: (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEmptyEventStore)(),
+                isEvent: _this.dragMeta.create,
+            };
+            if (hit) {
+                receivingContext = hit.context;
+                if (_this.canDropElOnCalendar(ev.subjectEl, receivingContext)) {
+                    droppableEvent = computeEventForDateSpan(hit.dateSpan, _this.dragMeta, receivingContext);
+                    interaction.mutatedEvents = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.eventTupleToStore)(droppableEvent);
+                    isInvalid = !(0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.isInteractionValid)(interaction, hit.dateProfile, receivingContext);
+                    if (isInvalid) {
+                        interaction.mutatedEvents = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEmptyEventStore)();
+                        droppableEvent = null;
+                    }
+                }
+            }
+            _this.displayDrag(receivingContext, interaction);
+            // show mirror if no already-rendered mirror element OR if we are shutting down the mirror (?)
+            // TODO: wish we could somehow wait for dispatch to guarantee render
+            dragging.setMirrorIsVisible(isFinal || !droppableEvent || !document.querySelector('.fc-event-mirror'));
+            if (!isInvalid) {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.enableCursor)();
+            }
+            else {
+                (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.disableCursor)();
+            }
+            if (!isFinal) {
+                dragging.setMirrorNeedsRevert(!droppableEvent);
+                _this.receivingContext = receivingContext;
+                _this.droppableEvent = droppableEvent;
+            }
+        };
+        this.handleDragEnd = function (pev) {
+            var _a = _this, receivingContext = _a.receivingContext, droppableEvent = _a.droppableEvent;
+            _this.clearDrag();
+            if (receivingContext && droppableEvent) {
+                var finalHit = _this.hitDragging.finalHit;
+                var finalView = finalHit.context.viewApi;
+                var dragMeta = _this.dragMeta;
+                receivingContext.emitter.trigger('drop', (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, buildDatePointApiWithContext(finalHit.dateSpan, receivingContext)), { draggedEl: pev.subjectEl, jsEvent: pev.origEvent, view: finalView }));
+                if (dragMeta.create) {
+                    var addingEvents_1 = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.eventTupleToStore)(droppableEvent);
+                    receivingContext.dispatch({
+                        type: 'MERGE_EVENTS',
+                        eventStore: addingEvents_1,
+                    });
+                    if (pev.isTouch) {
+                        receivingContext.dispatch({
+                            type: 'SELECT_EVENT',
+                            eventInstanceId: droppableEvent.instance.instanceId,
+                        });
+                    }
+                    // signal that an external event landed
+                    receivingContext.emitter.trigger('eventReceive', {
+                        event: new _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.EventApi(receivingContext, droppableEvent.def, droppableEvent.instance),
+                        relatedEvents: [],
+                        revert: function () {
+                            receivingContext.dispatch({
+                                type: 'REMOVE_EVENTS',
+                                eventStore: addingEvents_1,
+                            });
+                        },
+                        draggedEl: pev.subjectEl,
+                        view: finalView,
+                    });
+                }
+            }
+            _this.receivingContext = null;
+            _this.droppableEvent = null;
+        };
+        var hitDragging = this.hitDragging = new HitDragging(dragging, _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.interactionSettingsStore);
+        hitDragging.requireInitial = false; // will start outside of a component
+        hitDragging.emitter.on('dragstart', this.handleDragStart);
+        hitDragging.emitter.on('hitupdate', this.handleHitUpdate);
+        hitDragging.emitter.on('dragend', this.handleDragEnd);
+        this.suppliedDragMeta = suppliedDragMeta;
+    }
+    ExternalElementDragging.prototype.buildDragMeta = function (subjectEl) {
+        if (typeof this.suppliedDragMeta === 'object') {
+            return (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.parseDragMeta)(this.suppliedDragMeta);
+        }
+        if (typeof this.suppliedDragMeta === 'function') {
+            return (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.parseDragMeta)(this.suppliedDragMeta(subjectEl));
+        }
+        return getDragMetaFromEl(subjectEl);
+    };
+    ExternalElementDragging.prototype.displayDrag = function (nextContext, state) {
+        var prevContext = this.receivingContext;
+        if (prevContext && prevContext !== nextContext) {
+            prevContext.dispatch({ type: 'UNSET_EVENT_DRAG' });
+        }
+        if (nextContext) {
+            nextContext.dispatch({ type: 'SET_EVENT_DRAG', state: state });
+        }
+    };
+    ExternalElementDragging.prototype.clearDrag = function () {
+        if (this.receivingContext) {
+            this.receivingContext.dispatch({ type: 'UNSET_EVENT_DRAG' });
+        }
+    };
+    ExternalElementDragging.prototype.canDropElOnCalendar = function (el, receivingContext) {
+        var dropAccept = receivingContext.options.dropAccept;
+        if (typeof dropAccept === 'function') {
+            return dropAccept.call(receivingContext.calendarApi, el);
+        }
+        if (typeof dropAccept === 'string' && dropAccept) {
+            return Boolean((0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.elementMatches)(el, dropAccept));
+        }
+        return true;
+    };
+    return ExternalElementDragging;
+}());
+// Utils for computing event store from the DragMeta
+// ----------------------------------------------------------------------------------------------------
+function computeEventForDateSpan(dateSpan, dragMeta, context) {
+    var defProps = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, dragMeta.leftoverProps);
+    for (var _i = 0, _a = context.pluginHooks.externalDefTransforms; _i < _a.length; _i++) {
+        var transform = _a[_i];
+        (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)(defProps, transform(dateSpan, dragMeta));
+    }
+    var _b = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.refineEventDef)(defProps, context), refined = _b.refined, extra = _b.extra;
+    var def = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.parseEventDef)(refined, extra, dragMeta.sourceId, dateSpan.allDay, context.options.forceEventDuration || Boolean(dragMeta.duration), // hasEnd
+    context);
+    var start = dateSpan.range.start;
+    // only rely on time info if drop zone is all-day,
+    // otherwise, we already know the time
+    if (dateSpan.allDay && dragMeta.startTime) {
+        start = context.dateEnv.add(start, dragMeta.startTime);
+    }
+    var end = dragMeta.duration ?
+        context.dateEnv.add(start, dragMeta.duration) :
+        (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.getDefaultEventEnd)(dateSpan.allDay, start, context);
+    var instance = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createEventInstance)(def.defId, { start: start, end: end });
+    return { def: def, instance: instance };
+}
+// Utils for extracting data from element
+// ----------------------------------------------------------------------------------------------------
+function getDragMetaFromEl(el) {
+    var str = getEmbeddedElData(el, 'event');
+    var obj = str ?
+        JSON.parse(str) :
+        { create: false }; // if no embedded data, assume no event creation
+    return (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.parseDragMeta)(obj);
+}
+_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.config.dataAttrPrefix = '';
+function getEmbeddedElData(el, name) {
+    var prefix = _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.config.dataAttrPrefix;
+    var prefixedName = (prefix ? prefix + '-' : '') + name;
+    return el.getAttribute('data-' + prefixedName) || '';
+}
+
+/*
+Makes an element (that is *external* to any calendar) draggable.
+Can pass in data that determines how an event will be created when dropped onto a calendar.
+Leverages FullCalendar's internal drag-n-drop functionality WITHOUT a third-party drag system.
+*/
+var ExternalDraggable = /** @class */ (function () {
+    function ExternalDraggable(el, settings) {
+        var _this = this;
+        if (settings === void 0) { settings = {}; }
+        this.handlePointerDown = function (ev) {
+            var dragging = _this.dragging;
+            var _a = _this.settings, minDistance = _a.minDistance, longPressDelay = _a.longPressDelay;
+            dragging.minDistance =
+                minDistance != null ?
+                    minDistance :
+                    (ev.isTouch ? 0 : _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.BASE_OPTION_DEFAULTS.eventDragMinDistance);
+            dragging.delay =
+                ev.isTouch ? // TODO: eventually read eventLongPressDelay instead vvv
+                    (longPressDelay != null ? longPressDelay : _fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.BASE_OPTION_DEFAULTS.longPressDelay) :
+                    0;
+        };
+        this.handleDragStart = function (ev) {
+            if (ev.isTouch &&
+                _this.dragging.delay &&
+                ev.subjectEl.classList.contains('fc-event')) {
+                _this.dragging.mirror.getMirrorEl().classList.add('fc-event-selected');
+            }
+        };
+        this.settings = settings;
+        var dragging = this.dragging = new FeaturefulElementDragging(el);
+        dragging.touchScrollAllowed = false;
+        if (settings.itemSelector != null) {
+            dragging.pointer.selector = settings.itemSelector;
+        }
+        if (settings.appendTo != null) {
+            dragging.mirror.parentNode = settings.appendTo; // TODO: write tests
+        }
+        dragging.emitter.on('pointerdown', this.handlePointerDown);
+        dragging.emitter.on('dragstart', this.handleDragStart);
+        new ExternalElementDragging(dragging, settings.eventData); // eslint-disable-line no-new
+    }
+    ExternalDraggable.prototype.destroy = function () {
+        this.dragging.destroy();
+    };
+    return ExternalDraggable;
+}());
+
+/*
+Detects when a *THIRD-PARTY* drag-n-drop system interacts with elements.
+The third-party system is responsible for drawing the visuals effects of the drag.
+This class simply monitors for pointer movements and fires events.
+It also has the ability to hide the moving element (the "mirror") during the drag.
+*/
+var InferredElementDragging = /** @class */ (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__extends)(InferredElementDragging, _super);
+    function InferredElementDragging(containerEl) {
+        var _this = _super.call(this, containerEl) || this;
+        _this.shouldIgnoreMove = false;
+        _this.mirrorSelector = '';
+        _this.currentMirrorEl = null;
+        _this.handlePointerDown = function (ev) {
+            _this.emitter.trigger('pointerdown', ev);
+            if (!_this.shouldIgnoreMove) {
+                // fire dragstart right away. does not support delay or min-distance
+                _this.emitter.trigger('dragstart', ev);
+            }
+        };
+        _this.handlePointerMove = function (ev) {
+            if (!_this.shouldIgnoreMove) {
+                _this.emitter.trigger('dragmove', ev);
+            }
+        };
+        _this.handlePointerUp = function (ev) {
+            _this.emitter.trigger('pointerup', ev);
+            if (!_this.shouldIgnoreMove) {
+                // fire dragend right away. does not support a revert animation
+                _this.emitter.trigger('dragend', ev);
+            }
+        };
+        var pointer = _this.pointer = new PointerDragging(containerEl);
+        pointer.emitter.on('pointerdown', _this.handlePointerDown);
+        pointer.emitter.on('pointermove', _this.handlePointerMove);
+        pointer.emitter.on('pointerup', _this.handlePointerUp);
+        return _this;
+    }
+    InferredElementDragging.prototype.destroy = function () {
+        this.pointer.destroy();
+    };
+    InferredElementDragging.prototype.setIgnoreMove = function (bool) {
+        this.shouldIgnoreMove = bool;
+    };
+    InferredElementDragging.prototype.setMirrorIsVisible = function (bool) {
+        if (bool) {
+            // restore a previously hidden element.
+            // use the reference in case the selector class has already been removed.
+            if (this.currentMirrorEl) {
+                this.currentMirrorEl.style.visibility = '';
+                this.currentMirrorEl = null;
+            }
+        }
+        else {
+            var mirrorEl = this.mirrorSelector
+                // TODO: somehow query FullCalendars WITHIN shadow-roots
+                ? document.querySelector(this.mirrorSelector)
+                : null;
+            if (mirrorEl) {
+                this.currentMirrorEl = mirrorEl;
+                mirrorEl.style.visibility = 'hidden';
+            }
+        }
+    };
+    return InferredElementDragging;
+}(_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.ElementDragging));
+
+/*
+Bridges third-party drag-n-drop systems with FullCalendar.
+Must be instantiated and destroyed by caller.
+*/
+var ThirdPartyDraggable = /** @class */ (function () {
+    function ThirdPartyDraggable(containerOrSettings, settings) {
+        var containerEl = document;
+        if (
+        // wish we could just test instanceof EventTarget, but doesn't work in IE11
+        containerOrSettings === document ||
+            containerOrSettings instanceof Element) {
+            containerEl = containerOrSettings;
+            settings = settings || {};
+        }
+        else {
+            settings = (containerOrSettings || {});
+        }
+        var dragging = this.dragging = new InferredElementDragging(containerEl);
+        if (typeof settings.itemSelector === 'string') {
+            dragging.pointer.selector = settings.itemSelector;
+        }
+        else if (containerEl === document) {
+            dragging.pointer.selector = '[data-event]';
+        }
+        if (typeof settings.mirrorSelector === 'string') {
+            dragging.mirrorSelector = settings.mirrorSelector;
+        }
+        new ExternalElementDragging(dragging, settings.eventData); // eslint-disable-line no-new
+    }
+    ThirdPartyDraggable.prototype.destroy = function () {
+        this.dragging.destroy();
+    };
+    return ThirdPartyDraggable;
+}());
+
+var main = (0,_fullcalendar_common__WEBPACK_IMPORTED_MODULE_0__.createPlugin)({
+    componentInteractions: [DateClicking, DateSelecting, EventDragging, EventResizing],
+    calendarInteractions: [UnselectAuto],
+    elementDraggingImpl: FeaturefulElementDragging,
+    optionRefiners: OPTION_REFINERS,
+    listenerRefiners: LISTENER_REFINERS,
 });
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);
@@ -16751,10 +20735,123 @@ function VerifyEmail(_ref) {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Calendar.js":
-/*!****************************************!*\
-  !*** ./resources/js/Pages/Calendar.js ***!
-  \****************************************/
+/***/ "./resources/js/Pages/Calendar/AddEventModal.js":
+/*!******************************************************!*\
+  !*** ./resources/js/Pages/Calendar/AddEventModal.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-modal */ "./node_modules/react-modal/lib/index.js");
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+var modalStyle = {
+  overlay: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    backgroundColor: "rgba(0,0,0,0.85)"
+  },
+  content: {
+    position: "absolute",
+    top: "5rem",
+    left: "5rem",
+    right: "5rem",
+    bottom: "5rem",
+    backgroundColor: "white",
+    borderRadius: "1rem",
+    padding: "1.5rem",
+    marginRight: "5%",
+    marginLeft: "5%"
+  }
+};
+react_modal__WEBPACK_IMPORTED_MODULE_1___default().setAppElement("#root");
+
+var AddEventModal = function AddEventModal(props) {
+  var modalIsOpen = props.modalIsOpen,
+      setIsOpen = props.setIsOpen,
+      data = props.data,
+      setData = props.setData,
+      handleSubmit = props.handleSubmit;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    className: "App",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)((react_modal__WEBPACK_IMPORTED_MODULE_1___default()), {
+      isOpen: modalIsOpen,
+      style: modalStyle,
+      onRequestClose: function onRequestClose() {
+        return setIsOpen(false);
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "text-center relative top-1/2 -translate-y-2/4",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "flex justify-center items-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: "event title"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "text",
+            className: "w-6/12 m-5",
+            name: "title",
+            onChange: function onChange(e) {
+              return setData("event_name", e.target.value);
+            }
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "flex justify-center items-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: "start date"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "datetime-local",
+            className: "w-6/12 m-5",
+            name: "start_date",
+            value: data.start_date,
+            onChange: function onChange(e) {
+              return setData("start_date", e.target.value);
+            }
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "flex justify-center items-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: "start date"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "datetime-local",
+            className: "w-6/12 m-5",
+            name: "end_date",
+            value: data.end_date,
+            onChange: function onChange(e) {
+              return setData("end_date", e.target.value);
+            }
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          onClick: handleSubmit,
+          className: "px-4 py-2 text-white bg-gray-500 rounded",
+          children: "send"
+        })]
+      })
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddEventModal);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Calendar/Calendar.js":
+/*!*************************************************!*\
+  !*** ./resources/js/Pages/Calendar/Calendar.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16766,8 +20863,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fullcalendar_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fullcalendar/react */ "./node_modules/@fullcalendar/react/dist/main.js");
 /* harmony import */ var _fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fullcalendar/daygrid */ "./node_modules/@fullcalendar/daygrid/main.js");
 /* harmony import */ var _Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Layouts/Authenticated */ "./resources/js/Layouts/Authenticated.js");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fullcalendar/interaction */ "./node_modules/@fullcalendar/interaction/main.js");
+/* harmony import */ var _fullcalendar_core_locales_all__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fullcalendar/core/locales-all */ "./node_modules/@fullcalendar/core/locales-all.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _AddEventModal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AddEventModal */ "./resources/js/Pages/Calendar/AddEventModal.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
 
 
 
@@ -16777,47 +20894,78 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Calendar = function Calendar(props) {
-  var schedules = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.usePage)().props.schedules;
-  console.log(schedules);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  var schedules = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.usePage)().props.schedules;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      modalIsOpen = _useState2[0],
+      setIsOpen = _useState2[1];
+
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.useForm)({
+    event_name: "",
+    start_date: "",
+    end_date: ""
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      post = _useForm.post; // console.log(schedules);
+
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__.Inertia.post(route("schedules.store"), data);
+    setIsOpen(false);
+  };
+
+  var handleDateClick = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (arg) {
+    console.log(arg.dateStr);
+    setData({
+      event_name: "",
+      start_date: arg.dateStr + "T00:00",
+      end_date: arg.dateStr + "T00:00"
+    });
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_3__["default"], {
     auth: props.auth,
     error: props.error,
-    header: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h2", {
-      className: "font-semibold text-xl text-gray-800 leading-tight",
-      children: "Dashboard"
-    }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.Head, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.Head, {
       title: "Calendar"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
       className: "my-10 mx-20",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_fullcalendar_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"]],
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_AddEventModal__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        modalIsOpen: modalIsOpen,
+        setIsOpen: setIsOpen,
+        data: data,
+        setData: setData,
+        handleSubmit: handleSubmit
+      }), modalIsOpen ? null : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_fullcalendar_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_4__["default"]],
         initialView: "dayGridMonth",
         locale: "ja",
+        locales: _fullcalendar_core_locales_all__WEBPACK_IMPORTED_MODULE_5__["default"],
         titleFormat: {
           year: "2-digit",
           month: "2-digit",
           day: "2-digit"
         },
         headerToolbar: {
-          start: "title",
+          start: "dayGridMonth,dayGridWeek,dayGridDay",
           // leftと書いてもよい
-          center: "myCustomButton",
-          end: "today prev,next"
+          center: "title",
+          end: "myCustomButton today prev,next"
         },
-        events: schedules,
         customButtons: {
           myCustomButton: {
-            // カスタムボタンの名前
-            text: "カスタムボタン!",
-            // 画面に表示されるテキスト
+            text: "add event",
             click: function click() {
-              // クリックイベントを設定できる
-              alert("clicked the custom button!");
+              setIsOpen(true);
             }
           }
-        }
-      })
+        },
+        selectable: "true",
+        events: schedules,
+        dateClick: handleDateClick
+      })]
     })]
   });
 };
@@ -18505,6 +22653,53 @@ deepmerge.all = function deepmergeAll(array, options) {
 var deepmerge_1 = deepmerge;
 
 module.exports = deepmerge_1;
+
+
+/***/ }),
+
+/***/ "./node_modules/exenv/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/exenv/index.js ***!
+  \*************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2015 Jed Watson.
+  Based on code that is Copyright 2013-2015, Facebook, Inc.
+  All rights reserved.
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var canUseDOM = !!(
+		typeof window !== 'undefined' &&
+		window.document &&
+		window.document.createElement
+	);
+
+	var ExecutionEnvironment = {
+
+		canUseDOM: canUseDOM,
+
+		canUseWorkers: typeof Worker !== 'undefined',
+
+		canUseEventListeners:
+			canUseDOM && !!(window.addEventListener || window.attachEvent),
+
+		canUseViewport: canUseDOM && !!window.screen
+
+	};
+
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return ExecutionEnvironment;
+		}).call(exports, __webpack_require__, exports, module),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+
+}());
 
 
 /***/ }),
@@ -39404,6 +43599,800 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/checkPropTypes.js":
+/*!***************************************************!*\
+  !*** ./node_modules/prop-types/checkPropTypes.js ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var printWarning = function() {};
+
+if (true) {
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+  var loggedTypeFailures = {};
+  var has = __webpack_require__(/*! ./lib/has */ "./node_modules/prop-types/lib/has.js");
+
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) { /**/ }
+  };
+}
+
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */
+function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+  if (true) {
+    for (var typeSpecName in typeSpecs) {
+      if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+          // This is intentionally an invariant that gets caught. It's the same
+          // behavior as without this statement except with a better message.
+          if (typeof typeSpecs[typeSpecName] !== 'function') {
+            var err = Error(
+              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
+              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' +
+              'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.'
+            );
+            err.name = 'Invariant Violation';
+            throw err;
+          }
+          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+          error = ex;
+        }
+        if (error && !(error instanceof Error)) {
+          printWarning(
+            (componentName || 'React class') + ': type specification of ' +
+            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
+            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
+            'You may have forgotten to pass an argument to the type checker ' +
+            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
+            'shape all require an argument).'
+          );
+        }
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+          // Only monitor this failure once because there tends to be a lot of the
+          // same error.
+          loggedTypeFailures[error.message] = true;
+
+          var stack = getStack ? getStack() : '';
+
+          printWarning(
+            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
+          );
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */
+checkPropTypes.resetWarningCache = function() {
+  if (true) {
+    loggedTypeFailures = {};
+  }
+}
+
+module.exports = checkPropTypes;
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
+/*!************************************************************!*\
+  !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+var has = __webpack_require__(/*! ./lib/has */ "./node_modules/prop-types/lib/has.js");
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+
+var printWarning = function() {};
+
+if (true) {
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+
+function emptyFunctionThatReturnsNull() {
+  return null;
+}
+
+module.exports = function(isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+  var ANONYMOUS = '<<anonymous>>';
+
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bigint: createPrimitiveTypeChecker('bigint'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
+
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    elementType: createElementTypeTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker,
+  };
+
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+  function PropTypeError(message, data) {
+    this.message = message;
+    this.data = data && typeof data === 'object' ? data: {};
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
+
+  function createChainableTypeChecker(validate) {
+    if (true) {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          var err = new Error(
+            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+            'Use `PropTypes.checkPropTypes()` to call them. ' +
+            'Read more at http://fb.me/use-check-prop-types'
+          );
+          err.name = 'Invariant Violation';
+          throw err;
+        } else if ( true && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (
+            !manualPropTypeCallCache[cacheKey] &&
+            // Avoid spamming the console because they are often not actionable except for lib authors
+            manualPropTypeWarningCount < 3
+          ) {
+            printWarning(
+              'You are manually calling a React.PropTypes validation ' +
+              'function for the `' + propFullName + '` prop on `' + componentName + '`. This is deprecated ' +
+              'and will throw in the standalone `prop-types` package. ' +
+              'You may be seeing this warning due to a third-party PropTypes ' +
+              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
+            );
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+
+        return new PropTypeError(
+          'Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'),
+          {expectedType: expectedType}
+        );
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!ReactIs.isValidElementType(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      if (true) {
+        if (arguments.length > 1) {
+          printWarning(
+            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
+            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
+          );
+        } else {
+          printWarning('Invalid argument supplied to oneOf, expected an array.');
+        }
+      }
+      return emptyFunctionThatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+        var type = getPreciseType(value);
+        if (type === 'symbol') {
+          return String(value);
+        }
+        return value;
+      });
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (has(propValue, key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : 0;
+      return emptyFunctionThatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        printWarning(
+          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
+          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
+        );
+        return emptyFunctionThatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var expectedTypes = [];
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+        if (checkerResult == null) {
+          return null;
+        }
+        if (checkerResult.data && has(checkerResult.data, 'expectedType')) {
+          expectedTypes.push(checkerResult.data.expectedType);
+        }
+      }
+      var expectedTypesMessage = (expectedTypes.length > 0) ? ', expected one of type [' + expectedTypes.join(', ') + ']': '';
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`' + expectedTypesMessage + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function invalidValidatorError(componentName, location, propFullName, key, type) {
+    return new PropTypeError(
+      (componentName || 'React class') + ': ' + location + ' type `' + propFullName + '.' + key + '` is invalid; ' +
+      'it must be a function, usually from the `prop-types` package, but received `' + type + '`.'
+    );
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (typeof checker !== 'function') {
+          return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (has(shapeTypes, key) && typeof checker !== 'function') {
+          return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+        }
+        if (!checker) {
+          return new PropTypeError(
+            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
+            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
+            '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  ')
+          );
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (typeof propValue) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // falsy value can't be a Symbol
+    if (!propValue) {
+      return false;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue;
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
+} else {}
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/lib/has.js":
+/*!********************************************!*\
+  !*** ./node_modules/prop-types/lib/has.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 
 
 /***/ }),
@@ -71453,6 +76442,1991 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+}
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-is/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "polyfill": () => (/* binding */ polyfill)
+/* harmony export */ });
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+function componentWillMount() {
+  // Call this.constructor.gDSFP to support sub-classes.
+  var state = this.constructor.getDerivedStateFromProps(this.props, this.state);
+  if (state !== null && state !== undefined) {
+    this.setState(state);
+  }
+}
+
+function componentWillReceiveProps(nextProps) {
+  // Call this.constructor.gDSFP to support sub-classes.
+  // Use the setState() updater to ensure state isn't stale in certain edge cases.
+  function updater(prevState) {
+    var state = this.constructor.getDerivedStateFromProps(nextProps, prevState);
+    return state !== null && state !== undefined ? state : null;
+  }
+  // Binding "this" is important for shallow renderer support.
+  this.setState(updater.bind(this));
+}
+
+function componentWillUpdate(nextProps, nextState) {
+  try {
+    var prevProps = this.props;
+    var prevState = this.state;
+    this.props = nextProps;
+    this.state = nextState;
+    this.__reactInternalSnapshotFlag = true;
+    this.__reactInternalSnapshot = this.getSnapshotBeforeUpdate(
+      prevProps,
+      prevState
+    );
+  } finally {
+    this.props = prevProps;
+    this.state = prevState;
+  }
+}
+
+// React may warn about cWM/cWRP/cWU methods being deprecated.
+// Add a flag to suppress these warnings for this special case.
+componentWillMount.__suppressDeprecationWarning = true;
+componentWillReceiveProps.__suppressDeprecationWarning = true;
+componentWillUpdate.__suppressDeprecationWarning = true;
+
+function polyfill(Component) {
+  var prototype = Component.prototype;
+
+  if (!prototype || !prototype.isReactComponent) {
+    throw new Error('Can only polyfill class components');
+  }
+
+  if (
+    typeof Component.getDerivedStateFromProps !== 'function' &&
+    typeof prototype.getSnapshotBeforeUpdate !== 'function'
+  ) {
+    return Component;
+  }
+
+  // If new component APIs are defined, "unsafe" lifecycles won't be called.
+  // Error if any of these lifecycles are present,
+  // Because they would work differently between older and newer (16.3+) versions of React.
+  var foundWillMountName = null;
+  var foundWillReceivePropsName = null;
+  var foundWillUpdateName = null;
+  if (typeof prototype.componentWillMount === 'function') {
+    foundWillMountName = 'componentWillMount';
+  } else if (typeof prototype.UNSAFE_componentWillMount === 'function') {
+    foundWillMountName = 'UNSAFE_componentWillMount';
+  }
+  if (typeof prototype.componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'componentWillReceiveProps';
+  } else if (typeof prototype.UNSAFE_componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'UNSAFE_componentWillReceiveProps';
+  }
+  if (typeof prototype.componentWillUpdate === 'function') {
+    foundWillUpdateName = 'componentWillUpdate';
+  } else if (typeof prototype.UNSAFE_componentWillUpdate === 'function') {
+    foundWillUpdateName = 'UNSAFE_componentWillUpdate';
+  }
+  if (
+    foundWillMountName !== null ||
+    foundWillReceivePropsName !== null ||
+    foundWillUpdateName !== null
+  ) {
+    var componentName = Component.displayName || Component.name;
+    var newApiName =
+      typeof Component.getDerivedStateFromProps === 'function'
+        ? 'getDerivedStateFromProps()'
+        : 'getSnapshotBeforeUpdate()';
+
+    throw Error(
+      'Unsafe legacy lifecycles will not be called for components using new component APIs.\n\n' +
+        componentName +
+        ' uses ' +
+        newApiName +
+        ' but also contains the following legacy lifecycles:' +
+        (foundWillMountName !== null ? '\n  ' + foundWillMountName : '') +
+        (foundWillReceivePropsName !== null
+          ? '\n  ' + foundWillReceivePropsName
+          : '') +
+        (foundWillUpdateName !== null ? '\n  ' + foundWillUpdateName : '') +
+        '\n\nThe above lifecycles should be removed. Learn more about this warning here:\n' +
+        'https://fb.me/react-async-component-lifecycle-hooks'
+    );
+  }
+
+  // React <= 16.2 does not support static getDerivedStateFromProps.
+  // As a workaround, use cWM and cWRP to invoke the new static lifecycle.
+  // Newer versions of React will ignore these lifecycles if gDSFP exists.
+  if (typeof Component.getDerivedStateFromProps === 'function') {
+    prototype.componentWillMount = componentWillMount;
+    prototype.componentWillReceiveProps = componentWillReceiveProps;
+  }
+
+  // React <= 16.2 does not support getSnapshotBeforeUpdate.
+  // As a workaround, use cWU to invoke the new lifecycle.
+  // Newer versions of React will ignore that lifecycle if gSBU exists.
+  if (typeof prototype.getSnapshotBeforeUpdate === 'function') {
+    if (typeof prototype.componentDidUpdate !== 'function') {
+      throw new Error(
+        'Cannot polyfill getSnapshotBeforeUpdate() for components that do not define componentDidUpdate() on the prototype'
+      );
+    }
+
+    prototype.componentWillUpdate = componentWillUpdate;
+
+    var componentDidUpdate = prototype.componentDidUpdate;
+
+    prototype.componentDidUpdate = function componentDidUpdatePolyfill(
+      prevProps,
+      prevState,
+      maybeSnapshot
+    ) {
+      // 16.3+ will not execute our will-update method;
+      // It will pass a snapshot value to did-update though.
+      // Older versions will require our polyfilled will-update value.
+      // We need to handle both cases, but can't just check for the presence of "maybeSnapshot",
+      // Because for <= 15.x versions this might be a "prevContext" object.
+      // We also can't just check "__reactInternalSnapshot",
+      // Because get-snapshot might return a falsy value.
+      // So check for the explicit __reactInternalSnapshotFlag flag to determine behavior.
+      var snapshot = this.__reactInternalSnapshotFlag
+        ? this.__reactInternalSnapshot
+        : maybeSnapshot;
+
+      componentDidUpdate.call(this, prevProps, prevState, snapshot);
+    };
+  }
+
+  return Component;
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/components/Modal.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/components/Modal.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.bodyOpenClassName = exports.portalClassName = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _ModalPortal = __webpack_require__(/*! ./ModalPortal */ "./node_modules/react-modal/lib/components/ModalPortal.js");
+
+var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
+
+var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
+
+var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
+
+var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
+
+var _reactLifecyclesCompat = __webpack_require__(/*! react-lifecycles-compat */ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var portalClassName = exports.portalClassName = "ReactModalPortal";
+var bodyOpenClassName = exports.bodyOpenClassName = "ReactModal__Body--open";
+
+var isReact16 = _safeHTMLElement.canUseDOM && _reactDom2.default.createPortal !== undefined;
+
+var createHTMLElement = function createHTMLElement(name) {
+  return document.createElement(name);
+};
+
+var getCreatePortal = function getCreatePortal() {
+  return isReact16 ? _reactDom2.default.createPortal : _reactDom2.default.unstable_renderSubtreeIntoContainer;
+};
+
+function getParentElement(parentSelector) {
+  return parentSelector();
+}
+
+var Modal = function (_Component) {
+  _inherits(Modal, _Component);
+
+  function Modal() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Modal);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Modal.__proto__ || Object.getPrototypeOf(Modal)).call.apply(_ref, [this].concat(args))), _this), _this.removePortal = function () {
+      !isReact16 && _reactDom2.default.unmountComponentAtNode(_this.node);
+      var parent = getParentElement(_this.props.parentSelector);
+      if (parent && parent.contains(_this.node)) {
+        parent.removeChild(_this.node);
+      } else {
+        // eslint-disable-next-line no-console
+        console.warn('React-Modal: "parentSelector" prop did not returned any DOM ' + "element. Make sure that the parent element is unmounted to " + "avoid any memory leaks.");
+      }
+    }, _this.portalRef = function (ref) {
+      _this.portal = ref;
+    }, _this.renderPortal = function (props) {
+      var createPortal = getCreatePortal();
+      var portal = createPortal(_this, _react2.default.createElement(_ModalPortal2.default, _extends({ defaultStyles: Modal.defaultStyles }, props)), _this.node);
+      _this.portalRef(portal);
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Modal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (!_safeHTMLElement.canUseDOM) return;
+
+      if (!isReact16) {
+        this.node = createHTMLElement("div");
+      }
+      this.node.className = this.props.portalClassName;
+
+      var parent = getParentElement(this.props.parentSelector);
+      parent.appendChild(this.node);
+
+      !isReact16 && this.renderPortal(this.props);
+    }
+  }, {
+    key: "getSnapshotBeforeUpdate",
+    value: function getSnapshotBeforeUpdate(prevProps) {
+      var prevParent = getParentElement(prevProps.parentSelector);
+      var nextParent = getParentElement(this.props.parentSelector);
+      return { prevParent: prevParent, nextParent: nextParent };
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, _, snapshot) {
+      if (!_safeHTMLElement.canUseDOM) return;
+      var _props = this.props,
+          isOpen = _props.isOpen,
+          portalClassName = _props.portalClassName;
+
+
+      if (prevProps.portalClassName !== portalClassName) {
+        this.node.className = portalClassName;
+      }
+
+      var prevParent = snapshot.prevParent,
+          nextParent = snapshot.nextParent;
+
+      if (nextParent !== prevParent) {
+        prevParent.removeChild(this.node);
+        nextParent.appendChild(this.node);
+      }
+
+      // Stop unnecessary renders if modal is remaining closed
+      if (!prevProps.isOpen && !isOpen) return;
+
+      !isReact16 && this.renderPortal(this.props);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (!_safeHTMLElement.canUseDOM || !this.node || !this.portal) return;
+
+      var state = this.portal.state;
+      var now = Date.now();
+      var closesAt = state.isOpen && this.props.closeTimeoutMS && (state.closesAt || now + this.props.closeTimeoutMS);
+
+      if (closesAt) {
+        if (!state.beforeClose) {
+          this.portal.closeWithTimeout();
+        }
+
+        setTimeout(this.removePortal, closesAt - now);
+      } else {
+        this.removePortal();
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (!_safeHTMLElement.canUseDOM || !isReact16) {
+        return null;
+      }
+
+      if (!this.node && isReact16) {
+        this.node = createHTMLElement("div");
+      }
+
+      var createPortal = getCreatePortal();
+      return createPortal(_react2.default.createElement(_ModalPortal2.default, _extends({
+        ref: this.portalRef,
+        defaultStyles: Modal.defaultStyles
+      }, this.props)), this.node);
+    }
+  }], [{
+    key: "setAppElement",
+    value: function setAppElement(element) {
+      ariaAppHider.setElement(element);
+    }
+
+    /* eslint-disable react/no-unused-prop-types */
+
+    /* eslint-enable react/no-unused-prop-types */
+
+  }]);
+
+  return Modal;
+}(_react.Component);
+
+Modal.propTypes = {
+  isOpen: _propTypes2.default.bool.isRequired,
+  style: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  portalClassName: _propTypes2.default.string,
+  bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
+  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
+    base: _propTypes2.default.string.isRequired,
+    afterOpen: _propTypes2.default.string.isRequired,
+    beforeClose: _propTypes2.default.string.isRequired
+  })]),
+  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
+    base: _propTypes2.default.string.isRequired,
+    afterOpen: _propTypes2.default.string.isRequired,
+    beforeClose: _propTypes2.default.string.isRequired
+  })]),
+  appElement: _propTypes2.default.oneOfType([_propTypes2.default.instanceOf(_safeHTMLElement2.default), _propTypes2.default.instanceOf(_safeHTMLElement.SafeHTMLCollection), _propTypes2.default.instanceOf(_safeHTMLElement.SafeNodeList), _propTypes2.default.arrayOf(_propTypes2.default.instanceOf(_safeHTMLElement2.default))]),
+  onAfterOpen: _propTypes2.default.func,
+  onRequestClose: _propTypes2.default.func,
+  closeTimeoutMS: _propTypes2.default.number,
+  ariaHideApp: _propTypes2.default.bool,
+  shouldFocusAfterRender: _propTypes2.default.bool,
+  shouldCloseOnOverlayClick: _propTypes2.default.bool,
+  shouldReturnFocusAfterClose: _propTypes2.default.bool,
+  preventScroll: _propTypes2.default.bool,
+  parentSelector: _propTypes2.default.func,
+  aria: _propTypes2.default.object,
+  data: _propTypes2.default.object,
+  role: _propTypes2.default.string,
+  contentLabel: _propTypes2.default.string,
+  shouldCloseOnEsc: _propTypes2.default.bool,
+  overlayRef: _propTypes2.default.func,
+  contentRef: _propTypes2.default.func,
+  id: _propTypes2.default.string,
+  overlayElement: _propTypes2.default.func,
+  contentElement: _propTypes2.default.func
+};
+Modal.defaultProps = {
+  isOpen: false,
+  portalClassName: portalClassName,
+  bodyOpenClassName: bodyOpenClassName,
+  role: "dialog",
+  ariaHideApp: true,
+  closeTimeoutMS: 0,
+  shouldFocusAfterRender: true,
+  shouldCloseOnEsc: true,
+  shouldCloseOnOverlayClick: true,
+  shouldReturnFocusAfterClose: true,
+  preventScroll: false,
+  parentSelector: function parentSelector() {
+    return document.body;
+  },
+  overlayElement: function overlayElement(props, contentEl) {
+    return _react2.default.createElement(
+      "div",
+      props,
+      contentEl
+    );
+  },
+  contentElement: function contentElement(props, children) {
+    return _react2.default.createElement(
+      "div",
+      props,
+      children
+    );
+  }
+};
+Modal.defaultStyles = {
+  overlay: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(255, 255, 255, 0.75)"
+  },
+  content: {
+    position: "absolute",
+    top: "40px",
+    left: "40px",
+    right: "40px",
+    bottom: "40px",
+    border: "1px solid #ccc",
+    background: "#fff",
+    overflow: "auto",
+    WebkitOverflowScrolling: "touch",
+    borderRadius: "4px",
+    outline: "none",
+    padding: "20px"
+  }
+};
+
+
+(0, _reactLifecyclesCompat.polyfill)(Modal);
+
+if (true) {
+  Modal.setCreateHTMLElement = function (fn) {
+    return createHTMLElement = fn;
+  };
+}
+
+exports["default"] = Modal;
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/components/ModalPortal.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-modal/lib/components/ModalPortal.js ***!
+  \****************************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _focusManager = __webpack_require__(/*! ../helpers/focusManager */ "./node_modules/react-modal/lib/helpers/focusManager.js");
+
+var focusManager = _interopRequireWildcard(_focusManager);
+
+var _scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ "./node_modules/react-modal/lib/helpers/scopeTab.js");
+
+var _scopeTab2 = _interopRequireDefault(_scopeTab);
+
+var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
+
+var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
+
+var _classList = __webpack_require__(/*! ../helpers/classList */ "./node_modules/react-modal/lib/helpers/classList.js");
+
+var classList = _interopRequireWildcard(_classList);
+
+var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
+
+var _portalOpenInstances = __webpack_require__(/*! ../helpers/portalOpenInstances */ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js");
+
+var _portalOpenInstances2 = _interopRequireDefault(_portalOpenInstances);
+
+__webpack_require__(/*! ../helpers/bodyTrap */ "./node_modules/react-modal/lib/helpers/bodyTrap.js");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// so that our CSS is statically analyzable
+var CLASS_NAMES = {
+  overlay: "ReactModal__Overlay",
+  content: "ReactModal__Content"
+};
+
+var TAB_KEY = 9;
+var ESC_KEY = 27;
+
+var ariaHiddenInstances = 0;
+
+var ModalPortal = function (_Component) {
+  _inherits(ModalPortal, _Component);
+
+  function ModalPortal(props) {
+    _classCallCheck(this, ModalPortal);
+
+    var _this = _possibleConstructorReturn(this, (ModalPortal.__proto__ || Object.getPrototypeOf(ModalPortal)).call(this, props));
+
+    _this.setOverlayRef = function (overlay) {
+      _this.overlay = overlay;
+      _this.props.overlayRef && _this.props.overlayRef(overlay);
+    };
+
+    _this.setContentRef = function (content) {
+      _this.content = content;
+      _this.props.contentRef && _this.props.contentRef(content);
+    };
+
+    _this.afterClose = function () {
+      var _this$props = _this.props,
+          appElement = _this$props.appElement,
+          ariaHideApp = _this$props.ariaHideApp,
+          htmlOpenClassName = _this$props.htmlOpenClassName,
+          bodyOpenClassName = _this$props.bodyOpenClassName;
+
+      // Remove classes.
+
+      bodyOpenClassName && classList.remove(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.remove(document.getElementsByTagName("html")[0], htmlOpenClassName);
+
+      // Reset aria-hidden attribute if all modals have been removed
+      if (ariaHideApp && ariaHiddenInstances > 0) {
+        ariaHiddenInstances -= 1;
+
+        if (ariaHiddenInstances === 0) {
+          ariaAppHider.show(appElement);
+        }
+      }
+
+      if (_this.props.shouldFocusAfterRender) {
+        if (_this.props.shouldReturnFocusAfterClose) {
+          focusManager.returnFocus(_this.props.preventScroll);
+          focusManager.teardownScopedFocus();
+        } else {
+          focusManager.popWithoutFocus();
+        }
+      }
+
+      if (_this.props.onAfterClose) {
+        _this.props.onAfterClose();
+      }
+
+      _portalOpenInstances2.default.deregister(_this);
+    };
+
+    _this.open = function () {
+      _this.beforeOpen();
+      if (_this.state.afterOpen && _this.state.beforeClose) {
+        clearTimeout(_this.closeTimer);
+        _this.setState({ beforeClose: false });
+      } else {
+        if (_this.props.shouldFocusAfterRender) {
+          focusManager.setupScopedFocus(_this.node);
+          focusManager.markForFocusLater();
+        }
+
+        _this.setState({ isOpen: true }, function () {
+          _this.openAnimationFrame = requestAnimationFrame(function () {
+            _this.setState({ afterOpen: true });
+
+            if (_this.props.isOpen && _this.props.onAfterOpen) {
+              _this.props.onAfterOpen({
+                overlayEl: _this.overlay,
+                contentEl: _this.content
+              });
+            }
+          });
+        });
+      }
+    };
+
+    _this.close = function () {
+      if (_this.props.closeTimeoutMS > 0) {
+        _this.closeWithTimeout();
+      } else {
+        _this.closeWithoutTimeout();
+      }
+    };
+
+    _this.focusContent = function () {
+      return _this.content && !_this.contentHasFocus() && _this.content.focus({ preventScroll: true });
+    };
+
+    _this.closeWithTimeout = function () {
+      var closesAt = Date.now() + _this.props.closeTimeoutMS;
+      _this.setState({ beforeClose: true, closesAt: closesAt }, function () {
+        _this.closeTimer = setTimeout(_this.closeWithoutTimeout, _this.state.closesAt - Date.now());
+      });
+    };
+
+    _this.closeWithoutTimeout = function () {
+      _this.setState({
+        beforeClose: false,
+        isOpen: false,
+        afterOpen: false,
+        closesAt: null
+      }, _this.afterClose);
+    };
+
+    _this.handleKeyDown = function (event) {
+      if (event.keyCode === TAB_KEY) {
+        (0, _scopeTab2.default)(_this.content, event);
+      }
+
+      if (_this.props.shouldCloseOnEsc && event.keyCode === ESC_KEY) {
+        event.stopPropagation();
+        _this.requestClose(event);
+      }
+    };
+
+    _this.handleOverlayOnClick = function (event) {
+      if (_this.shouldClose === null) {
+        _this.shouldClose = true;
+      }
+
+      if (_this.shouldClose && _this.props.shouldCloseOnOverlayClick) {
+        if (_this.ownerHandlesClose()) {
+          _this.requestClose(event);
+        } else {
+          _this.focusContent();
+        }
+      }
+      _this.shouldClose = null;
+    };
+
+    _this.handleContentOnMouseUp = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.handleOverlayOnMouseDown = function (event) {
+      if (!_this.props.shouldCloseOnOverlayClick && event.target == _this.overlay) {
+        event.preventDefault();
+      }
+    };
+
+    _this.handleContentOnClick = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.handleContentOnMouseDown = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.requestClose = function (event) {
+      return _this.ownerHandlesClose() && _this.props.onRequestClose(event);
+    };
+
+    _this.ownerHandlesClose = function () {
+      return _this.props.onRequestClose;
+    };
+
+    _this.shouldBeClosed = function () {
+      return !_this.state.isOpen && !_this.state.beforeClose;
+    };
+
+    _this.contentHasFocus = function () {
+      return document.activeElement === _this.content || _this.content.contains(document.activeElement);
+    };
+
+    _this.buildClassName = function (which, additional) {
+      var classNames = (typeof additional === "undefined" ? "undefined" : _typeof(additional)) === "object" ? additional : {
+        base: CLASS_NAMES[which],
+        afterOpen: CLASS_NAMES[which] + "--after-open",
+        beforeClose: CLASS_NAMES[which] + "--before-close"
+      };
+      var className = classNames.base;
+      if (_this.state.afterOpen) {
+        className = className + " " + classNames.afterOpen;
+      }
+      if (_this.state.beforeClose) {
+        className = className + " " + classNames.beforeClose;
+      }
+      return typeof additional === "string" && additional ? className + " " + additional : className;
+    };
+
+    _this.attributesFromObject = function (prefix, items) {
+      return Object.keys(items).reduce(function (acc, name) {
+        acc[prefix + "-" + name] = items[name];
+        return acc;
+      }, {});
+    };
+
+    _this.state = {
+      afterOpen: false,
+      beforeClose: false
+    };
+
+    _this.shouldClose = null;
+    _this.moveFromContentToOverlay = null;
+    return _this;
+  }
+
+  _createClass(ModalPortal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (this.props.isOpen) {
+        this.open();
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (true) {
+        if (prevProps.bodyOpenClassName !== this.props.bodyOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "bodyOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+        if (prevProps.htmlOpenClassName !== this.props.htmlOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "htmlOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+      }
+
+      if (this.props.isOpen && !prevProps.isOpen) {
+        this.open();
+      } else if (!this.props.isOpen && prevProps.isOpen) {
+        this.close();
+      }
+
+      // Focus only needs to be set once when the modal is being opened
+      if (this.props.shouldFocusAfterRender && this.state.isOpen && !prevState.isOpen) {
+        this.focusContent();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this.state.isOpen) {
+        this.afterClose();
+      }
+      clearTimeout(this.closeTimer);
+      cancelAnimationFrame(this.openAnimationFrame);
+    }
+  }, {
+    key: "beforeOpen",
+    value: function beforeOpen() {
+      var _props = this.props,
+          appElement = _props.appElement,
+          ariaHideApp = _props.ariaHideApp,
+          htmlOpenClassName = _props.htmlOpenClassName,
+          bodyOpenClassName = _props.bodyOpenClassName;
+
+      // Add classes.
+
+      bodyOpenClassName && classList.add(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.add(document.getElementsByTagName("html")[0], htmlOpenClassName);
+
+      if (ariaHideApp) {
+        ariaHiddenInstances += 1;
+        ariaAppHider.hide(appElement);
+      }
+
+      _portalOpenInstances2.default.register(this);
+    }
+
+    // Don't steal focus from inner elements
+
+  }, {
+    key: "render",
+    value: function render() {
+      var _props2 = this.props,
+          id = _props2.id,
+          className = _props2.className,
+          overlayClassName = _props2.overlayClassName,
+          defaultStyles = _props2.defaultStyles,
+          children = _props2.children;
+
+      var contentStyles = className ? {} : defaultStyles.content;
+      var overlayStyles = overlayClassName ? {} : defaultStyles.overlay;
+
+      if (this.shouldBeClosed()) {
+        return null;
+      }
+
+      var overlayProps = {
+        ref: this.setOverlayRef,
+        className: this.buildClassName("overlay", overlayClassName),
+        style: _extends({}, overlayStyles, this.props.style.overlay),
+        onClick: this.handleOverlayOnClick,
+        onMouseDown: this.handleOverlayOnMouseDown
+      };
+
+      var contentProps = _extends({
+        id: id,
+        ref: this.setContentRef,
+        style: _extends({}, contentStyles, this.props.style.content),
+        className: this.buildClassName("content", className),
+        tabIndex: "-1",
+        onKeyDown: this.handleKeyDown,
+        onMouseDown: this.handleContentOnMouseDown,
+        onMouseUp: this.handleContentOnMouseUp,
+        onClick: this.handleContentOnClick,
+        role: this.props.role,
+        "aria-label": this.props.contentLabel
+      }, this.attributesFromObject("aria", _extends({ modal: true }, this.props.aria)), this.attributesFromObject("data", this.props.data || {}), {
+        "data-testid": this.props.testId
+      });
+
+      var contentElement = this.props.contentElement(contentProps, children);
+      return this.props.overlayElement(overlayProps, contentElement);
+    }
+  }]);
+
+  return ModalPortal;
+}(_react.Component);
+
+ModalPortal.defaultProps = {
+  style: {
+    overlay: {},
+    content: {}
+  },
+  defaultStyles: {}
+};
+ModalPortal.propTypes = {
+  isOpen: _propTypes2.default.bool.isRequired,
+  defaultStyles: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  style: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
+  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
+  bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
+  ariaHideApp: _propTypes2.default.bool,
+  appElement: _propTypes2.default.oneOfType([_propTypes2.default.instanceOf(_safeHTMLElement2.default), _propTypes2.default.instanceOf(_safeHTMLElement.SafeHTMLCollection), _propTypes2.default.instanceOf(_safeHTMLElement.SafeNodeList), _propTypes2.default.arrayOf(_propTypes2.default.instanceOf(_safeHTMLElement2.default))]),
+  onAfterOpen: _propTypes2.default.func,
+  onAfterClose: _propTypes2.default.func,
+  onRequestClose: _propTypes2.default.func,
+  closeTimeoutMS: _propTypes2.default.number,
+  shouldFocusAfterRender: _propTypes2.default.bool,
+  shouldCloseOnOverlayClick: _propTypes2.default.bool,
+  shouldReturnFocusAfterClose: _propTypes2.default.bool,
+  preventScroll: _propTypes2.default.bool,
+  role: _propTypes2.default.string,
+  contentLabel: _propTypes2.default.string,
+  aria: _propTypes2.default.object,
+  data: _propTypes2.default.object,
+  children: _propTypes2.default.node,
+  shouldCloseOnEsc: _propTypes2.default.bool,
+  overlayRef: _propTypes2.default.func,
+  contentRef: _propTypes2.default.func,
+  id: _propTypes2.default.string,
+  overlayElement: _propTypes2.default.func,
+  contentElement: _propTypes2.default.func,
+  testId: _propTypes2.default.string
+};
+exports["default"] = ModalPortal;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/ariaAppHider.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/ariaAppHider.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.resetState = resetState;
+exports.log = log;
+exports.assertNodeList = assertNodeList;
+exports.setElement = setElement;
+exports.validateElement = validateElement;
+exports.hide = hide;
+exports.show = show;
+exports.documentNotReadyOrSSRTesting = documentNotReadyOrSSRTesting;
+
+var _warning = __webpack_require__(/*! warning */ "./node_modules/warning/warning.js");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _safeHTMLElement = __webpack_require__(/*! ./safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var globalElement = null;
+
+/* eslint-disable no-console */
+/* istanbul ignore next */
+function resetState() {
+  if (globalElement) {
+    if (globalElement.removeAttribute) {
+      globalElement.removeAttribute("aria-hidden");
+    } else if (globalElement.length != null) {
+      globalElement.forEach(function (element) {
+        return element.removeAttribute("aria-hidden");
+      });
+    } else {
+      document.querySelectorAll(globalElement).forEach(function (element) {
+        return element.removeAttribute("aria-hidden");
+      });
+    }
+  }
+  globalElement = null;
+}
+
+/* istanbul ignore next */
+function log() {
+  if (true) {
+    var check = globalElement || {};
+    console.log("ariaAppHider ----------");
+    console.log(check.nodeName, check.className, check.id);
+    console.log("end ariaAppHider ----------");
+  }
+}
+/* eslint-enable no-console */
+
+function assertNodeList(nodeList, selector) {
+  if (!nodeList || !nodeList.length) {
+    throw new Error("react-modal: No elements were found for selector " + selector + ".");
+  }
+}
+
+function setElement(element) {
+  var useElement = element;
+  if (typeof useElement === "string" && _safeHTMLElement.canUseDOM) {
+    var el = document.querySelectorAll(useElement);
+    assertNodeList(el, useElement);
+    useElement = el;
+  }
+  globalElement = useElement || globalElement;
+  return globalElement;
+}
+
+function validateElement(appElement) {
+  var el = appElement || globalElement;
+  if (el) {
+    return Array.isArray(el) || el instanceof HTMLCollection || el instanceof NodeList ? el : [el];
+  } else {
+    (0, _warning2.default)(false, ["react-modal: App element is not defined.", "Please use `Modal.setAppElement(el)` or set `appElement={el}`.", "This is needed so screen readers don't see main content", "when modal is opened. It is not recommended, but you can opt-out", "by setting `ariaHideApp={false}`."].join(" "));
+
+    return [];
+  }
+}
+
+function hide(appElement) {
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = validateElement(appElement)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var el = _step.value;
+
+      el.setAttribute("aria-hidden", "true");
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+}
+
+function show(appElement) {
+  var _iteratorNormalCompletion2 = true;
+  var _didIteratorError2 = false;
+  var _iteratorError2 = undefined;
+
+  try {
+    for (var _iterator2 = validateElement(appElement)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+      var el = _step2.value;
+
+      el.removeAttribute("aria-hidden");
+    }
+  } catch (err) {
+    _didIteratorError2 = true;
+    _iteratorError2 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion2 && _iterator2.return) {
+        _iterator2.return();
+      }
+    } finally {
+      if (_didIteratorError2) {
+        throw _iteratorError2;
+      }
+    }
+  }
+}
+
+function documentNotReadyOrSSRTesting() {
+  globalElement = null;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/bodyTrap.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/bodyTrap.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.resetState = resetState;
+exports.log = log;
+
+var _portalOpenInstances = __webpack_require__(/*! ./portalOpenInstances */ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js");
+
+var _portalOpenInstances2 = _interopRequireDefault(_portalOpenInstances);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Body focus trap see Issue #742
+
+var before = void 0,
+    after = void 0,
+    instances = [];
+
+/* eslint-disable no-console */
+/* istanbul ignore next */
+function resetState() {
+  var _arr = [before, after];
+
+  for (var _i = 0; _i < _arr.length; _i++) {
+    var item = _arr[_i];
+    if (!item) continue;
+    item.parentNode && item.parentNode.removeChild(item);
+  }
+  before = after = null;
+  instances = [];
+}
+
+/* istanbul ignore next */
+function log() {
+  console.log("bodyTrap ----------");
+  console.log(instances.length);
+  var _arr2 = [before, after];
+  for (var _i2 = 0; _i2 < _arr2.length; _i2++) {
+    var item = _arr2[_i2];
+    var check = item || {};
+    console.log(check.nodeName, check.className, check.id);
+  }
+  console.log("edn bodyTrap ----------");
+}
+/* eslint-enable no-console */
+
+function focusContent() {
+  if (instances.length === 0) {
+    if (true) {
+      // eslint-disable-next-line no-console
+      console.warn("React-Modal: Open instances > 0 expected");
+    }
+    return;
+  }
+  instances[instances.length - 1].focusContent();
+}
+
+function bodyTrap(eventType, openInstances) {
+  if (!before && !after) {
+    before = document.createElement("div");
+    before.setAttribute("data-react-modal-body-trap", "");
+    before.style.position = "absolute";
+    before.style.opacity = "0";
+    before.setAttribute("tabindex", "0");
+    before.addEventListener("focus", focusContent);
+    after = before.cloneNode();
+    after.addEventListener("focus", focusContent);
+  }
+
+  instances = openInstances;
+
+  if (instances.length > 0) {
+    // Add focus trap
+    if (document.body.firstChild !== before) {
+      document.body.insertBefore(before, document.body.firstChild);
+    }
+    if (document.body.lastChild !== after) {
+      document.body.appendChild(after);
+    }
+  } else {
+    // Remove focus trap
+    if (before.parentElement) {
+      before.parentElement.removeChild(before);
+    }
+    if (after.parentElement) {
+      after.parentElement.removeChild(after);
+    }
+  }
+}
+
+_portalOpenInstances2.default.subscribe(bodyTrap);
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/classList.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/classList.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.resetState = resetState;
+exports.log = log;
+var htmlClassList = {};
+var docBodyClassList = {};
+
+/* eslint-disable no-console */
+/* istanbul ignore next */
+function removeClass(at, cls) {
+  at.classList.remove(cls);
+}
+
+/* istanbul ignore next */
+function resetState() {
+  var htmlElement = document.getElementsByTagName("html")[0];
+  for (var cls in htmlClassList) {
+    removeClass(htmlElement, htmlClassList[cls]);
+  }
+
+  var body = document.body;
+  for (var _cls in docBodyClassList) {
+    removeClass(body, docBodyClassList[_cls]);
+  }
+
+  htmlClassList = {};
+  docBodyClassList = {};
+}
+
+/* istanbul ignore next */
+function log() {
+  if (true) {
+    var classes = document.getElementsByTagName("html")[0].className;
+    var buffer = "Show tracked classes:\n\n";
+
+    buffer += "<html /> (" + classes + "):\n  ";
+    for (var x in htmlClassList) {
+      buffer += "  " + x + " " + htmlClassList[x] + "\n  ";
+    }
+
+    classes = document.body.className;
+
+    buffer += "\n\ndoc.body (" + classes + "):\n  ";
+    for (var _x in docBodyClassList) {
+      buffer += "  " + _x + " " + docBodyClassList[_x] + "\n  ";
+    }
+
+    buffer += "\n";
+
+    console.log(buffer);
+  }
+}
+/* eslint-enable no-console */
+
+/**
+ * Track the number of reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var incrementReference = function incrementReference(poll, className) {
+  if (!poll[className]) {
+    poll[className] = 0;
+  }
+  poll[className] += 1;
+  return className;
+};
+
+/**
+ * Drop the reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var decrementReference = function decrementReference(poll, className) {
+  if (poll[className]) {
+    poll[className] -= 1;
+  }
+  return className;
+};
+
+/**
+ * Track a class and add to the given class list.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be tracked.
+ */
+var trackClass = function trackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    incrementReference(poll, className);
+    classListRef.add(className);
+  });
+};
+
+/**
+ * Untrack a class and remove from the given class list if the reference
+ * reaches 0.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be untracked.
+ */
+var untrackClass = function untrackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    decrementReference(poll, className);
+    poll[className] === 0 && classListRef.remove(className);
+  });
+};
+
+/**
+ * Public inferface to add classes to the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var add = exports.add = function add(element, classString) {
+  return trackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+
+/**
+ * Public inferface to remove classes from the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var remove = exports.remove = function remove(element, classString) {
+  return untrackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/focusManager.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/focusManager.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.resetState = resetState;
+exports.log = log;
+exports.handleBlur = handleBlur;
+exports.handleFocus = handleFocus;
+exports.markForFocusLater = markForFocusLater;
+exports.returnFocus = returnFocus;
+exports.popWithoutFocus = popWithoutFocus;
+exports.setupScopedFocus = setupScopedFocus;
+exports.teardownScopedFocus = teardownScopedFocus;
+
+var _tabbable = __webpack_require__(/*! ../helpers/tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
+
+var _tabbable2 = _interopRequireDefault(_tabbable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var focusLaterElements = [];
+var modalElement = null;
+var needToFocus = false;
+
+/* eslint-disable no-console */
+/* istanbul ignore next */
+function resetState() {
+  focusLaterElements = [];
+}
+
+/* istanbul ignore next */
+function log() {
+  if (true) {
+    console.log("focusManager ----------");
+    focusLaterElements.forEach(function (f) {
+      var check = f || {};
+      console.log(check.nodeName, check.className, check.id);
+    });
+    console.log("end focusManager ----------");
+  }
+}
+/* eslint-enable no-console */
+
+function handleBlur() {
+  needToFocus = true;
+}
+
+function handleFocus() {
+  if (needToFocus) {
+    needToFocus = false;
+    if (!modalElement) {
+      return;
+    }
+    // need to see how jQuery shims document.on('focusin') so we don't need the
+    // setTimeout, firefox doesn't support focusin, if it did, we could focus
+    // the element outside of a setTimeout. Side-effect of this implementation
+    // is that the document.body gets focus, and then we focus our element right
+    // after, seems fine.
+    setTimeout(function () {
+      if (modalElement.contains(document.activeElement)) {
+        return;
+      }
+      var el = (0, _tabbable2.default)(modalElement)[0] || modalElement;
+      el.focus();
+    }, 0);
+  }
+}
+
+function markForFocusLater() {
+  focusLaterElements.push(document.activeElement);
+}
+
+/* eslint-disable no-console */
+function returnFocus() {
+  var preventScroll = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+  var toFocus = null;
+  try {
+    if (focusLaterElements.length !== 0) {
+      toFocus = focusLaterElements.pop();
+      toFocus.focus({ preventScroll: preventScroll });
+    }
+    return;
+  } catch (e) {
+    console.warn(["You tried to return focus to", toFocus, "but it is not in the DOM anymore"].join(" "));
+  }
+}
+/* eslint-enable no-console */
+
+function popWithoutFocus() {
+  focusLaterElements.length > 0 && focusLaterElements.pop();
+}
+
+function setupScopedFocus(element) {
+  modalElement = element;
+
+  if (window.addEventListener) {
+    window.addEventListener("blur", handleBlur, false);
+    document.addEventListener("focus", handleFocus, true);
+  } else {
+    window.attachEvent("onBlur", handleBlur);
+    document.attachEvent("onFocus", handleFocus);
+  }
+}
+
+function teardownScopedFocus() {
+  modalElement = null;
+
+  if (window.addEventListener) {
+    window.removeEventListener("blur", handleBlur);
+    document.removeEventListener("focus", handleFocus);
+  } else {
+    window.detachEvent("onBlur", handleBlur);
+    document.detachEvent("onFocus", handleFocus);
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/portalOpenInstances.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/portalOpenInstances.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.log = log;
+exports.resetState = resetState;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// Tracks portals that are open and emits events to subscribers
+
+var PortalOpenInstances = function PortalOpenInstances() {
+  var _this = this;
+
+  _classCallCheck(this, PortalOpenInstances);
+
+  this.register = function (openInstance) {
+    if (_this.openInstances.indexOf(openInstance) !== -1) {
+      if (true) {
+        // eslint-disable-next-line no-console
+        console.warn("React-Modal: Cannot register modal instance that's already open");
+      }
+      return;
+    }
+    _this.openInstances.push(openInstance);
+    _this.emit("register");
+  };
+
+  this.deregister = function (openInstance) {
+    var index = _this.openInstances.indexOf(openInstance);
+    if (index === -1) {
+      if (true) {
+        // eslint-disable-next-line no-console
+        console.warn("React-Modal: Unable to deregister " + openInstance + " as " + "it was never registered");
+      }
+      return;
+    }
+    _this.openInstances.splice(index, 1);
+    _this.emit("deregister");
+  };
+
+  this.subscribe = function (callback) {
+    _this.subscribers.push(callback);
+  };
+
+  this.emit = function (eventType) {
+    _this.subscribers.forEach(function (subscriber) {
+      return subscriber(eventType,
+      // shallow copy to avoid accidental mutation
+      _this.openInstances.slice());
+    });
+  };
+
+  this.openInstances = [];
+  this.subscribers = [];
+};
+
+var portalOpenInstances = new PortalOpenInstances();
+
+/* eslint-disable no-console */
+/* istanbul ignore next */
+function log() {
+  console.log("portalOpenInstances ----------");
+  console.log(portalOpenInstances.openInstances.length);
+  portalOpenInstances.openInstances.forEach(function (p) {
+    return console.log(p);
+  });
+  console.log("end portalOpenInstances ----------");
+}
+
+/* istanbul ignore next */
+function resetState() {
+  portalOpenInstances = new PortalOpenInstances();
+}
+/* eslint-enable no-console */
+
+exports["default"] = portalOpenInstances;
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/safeHTMLElement.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.canUseDOM = exports.SafeNodeList = exports.SafeHTMLCollection = undefined;
+
+var _exenv = __webpack_require__(/*! exenv */ "./node_modules/exenv/index.js");
+
+var _exenv2 = _interopRequireDefault(_exenv);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EE = _exenv2.default;
+
+var SafeHTMLElement = EE.canUseDOM ? window.HTMLElement : {};
+
+var SafeHTMLCollection = exports.SafeHTMLCollection = EE.canUseDOM ? window.HTMLCollection : {};
+
+var SafeNodeList = exports.SafeNodeList = EE.canUseDOM ? window.NodeList : {};
+
+var canUseDOM = exports.canUseDOM = EE.canUseDOM;
+
+exports["default"] = SafeHTMLElement;
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/scopeTab.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/scopeTab.js ***!
+  \**********************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = scopeTab;
+
+var _tabbable = __webpack_require__(/*! ./tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
+
+var _tabbable2 = _interopRequireDefault(_tabbable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function getActiveElement() {
+  var el = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+
+  return el.activeElement.shadowRoot ? getActiveElement(el.activeElement.shadowRoot) : el.activeElement;
+}
+
+function scopeTab(node, event) {
+  var tabbable = (0, _tabbable2.default)(node);
+
+  if (!tabbable.length) {
+    // Do nothing, since there are no elements that can receive focus.
+    event.preventDefault();
+    return;
+  }
+
+  var target = void 0;
+
+  var shiftKey = event.shiftKey;
+  var head = tabbable[0];
+  var tail = tabbable[tabbable.length - 1];
+  var activeElement = getActiveElement();
+
+  // proceed with default browser behavior on tab.
+  // Focus on last element on shift + tab.
+  if (node === activeElement) {
+    if (!shiftKey) return;
+    target = tail;
+  }
+
+  if (tail === activeElement && !shiftKey) {
+    target = head;
+  }
+
+  if (head === activeElement && shiftKey) {
+    target = tail;
+  }
+
+  if (target) {
+    event.preventDefault();
+    target.focus();
+    return;
+  }
+
+  // Safari radio issue.
+  //
+  // Safari does not move the focus to the radio button,
+  // so we need to force it to really walk through all elements.
+  //
+  // This is very error prone, since we are trying to guess
+  // if it is a safari browser from the first occurence between
+  // chrome or safari.
+  //
+  // The chrome user agent contains the first ocurrence
+  // as the 'chrome/version' and later the 'safari/version'.
+  var checkSafari = /(\bChrome\b|\bSafari\b)\//.exec(navigator.userAgent);
+  var isSafariDesktop = checkSafari != null && checkSafari[1] != "Chrome" && /\biPod\b|\biPad\b/g.exec(navigator.userAgent) == null;
+
+  // If we are not in safari desktop, let the browser control
+  // the focus
+  if (!isSafariDesktop) return;
+
+  var x = tabbable.indexOf(activeElement);
+
+  if (x > -1) {
+    x += shiftKey ? -1 : 1;
+  }
+
+  target = tabbable[x];
+
+  // If the tabbable element does not exist,
+  // focus head/tail based on shiftKey
+  if (typeof target === "undefined") {
+    event.preventDefault();
+    target = shiftKey ? tail : head;
+    target.focus();
+    return;
+  }
+
+  event.preventDefault();
+
+  target.focus();
+}
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/tabbable.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/tabbable.js ***!
+  \**********************************************************/
+/***/ ((module, exports) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = findTabbableDescendants;
+/*!
+ * Adapted from jQuery UI core
+ *
+ * http://jqueryui.com
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/ui-core/
+ */
+
+var tabbableNode = /input|select|textarea|button|object|iframe/;
+
+function hidesContents(element) {
+  var zeroSize = element.offsetWidth <= 0 && element.offsetHeight <= 0;
+
+  // If the node is empty, this is good enough
+  if (zeroSize && !element.innerHTML) return true;
+
+  try {
+    // Otherwise we need to check some styles
+    var style = window.getComputedStyle(element);
+    return zeroSize ? style.getPropertyValue("overflow") !== "visible" ||
+    // if 'overflow: visible' set, check if there is actually any overflow
+    element.scrollWidth <= 0 && element.scrollHeight <= 0 : style.getPropertyValue("display") == "none";
+  } catch (exception) {
+    // eslint-disable-next-line no-console
+    console.warn("Failed to inspect element style");
+    return false;
+  }
+}
+
+function visible(element) {
+  var parentElement = element;
+  var rootNode = element.getRootNode && element.getRootNode();
+  while (parentElement) {
+    if (parentElement === document.body) break;
+
+    // if we are not hidden yet, skip to checking outside the Web Component
+    if (rootNode && parentElement === rootNode) parentElement = rootNode.host.parentNode;
+
+    if (hidesContents(parentElement)) return false;
+    parentElement = parentElement.parentNode;
+  }
+  return true;
+}
+
+function focusable(element, isTabIndexNotNaN) {
+  var nodeName = element.nodeName.toLowerCase();
+  var res = tabbableNode.test(nodeName) && !element.disabled || (nodeName === "a" ? element.href || isTabIndexNotNaN : isTabIndexNotNaN);
+  return res && visible(element);
+}
+
+function tabbable(element) {
+  var tabIndex = element.getAttribute("tabindex");
+  if (tabIndex === null) tabIndex = undefined;
+  var isTabIndexNaN = isNaN(tabIndex);
+  return (isTabIndexNaN || tabIndex >= 0) && focusable(element, !isTabIndexNaN);
+}
+
+function findTabbableDescendants(element) {
+  var descendants = [].slice.call(element.querySelectorAll("*"), 0).reduce(function (finished, el) {
+    return finished.concat(!el.shadowRoot ? [el] : findTabbableDescendants(el.shadowRoot));
+  }, []);
+  return descendants.filter(tabbable);
+}
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-modal/lib/index.js ***!
+  \***********************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var _Modal = __webpack_require__(/*! ./components/Modal */ "./node_modules/react-modal/lib/components/Modal.js");
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports["default"] = _Modal2.default;
+module.exports = exports["default"];
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react-jsx-runtime.development.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -76869,6 +83843,79 @@ function __classPrivateFieldIn(state, receiver) {
 
 /***/ }),
 
+/***/ "./node_modules/warning/warning.js":
+/*!*****************************************!*\
+  !*** ./node_modules/warning/warning.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+"use strict";
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+/**
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var __DEV__ = "development" !== 'production';
+
+var warning = function() {};
+
+if (__DEV__) {
+  var printWarning = function printWarning(format, args) {
+    var len = arguments.length;
+    args = new Array(len > 1 ? len - 1 : 0);
+    for (var key = 1; key < len; key++) {
+      args[key - 1] = arguments[key];
+    }
+    var argIndex = 0;
+    var message = 'Warning: ' +
+      format.replace(/%s/g, function() {
+        return args[argIndex++];
+      });
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  }
+
+  warning = function(condition, format, args) {
+    var len = arguments.length;
+    args = new Array(len > 2 ? len - 2 : 0);
+    for (var key = 2; key < len; key++) {
+      args[key - 2] = arguments[key];
+    }
+    if (format === undefined) {
+      throw new Error(
+          '`warning(condition, format, ...args)` requires a warning ' +
+          'message argument'
+      );
+    }
+    if (!condition) {
+      printWarning.apply(null, [format].concat(args));
+    }
+  };
+}
+
+module.exports = warning;
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages sync recursive ^\\.\\/.*$":
 /*!*******************************************!*\
   !*** ./resources/js/Pages/ sync ^\.\/.*$ ***!
@@ -76888,8 +83935,10 @@ var map = {
 	"./Auth/ResetPassword.js": "./resources/js/Pages/Auth/ResetPassword.js",
 	"./Auth/VerifyEmail": "./resources/js/Pages/Auth/VerifyEmail.js",
 	"./Auth/VerifyEmail.js": "./resources/js/Pages/Auth/VerifyEmail.js",
-	"./Calendar": "./resources/js/Pages/Calendar.js",
-	"./Calendar.js": "./resources/js/Pages/Calendar.js",
+	"./Calendar/AddEventModal": "./resources/js/Pages/Calendar/AddEventModal.js",
+	"./Calendar/AddEventModal.js": "./resources/js/Pages/Calendar/AddEventModal.js",
+	"./Calendar/Calendar": "./resources/js/Pages/Calendar/Calendar.js",
+	"./Calendar/Calendar.js": "./resources/js/Pages/Calendar/Calendar.js",
 	"./Dashboard": "./resources/js/Pages/Dashboard.js",
 	"./Dashboard.js": "./resources/js/Pages/Dashboard.js",
 	"./Forbidden": "./resources/js/Pages/Forbidden.js",
