@@ -17,9 +17,7 @@ const Index = (props) => {
 
         var channel = pusher.subscribe("post");
         channel.bind("App\\Events\\Posted", function (data) {
-            axios.get("/get-data").then((res) => {
-                setDatas(res.data);
-            });
+            Inertia.get("posts.index");
         });
     }, []);
 
