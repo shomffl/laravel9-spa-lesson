@@ -30,6 +30,8 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::resource('posts', PostController::class);
     Route::resource("messages", MessageController::class);
     Route::resource("users", UserController::class);
+    Route::resource("schedules", ScheduleController::class);
+
 
     Route::get("/get-data", [PostController::class, "getData"]);
     Route::get("/posts-friends", [PostController::class, "getDataPostByFriends"]);
@@ -38,8 +40,6 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::get("/unfollow/{user}", [UserController::class, "unFollowUser"]);
 
     Route::get("/room/{send}/{recieve}", [UserController::class, "getMessageByRoom"]); // チャットルームごとのメッセージを取得するための関数
-
-    Route::resource("schedules", ScheduleController::class);
 });
 
 require __DIR__.'/auth.php';

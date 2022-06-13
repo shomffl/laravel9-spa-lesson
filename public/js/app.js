@@ -20784,7 +20784,8 @@ var AddEventModal = function AddEventModal(props) {
   var modalIsOpen = props.modalIsOpen,
       setIsOpen = props.setIsOpen,
       data = props.data,
-      setData = props.setData;
+      setData = props.setData,
+      handleSubmit = props.handleSubmit;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "App",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)((react_modal__WEBPACK_IMPORTED_MODULE_1___default()), {
@@ -20834,6 +20835,7 @@ var AddEventModal = function AddEventModal(props) {
             }
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          onClick: handleSubmit,
           className: "px-4 py-2 text-white bg-gray-500 rounded",
           children: "send"
         })]
@@ -20909,25 +20911,20 @@ var Calendar = function Calendar(props) {
       post = _useForm.post; // console.log(schedules);
 
 
-  var handleDateClick = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (arg) {
-    var formated_data = getFormatDate(arg.date);
-    setData({
-      event_name: "",
-      start_date: formated_data,
-      end_date: formated_data
-    });
-  }, []);
-
-  var getFormatDate = function getFormatDate(date) {
-    return (0,_fullcalendar_react__WEBPACK_IMPORTED_MODULE_1__.formatDate)(date, {
-      month: "2-digit",
-      year: "numeric",
-      day: "2-digit",
-      locale: "ja"
-    });
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_7__.Inertia.post(route("schedules.store"), data);
+    setIsOpen(false);
   };
 
-  console.log(data);
+  var handleDateClick = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (arg) {
+    console.log(arg.dateStr);
+    setData({
+      event_name: "",
+      start_date: arg.dateStr + "T00:00",
+      end_date: arg.dateStr + "T00:00"
+    });
+  }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_3__["default"], {
     auth: props.auth,
     error: props.error,
@@ -20939,7 +20936,8 @@ var Calendar = function Calendar(props) {
         modalIsOpen: modalIsOpen,
         setIsOpen: setIsOpen,
         data: data,
-        setData: setData
+        setData: setData,
+        handleSubmit: handleSubmit
       }), modalIsOpen ? null : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_fullcalendar_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
         plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_4__["default"]],
         initialView: "dayGridMonth",

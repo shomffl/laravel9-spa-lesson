@@ -27,7 +27,7 @@ const modalStyle = {
 Modal.setAppElement("#root");
 
 const AddEventModal = (props) => {
-    const { modalIsOpen, setIsOpen, data, setData } = props;
+    const { modalIsOpen, setIsOpen, data, setData, handleSubmit } = props;
 
     return (
         <div className="App">
@@ -73,7 +73,10 @@ const AddEventModal = (props) => {
                             }
                         />
                     </div>
-                    <button className="px-4 py-2 text-white bg-gray-500 rounded">
+                    <button
+                        onClick={handleSubmit}
+                        className="px-4 py-2 text-white bg-gray-500 rounded"
+                    >
                         send
                     </button>
                 </div>

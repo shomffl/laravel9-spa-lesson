@@ -20,24 +20,20 @@ const Calendar = (props) => {
 
     // console.log(schedules);
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        Inertia.post(route("schedules.store"), data);
+        setIsOpen(false);
+    };
+
     const handleDateClick = useCallback((arg) => {
-        const formated_data = getFormatDate(arg.date);
+        console.log(arg.dateStr);
         setData({
             event_name: "",
-            start_date: formated_data,
-            end_date: formated_data,
+            start_date: arg.dateStr + "T00:00",
+            end_date: arg.dateStr + "T00:00",
         });
     }, []);
-
-    const getFormatDate = (date) =>
-        formatDate(date, {
-            month: "2-digit",
-            year: "numeric",
-            day: "2-digit",
-            locale: "ja",
-        });
-
-    console.log(data);
 
     return (
         <Authenticated auth={props.auth} error={props.error}>
@@ -48,6 +44,7 @@ const Calendar = (props) => {
                     setIsOpen={setIsOpen}
                     data={data}
                     setData={setData}
+                    handleSubmit={handleSubmit}
                 />
                 {modalIsOpen ? null : (
                     <FullCalendar
