@@ -20907,9 +20907,7 @@ var Calendar = function Calendar(props) {
     end_date: ""
   }),
       data = _useForm.data,
-      setData = _useForm.setData,
-      post = _useForm.post; // console.log(schedules);
-
+      setData = _useForm.setData;
 
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
@@ -20918,7 +20916,6 @@ var Calendar = function Calendar(props) {
   };
 
   var handleDateClick = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (arg) {
-    console.log(arg.dateStr);
     setData({
       event_name: "",
       start_date: arg.dateStr + "T00:00",
@@ -21784,9 +21781,7 @@ var Index = function Index(props) {
     });
     var channel = pusher.subscribe("post");
     channel.bind("App\\Events\\Posted", function (data) {
-      axios__WEBPACK_IMPORTED_MODULE_5___default().get("/get-data").then(function (res) {
-        setDatas(res.data);
-      });
+      _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.get("posts.index");
     });
   }, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
