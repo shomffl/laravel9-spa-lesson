@@ -20746,11 +20746,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-modal */ "./node_modules/react-modal/lib/index.js");
-/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-modal */ "./node_modules/react-modal/lib/index.js");
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -20770,22 +20773,71 @@ var modalStyle = {
     bottom: "5rem",
     backgroundColor: "white",
     borderRadius: "1rem",
-    padding: "1.5rem"
+    padding: "1.5rem",
+    marginRight: "5%",
+    marginLeft: "5%"
   }
 };
-react_modal__WEBPACK_IMPORTED_MODULE_2___default().setAppElement("#root");
+react_modal__WEBPACK_IMPORTED_MODULE_1___default().setAppElement("#root");
 
 var AddEventModal = function AddEventModal(props) {
   var modalIsOpen = props.modalIsOpen,
-      setIsOpen = props.setIsOpen;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      setIsOpen = props.setIsOpen,
+      data = props.data,
+      setData = props.setData;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "App",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)((react_modal__WEBPACK_IMPORTED_MODULE_2___default()), {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)((react_modal__WEBPACK_IMPORTED_MODULE_1___default()), {
       isOpen: modalIsOpen,
       style: modalStyle,
       onRequestClose: function onRequestClose() {
         return setIsOpen(false);
-      }
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "text-center relative top-1/2 -translate-y-2/4",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "flex justify-center items-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: "event title"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "text",
+            className: "w-6/12 m-5",
+            name: "title",
+            onChange: function onChange(e) {
+              return setData("event_name", e.target.value);
+            }
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "flex justify-center items-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: "start date"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "datetime-local",
+            className: "w-6/12 m-5",
+            name: "start_date",
+            value: data.start_date,
+            onChange: function onChange(e) {
+              return setData("start_date", e.target.value);
+            }
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "flex justify-center items-center",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            children: "start date"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
+            type: "datetime-local",
+            className: "w-6/12 m-5",
+            name: "end_date",
+            value: data.end_date,
+            onChange: function onChange(e) {
+              return setData("end_date", e.target.value);
+            }
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+          className: "px-4 py-2 text-white bg-gray-500 rounded",
+          children: "send"
+        })]
+      })
     })
   });
 };
@@ -20842,20 +20894,28 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var Calendar = function Calendar(props) {
   var schedules = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.usePage)().props.schedules;
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
-      selectDate = _useState2[0],
-      setSelectDate = _useState2[1];
+      modalIsOpen = _useState2[0],
+      setIsOpen = _useState2[1];
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-      _useState4 = _slicedToArray(_useState3, 2),
-      modalIsOpen = _useState4[0],
-      setIsOpen = _useState4[1];
+  var _useForm = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.useForm)({
+    event_name: "",
+    start_date: "",
+    end_date: ""
+  }),
+      data = _useForm.data,
+      setData = _useForm.setData,
+      post = _useForm.post; // console.log(schedules);
 
-  console.log(schedules);
+
   var handleDateClick = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (arg) {
     var formated_data = getFormatDate(arg.date);
-    setSelectDate(formated_data);
+    setData({
+      event_name: "",
+      start_date: formated_data,
+      end_date: formated_data
+    });
   }, []);
 
   var getFormatDate = function getFormatDate(date) {
@@ -20867,7 +20927,7 @@ var Calendar = function Calendar(props) {
     });
   };
 
-  console.log(selectDate);
+  console.log(data);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_Layouts_Authenticated__WEBPACK_IMPORTED_MODULE_3__["default"], {
     auth: props.auth,
     error: props.error,
@@ -20877,7 +20937,9 @@ var Calendar = function Calendar(props) {
       className: "my-10 mx-20",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_AddEventModal__WEBPACK_IMPORTED_MODULE_8__["default"], {
         modalIsOpen: modalIsOpen,
-        setIsOpen: setIsOpen
+        setIsOpen: setIsOpen,
+        data: data,
+        setData: setData
       }), modalIsOpen ? null : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_fullcalendar_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
         plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_4__["default"]],
         initialView: "dayGridMonth",

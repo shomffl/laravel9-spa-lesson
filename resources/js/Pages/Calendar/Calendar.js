@@ -4,20 +4,29 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import Authenticated from "@/Layouts/Authenticated";
 import interactionPlugin from "@fullcalendar/interaction";
 import allLocales from "@fullcalendar/core/locales-all";
-import { Head, usePage } from "@inertiajs/inertia-react";
+import { Head, usePage, useForm } from "@inertiajs/inertia-react";
 import { Inertia } from "@inertiajs/inertia";
 import AddEventModal from "./AddEventModal";
 
 const Calendar = (props) => {
     const { schedules } = usePage().props;
-    const [selectDate, setSelectDate] = useState();
     const [modalIsOpen, setIsOpen] = useState(false);
 
-    console.log(schedules);
+    const { data, setData, post } = useForm({
+        event_name: "",
+        start_date: "",
+        end_date: "",
+    });
+
+    // console.log(schedules);
 
     const handleDateClick = useCallback((arg) => {
         const formated_data = getFormatDate(arg.date);
-        setSelectDate(formated_data);
+        setData({
+            event_name: "",
+            start_date: formated_data,
+            end_date: formated_data,
+        });
     }, []);
 
     const getFormatDate = (date) =>
@@ -28,7 +37,7 @@ const Calendar = (props) => {
             locale: "ja",
         });
 
-    console.log(selectDate);
+    console.log(data);
 
     return (
         <Authenticated auth={props.auth} error={props.error}>
@@ -37,6 +46,8 @@ const Calendar = (props) => {
                 <AddEventModal
                     modalIsOpen={modalIsOpen}
                     setIsOpen={setIsOpen}
+                    data={data}
+                    setData={setData}
                 />
                 {modalIsOpen ? null : (
                     <FullCalendar
