@@ -93,7 +93,7 @@ const Chat = (props) => {
                         <div>
                             <button
                                 type="submit"
-                                className="px-6 py-2 font-bold text-white bg-green-500 rounded"
+                                className="px-6 py-2 font-bold text-white bg-green-500 hover:bg-green-300 rounded duration-300"
                             >
                                 Send
                             </button>

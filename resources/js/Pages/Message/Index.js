@@ -37,7 +37,7 @@ const Index = (props) => {
                                     <td className="border-t">
                                         <InertiaLink
                                             href={`/users/${id}`}
-                                            className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
+                                            className="px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-300 rounded duration-300"
                                         >
                                             Chat
                                         </InertiaLink>
@@ -46,14 +46,14 @@ const Index = (props) => {
                                         {follows_id.includes(id) ? (
                                             <InertiaLink
                                                 href={`/unfollow/${id}`}
-                                                className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
+                                                className="px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-300 rounded duration-300"
                                             >
                                                 UnFollow
                                             </InertiaLink>
                                         ) : (
                                             <InertiaLink
                                                 href={`/follow/${id}`}
-                                                className="px-4 py-2 text-sm text-white bg-red-500 rounded"
+                                                className="px-4 py-2 text-sm text-white bg-red-500 hover:bg-pink-300 rounded duration-300"
                                             >
                                                 Follow
                                             </InertiaLink>
