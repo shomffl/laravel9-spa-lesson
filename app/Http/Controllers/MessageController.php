@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\User;
 use App\Events\Chat;
+use App\Http\Requests\ChatRequest;
 
 
 class MessageController extends Controller
@@ -37,7 +38,7 @@ class MessageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ChatRequest $request)
     {
         $message = new Message($request->all());
         $message->save();
