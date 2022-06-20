@@ -21186,7 +21186,7 @@ var Chat = function Chat(props) {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("button", {
               type: "submit",
-              className: "px-6 py-2 font-bold text-white bg-green-500 rounded",
+              className: "px-6 py-2 font-bold text-white bg-green-500 hover:bg-green-300 rounded duration-300",
               children: "Send"
             })
           })]
@@ -21272,18 +21272,18 @@ var Index = function Index(props) {
                   className: "border-t",
                   children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
                     href: "/users/".concat(id),
-                    className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
+                    className: "px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-300 rounded duration-300",
                     children: "Chat"
                   })
                 }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
                   className: "border-t",
                   children: follows_id.includes(id) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
                     href: "/unfollow/".concat(id),
-                    className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
+                    className: "px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-300 rounded duration-300",
                     children: "UnFollow"
                   }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
                     href: "/follow/".concat(id),
-                    className: "px-4 py-2 text-sm text-white bg-red-500 rounded",
+                    className: "px-4 py-2 text-sm text-white bg-red-500 hover:bg-pink-300 rounded duration-300",
                     children: "Follow"
                   })
                 })]
@@ -21897,14 +21897,14 @@ var Index = function Index(props) {
                       className: "border-y",
                       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Link, {
                         tabIndex: "1",
-                        className: "px-4 py-2 text-sm text-white bg-blue-500 rounded",
+                        className: "px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-300 rounded duration-300",
                         href: route("posts.edit", id),
                         children: "Edit"
                       })
                     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
                       className: "border-y",
                       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-                        className: "px-4 py-2 text-sm text-white bg-red-500 rounded",
+                        className: "px-4 py-2 text-sm text-white bg-red-500 hover:bg-pink-300 rounded duration-300",
                         onClick: function onClick(e) {
                           return destroy(id);
                         },
