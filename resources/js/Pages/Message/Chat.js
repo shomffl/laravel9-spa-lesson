@@ -6,6 +6,7 @@ import Pusher from "pusher-js";
 import axios from "axios";
 import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import IconButton from "@mui/material/IconButton";
+import { config } from "@fullcalendar/react";
 
 const Chat = (props) => {
     const { recieve_id, messages } = usePage().props;
@@ -38,6 +39,19 @@ const Chat = (props) => {
                 });
         });
     }, []);
+
+    const ReadAloudText = (message) => {
+        const axiosInstance = axios.create();
+        const url = axiosInstance.getUri({
+            url: "https://api.su-shiki.com/v2/voicevox/audio/",
+            params: {
+                text: `${message}`,
+                key: process.env.MIX_VOICE_VOX_KEY,
+            },
+        });
+        const music = new Audio(url);
+        music.play();
+    };
 
     const messageStyle = (send) => {
         if (send === props.auth.user.id) {
@@ -83,7 +97,7 @@ const Chat = (props) => {
                             {message}
                             <IconButton
                                 component="span"
-                                onClick={(e) => console.log("hi")}
+                                onClick={(e) => ReadAloudText(message)}
                             >
                                 <RecordVoiceOverIcon />
                             </IconButton>
