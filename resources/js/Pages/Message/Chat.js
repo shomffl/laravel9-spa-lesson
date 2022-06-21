@@ -4,6 +4,8 @@ import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 import Pusher from "pusher-js";
 import axios from "axios";
+import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
+import IconButton from "@mui/material/IconButton";
 
 const Chat = (props) => {
     const { recieve_id, messages } = usePage().props;
@@ -79,6 +81,12 @@ const Chat = (props) => {
                     {messagesData.map(({ id, send, message }) => (
                         <div style={messageStyle(send)} key={id}>
                             {message}
+                            <IconButton
+                                component="span"
+                                onClick={(e) => console.log("hi")}
+                            >
+                                <RecordVoiceOverIcon />
+                            </IconButton>
                         </div>
                     ))}
                 </div>
