@@ -126,7 +126,7 @@ const Index = (props) => {
                                                     <td className="border-y">
                                                         <Link
                                                             tabIndex="1"
-                                                            className="px-4 py-2 text-sm text-white bg-blue-500 rounded"
+                                                            className="px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-300 rounded duration-300"
                                                             href={route(
                                                                 "posts.edit",
                                                                 id
@@ -137,7 +137,7 @@ const Index = (props) => {
                                                     </td>
                                                     <td className="border-y">
                                                         <button
-                                                            className="px-4 py-2 text-sm text-white bg-red-500 rounded"
+                                                            className="px-4 py-2 text-sm text-white bg-red-500 hover:bg-pink-300 rounded duration-300"
                                                             onClick={(e) =>
                                                                 destroy(id)
                                                             }

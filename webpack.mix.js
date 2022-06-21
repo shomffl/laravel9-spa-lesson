@@ -1,5 +1,5 @@
-const mix = require("laravel-mix");
-
+let mix = require("laravel-mix");
+require("mix-env-file");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -25,3 +25,5 @@ mix.js("resources/js/app.js", "public/js")
 if (mix.inProduction()) {
     mix.version();
 }
+
+mix.env(process.env.ENV_FILE);
