@@ -97,12 +97,7 @@ class PostController extends Controller
     {
         $auth_id = auth()->id();
 
-        $posts_liked_by_auth = User::with("likePosts:id")->find($auth_id);
-        $posts_list_liked_by_auth = [];
-        foreach($posts_liked_by_auth["likePosts"] as $post_liked_by_auth)
-        {
-            array_push($posts_list_liked_by_auth, $post_liked_by_auth->id);
-        }
+        $posts_list_liked_by_auth = PostController::getPostsLikedByUser($auth_id);
 
         if(in_array($post->id, $posts_list_liked_by_auth)){
             $post->likedUsers()->detach($auth_id);
@@ -111,5 +106,16 @@ class PostController extends Controller
         }
 
         return Redirect::route('posts.index');
+    }
+
+    public function getPostsLikedByUser($auth_id)
+    {
+        $posts_list_liked_by_auth = [];
+        $posts_liked_by_auth = User::with("likePosts:id")->find($auth_id);
+        foreach($posts_liked_by_auth["likePosts"] as $post_liked_by_auth)
+        {
+            array_push($posts_list_liked_by_auth, $post_liked_by_auth->id);
+        }
+        return $posts_list_liked_by_auth;
     }
 }
