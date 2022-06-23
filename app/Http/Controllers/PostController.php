@@ -18,7 +18,8 @@ class PostController extends Controller
     public function index()
     {
         $post = Post::with("category")->get();
-        return Inertia::render('Post/Index', ['posts' => $post]);
+        $posts_list_liked_by_auth = PostController::getPostsLikedByUser(auth()->id());
+        return Inertia::render('Post/Index', ['posts' => $post, "like_list" => $posts_list_liked_by_auth]);
     }
 
     public function getData()
@@ -91,5 +92,31 @@ class PostController extends Controller
         $post->delete();
 
         return Redirect::route('posts.index');
+    }
+
+    public function toggleLike(Post $post)
+    {
+        $auth_id = auth()->id();
+
+        $posts_list_liked_by_auth = PostController::getPostsLikedByUser($auth_id);
+
+        if(in_array($post->id, $posts_list_liked_by_auth)){
+            $post->likedUsers()->detach($auth_id);
+        }else{
+            $post->likedUsers()->attach($auth_id);
+        }
+
+        return Redirect::route('posts.index');
+    }
+
+    public function getPostsLikedByUser($auth_id)
+    {
+        $posts_list_liked_by_auth = [];
+        $posts_liked_by_auth = User::with("likePosts:id")->find($auth_id);
+        foreach($posts_liked_by_auth["likePosts"] as $post_liked_by_auth)
+        {
+            array_push($posts_list_liked_by_auth, $post_liked_by_auth->id);
+        }
+        return $posts_list_liked_by_auth;
     }
 }
