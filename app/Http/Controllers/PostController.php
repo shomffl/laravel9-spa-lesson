@@ -92,4 +92,24 @@ class PostController extends Controller
 
         return Redirect::route('posts.index');
     }
+
+    public function toggleLike(Post $post)
+    {
+        $auth_id = auth()->id();
+
+        $posts_liked_by_auth = User::with("likePosts:id")->find($auth_id);
+        $posts_list_liked_by_auth = [];
+        foreach($posts_liked_by_auth["likePosts"] as $post_liked_by_auth)
+        {
+            array_push($posts_list_liked_by_auth, $post_liked_by_auth->id);
+        }
+
+        if(in_array($post->id, $posts_list_liked_by_auth)){
+            $post->likedUsers()->detach($auth_id);
+        }else{
+            $post->likedUsers()->attach($auth_id);
+        }
+
+        return Redirect::route('posts.index');
+    }
 }

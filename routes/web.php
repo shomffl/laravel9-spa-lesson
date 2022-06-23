@@ -38,6 +38,8 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::get("/unfollow/{user}", [UserController::class, "unFollowUser"]);
 
     Route::get("/room/{send}/{recieve}", [UserController::class, "getMessageByRoom"]); // チャットルームごとのメッセージを取得するための関数
+
+    Route::get("/like/{post}", [PostController::class, "toggleLike"]);
 });
 
 require __DIR__.'/auth.php';
