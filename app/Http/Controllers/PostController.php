@@ -18,7 +18,8 @@ class PostController extends Controller
     public function index()
     {
         $post = Post::with("category")->get();
-        return Inertia::render('Post/Index', ['posts' => $post]);
+        $posts_list_liked_by_auth = PostController::getPostsLikedByUser(auth()->id());
+        return Inertia::render('Post/Index', ['posts' => $post, "like_list" => $posts_list_liked_by_auth]);
     }
 
     public function getData()

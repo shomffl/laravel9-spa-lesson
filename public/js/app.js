@@ -30947,7 +30947,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var Index = function Index(props) {
   var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props,
       auth = _usePage$props.auth,
-      posts = _usePage$props.posts;
+      posts = _usePage$props.posts,
+      like_list = _usePage$props.like_list;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_toConsumableArray(posts)),
       _useState2 = _slicedToArray(_useState, 2),
@@ -31108,7 +31109,19 @@ var Index = function Index(props) {
                         children: "delete"
                       })
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                  }), like_list.includes(id) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                    className: "border-y",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                      onClick: function onClick(e) {
+                        return _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.get("/like/".concat(id));
+                      },
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_icons_material_ThumbUp__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                        sx: {
+                          color: "pink"
+                        }
+                      })
+                    })
+                  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
                     className: "border-y",
                     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
                       onClick: function onClick(e) {
