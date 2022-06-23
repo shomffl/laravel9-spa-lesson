@@ -5,9 +5,11 @@ import Authenticated from "@/Layouts/Authenticated";
 import { Head } from "@inertiajs/inertia-react";
 import Pusher from "pusher-js";
 import axios from "axios";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import IconButton from "@mui/material/IconButton";
 
 const Index = (props) => {
-    const { auth, posts } = usePage().props;
+    const { auth, posts, like_list } = usePage().props;
     const [datas, setDatas] = useState([...posts]);
 
     useEffect(() => {
@@ -82,6 +84,7 @@ const Index = (props) => {
                                     <th className="px-6 pt-5 pb-4">Category</th>
                                     <th className="px-6 pt-5 pb-4">Action</th>
                                     <th className="px-6 pt-5 pb-4">Action</th>
+                                    <th className="px-6 pt-5 pb-4">Like!</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -162,6 +165,35 @@ const Index = (props) => {
                                                         </button>
                                                     </td>
                                                 </>
+                                            )}
+                                            {like_list.includes(id) ? (
+                                                <td className="border-y">
+                                                    <IconButton
+                                                        onClick={(e) =>
+                                                            Inertia.get(
+                                                                `/like/${id}`
+                                                            )
+                                                        }
+                                                    >
+                                                        <ThumbUpIcon
+                                                            sx={{
+                                                                color: "pink",
+                                                            }}
+                                                        />
+                                                    </IconButton>
+                                                </td>
+                                            ) : (
+                                                <td className="border-y">
+                                                    <IconButton
+                                                        onClick={(e) =>
+                                                            Inertia.get(
+                                                                `/like/${id}`
+                                                            )
+                                                        }
+                                                    >
+                                                        <ThumbUpIcon />
+                                                    </IconButton>
+                                                </td>
                                             )}
                                         </tr>
                                     )
