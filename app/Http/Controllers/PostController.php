@@ -18,8 +18,9 @@ class PostController extends Controller
     public function index()
     {
         $post = Post::with("category")->get();
+        $num_of_likes = PostController::countLikes();
         $posts_list_liked_by_auth = PostController::getPostsLikedByUser(auth()->id());
-        return Inertia::render('Post/Index', ['posts' => $post, "like_list" => $posts_list_liked_by_auth]);
+        return Inertia::render('Post/Index', ['posts' => $post, "like_list" => $posts_list_liked_by_auth, "num_of_likes" => $num_of_likes]);
     }
 
     public function getData()
@@ -118,5 +119,14 @@ class PostController extends Controller
             array_push($posts_list_liked_by_auth, $post_liked_by_auth->id);
         }
         return $posts_list_liked_by_auth;
+    }
+
+    public function countLikes(){
+        $posts = Post::withCount("likedUsers")->get();
+        $num_of_likes = [];
+        foreach($posts as $post){
+            array_push($num_of_likes, $post->liked_users_count);
+        }
+        return $num_of_likes;
     }
 }

@@ -9,9 +9,8 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import IconButton from "@mui/material/IconButton";
 
 const Index = (props) => {
-    const { auth, posts, like_list } = usePage().props;
+    const { auth, posts, like_list, num_of_likes } = usePage().props;
     const [datas, setDatas] = useState([...posts]);
-
     useEffect(() => {
         var pusher = new Pusher("00e71296007022344f25", {
             cluster: "ap3",
@@ -181,6 +180,7 @@ const Index = (props) => {
                                                             }}
                                                         />
                                                     </IconButton>
+                                                    {num_of_likes[id - 1]}
                                                 </td>
                                             ) : (
                                                 <td className="border-y">
@@ -193,6 +193,7 @@ const Index = (props) => {
                                                     >
                                                         <ThumbUpIcon />
                                                     </IconButton>
+                                                    {num_of_likes[id - 1]}
                                                 </td>
                                             )}
                                         </tr>
