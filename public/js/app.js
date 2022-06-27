@@ -30948,7 +30948,8 @@ var Index = function Index(props) {
   var _usePage$props = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.usePage)().props,
       auth = _usePage$props.auth,
       posts = _usePage$props.posts,
-      like_list = _usePage$props.like_list;
+      like_list = _usePage$props.like_list,
+      num_of_likes = _usePage$props.num_of_likes;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_toConsumableArray(posts)),
       _useState2 = _slicedToArray(_useState, 2),
@@ -31109,9 +31110,9 @@ var Index = function Index(props) {
                         children: "delete"
                       })
                     })]
-                  }), like_list.includes(id) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                  }), like_list.includes(id) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("td", {
                     className: "border-y",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
                       onClick: function onClick(e) {
                         return _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.get("/like/".concat(id));
                       },
@@ -31120,15 +31121,15 @@ var Index = function Index(props) {
                           color: "pink"
                         }
                       })
-                    })
-                  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+                    }), num_of_likes[id - 1]]
+                  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("td", {
                     className: "border-y",
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], {
                       onClick: function onClick(e) {
                         return _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_1__.Inertia.get("/like/".concat(id));
                       },
                       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_mui_icons_material_ThumbUp__WEBPACK_IMPORTED_MODULE_8__["default"], {})
-                    })
+                    }), num_of_likes[id - 1]]
                   })]
                 }, id);
               }), datas.length === 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("tr", {
